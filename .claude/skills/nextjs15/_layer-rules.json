@@ -1,0 +1,167 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Layer Composition Rules",
+  "description": "Defines the atomic design hierarchy and composition rules for each layer",
+  "version": "2.0.0",
+  "layers": {
+    "L0": {
+      "name": "primitives",
+      "directory": "primitives",
+      "idPrefix": "p-",
+      "canCompose": [],
+      "description": "Design tokens and foundational values. No dependencies on other layers.",
+      "categories": ["colors", "typography", "spacing", "motion", "layout", "accessibility", "theming", "visual"],
+      "examples": ["p-colors", "p-typography", "p-spacing", "p-motion"],
+      "rules": [
+        "Must not reference any other layer",
+        "Contains only CSS custom properties and Tailwind config",
+        "No React components - only values and tokens"
+      ]
+    },
+    "L1": {
+      "name": "atoms",
+      "directory": "atoms",
+      "idPrefix": "a-",
+      "canCompose": ["L0"],
+      "description": "Base UI components. Single-purpose, highly reusable elements.",
+      "categories": ["display", "input", "feedback", "layout", "interactive", "state"],
+      "examples": ["a-button", "a-input", "a-badge", "a-avatar"],
+      "rules": [
+        "May only compose from L0 (primitives)",
+        "Must be single-purpose components",
+        "Must include accessibility attributes",
+        "Must use CVA for variants"
+      ]
+    },
+    "L2": {
+      "name": "molecules",
+      "directory": "molecules",
+      "idPrefix": "m-",
+      "canCompose": ["L0", "L1"],
+      "mustCompose": true,
+      "minCompositions": 2,
+      "description": "Composed units combining atoms into functional groups.",
+      "categories": ["navigation", "forms", "content", "data", "interactive", "state"],
+      "examples": ["m-form-field", "m-nav-link", "m-card", "m-pagination"],
+      "rules": [
+        "May compose from L0 (primitives) and L1 (atoms)",
+        "Must explicitly list composed atoms in frontmatter",
+        "Must include formula notation in frontmatter",
+        "Must include composition diagram in body",
+        "Should provide compound component patterns where appropriate"
+      ]
+    },
+    "L3": {
+      "name": "organisms",
+      "directory": "organisms",
+      "idPrefix": "o-",
+      "canCompose": ["L0", "L1", "L2"],
+      "mustCompose": true,
+      "minCompositions": 2,
+      "description": "Complex feature blocks combining molecules into distinct sections.",
+      "categories": ["navigation", "forms", "marketing", "data", "commerce", "overlays", "user", "utility"],
+      "examples": ["o-header", "o-footer", "o-data-table", "o-hero"],
+      "rules": [
+        "May compose from L0, L1, and L2",
+        "Should be self-contained feature units",
+        "May include client-side state management",
+        "Must document all composed molecules/atoms",
+        "Must include formula notation in frontmatter",
+        "Must include composition diagram in body"
+      ]
+    },
+    "L4": {
+      "name": "templates",
+      "directory": "templates",
+      "idPrefix": "t-",
+      "canCompose": ["L0", "L1", "L2", "L3"],
+      "mustCompose": true,
+      "minCompositions": 2,
+      "description": "Page layouts and complete page compositions.",
+      "categories": ["layouts", "pages"],
+      "examples": ["t-root-layout", "t-landing-page", "t-dashboard-layout"],
+      "rules": [
+        "May compose from L0 through L3",
+        "Layouts define structural wrappers and route groups",
+        "Pages compose organisms into complete views",
+        "Must include SEO metadata configuration",
+        "Must include formula notation in frontmatter",
+        "Must include composition diagram in body"
+      ]
+    },
+    "L5": {
+      "name": "patterns",
+      "directory": "patterns",
+      "idPrefix": "pt-",
+      "canCompose": ["L0", "L1", "L2", "L3", "L4"],
+      "mustCompose": true,
+      "minCompositions": 1,
+      "description": "Architectural patterns and cross-cutting concerns.",
+      "categories": ["routing", "data", "state", "auth", "cache", "testing", "performance", "forms", "errors", "i18n", "realtime", "payments", "seo", "edge", "security", "typescript", "devops", "observability", "database", "files", "browser", "background", "email", "cms", "animation"],
+      "examples": ["pt-server-actions", "pt-rbac", "pt-streaming", "pt-caching"],
+      "rules": [
+        "May reference any lower layer for examples",
+        "Focus on architectural guidance, not UI",
+        "Must include anti-patterns section",
+        "Should provide complete, production-ready code",
+        "Must include formula notation in frontmatter",
+        "Must reference UI components used in examples"
+      ]
+    },
+    "L6": {
+      "name": "recipes",
+      "directory": "recipes",
+      "idPrefix": "r-",
+      "canCompose": ["L0", "L1", "L2", "L3", "L4", "L5"],
+      "mustCompose": true,
+      "minCompositions": 3,
+      "description": "Complete application implementations combining all layers.",
+      "categories": ["business", "commerce", "content", "social", "booking", "tech", "health", "finance", "utility"],
+      "examples": ["r-marketing-site", "r-ecommerce", "r-saas-dashboard"],
+      "rules": [
+        "May compose from all layers",
+        "Must provide complete implementation guide",
+        "Must include database schema",
+        "Must include deployment checklist",
+        "Must reference specific skills from each layer",
+        "Must include formula notation in frontmatter",
+        "Must include composition diagram in body"
+      ]
+    }
+  },
+  "validation": {
+    "compositionRules": {
+      "description": "A skill may only compose from layers with lower numbers",
+      "formula": "skill.layer > composed.layer",
+      "violation": "Upward composition is not allowed"
+    },
+    "formulaRules": {
+      "description": "All L2+ skills must include a formula notation in frontmatter",
+      "format": "Name = Component1(id) + Component2(id) + ...",
+      "pattern": "^[A-Z][a-zA-Z]+ = .+$",
+      "required": ["L2", "L3", "L4", "L5", "L6"]
+    },
+    "requiredSections": [
+      "Overview",
+      "When to Use",
+      "Composition Diagram",
+      "Implementation",
+      "Examples",
+      "Anti-patterns",
+      "Related Skills"
+    ],
+    "optionalSections": [
+      "Composes",
+      "Variants",
+      "States",
+      "Accessibility",
+      "Dependencies",
+      "Changelog"
+    ],
+    "sectionExemptions": {
+      "L0": ["Composition Diagram"],
+      "L1": ["Composition Diagram"],
+      "L5": ["Composition Diagram"]
+    }
+  }
+}

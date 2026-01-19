@@ -1,0 +1,25 @@
+# Development templates
+.templates/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Node modules (if using TypeScript validator)
+node_modules/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+*.tmp
+*.temp
+*.log

@@ -1,0 +1,4830 @@
+{
+  "generated": "2026-01-18T21:37:42.751Z",
+  "totalSkills": 455,
+  "compositionEdges": 1065,
+  "byLayer": {
+    "L1": {
+      "count": 42,
+      "avgCompositions": 3
+    },
+    "L2": {
+      "count": 40,
+      "avgCompositions": 2.4
+    },
+    "L3": {
+      "count": 48,
+      "avgCompositions": 3.8
+    },
+    "L5": {
+      "count": 243,
+      "avgCompositions": 1
+    },
+    "L0": {
+      "count": 20,
+      "avgCompositions": 0
+    },
+    "L6": {
+      "count": 31,
+      "avgCompositions": 9.7
+    },
+    "L4": {
+      "count": 31,
+      "avgCompositions": 3.5
+    }
+  },
+  "graph": {
+    "a-display-avatar": {
+      "composedBy": [
+        "m-avatar-group",
+        "m-mention-input"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-badge": {
+      "composedBy": [
+        "m-nav-link",
+        "m-notification-badge",
+        "m-stat-card",
+        "m-tag-input",
+        "pt-filtering",
+        "t-changelog-page"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-code": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-currency": {
+      "composedBy": [
+        "t-invoice-page",
+        "t-product-detail"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-heading": {
+      "composedBy": [
+        "m-card"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-icon": {
+      "composedBy": [
+        "m-accordion-item",
+        "m-action-menu",
+        "m-address-input",
+        "m-breadcrumb",
+        "m-callout",
+        "m-combobox",
+        "m-copy-button",
+        "m-credit-card-input",
+        "m-date-picker",
+        "m-empty-state",
+        "m-error-boundary",
+        "m-list-item",
+        "m-media-object",
+        "m-nav-link",
+        "m-pagination",
+        "m-password-input",
+        "m-rating",
+        "m-search-input",
+        "m-share-button",
+        "m-sortable-item",
+        "m-stat-card",
+        "m-stepper",
+        "m-timeline-item",
+        "m-toolbar",
+        "pt-autosave",
+        "pt-date-pickers",
+        "pt-form-arrays",
+        "pt-multi-step-forms",
+        "pt-optimistic-updates",
+        "pt-rich-text-editor",
+        "pt-search",
+        "pt-signature-pad",
+        "pt-sorting"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-image": {
+      "composedBy": [
+        "m-card",
+        "m-media-object",
+        "t-gallery-page"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-percentage": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-skeleton": {
+      "composedBy": [
+        "pt-client-fetch",
+        "pt-graphql",
+        "pt-infinite-scroll",
+        "pt-pagination",
+        "pt-react-query",
+        "pt-server-components-data",
+        "pt-streaming",
+        "pt-swr",
+        "pt-trpc",
+        "pt-virtual-scroll"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-text": {
+      "composedBy": [
+        "m-accordion-item",
+        "m-avatar-group",
+        "m-breadcrumb",
+        "m-callout",
+        "m-card",
+        "m-empty-state",
+        "m-error-boundary",
+        "m-form-field",
+        "m-inline-edit",
+        "m-key-value",
+        "m-list-item",
+        "m-media-object",
+        "m-notification-badge",
+        "m-pagination",
+        "m-range-slider",
+        "m-stat-card",
+        "m-stepper",
+        "m-table-row",
+        "m-tabs",
+        "m-timeline-item",
+        "o-auth-form",
+        "pt-form-builder",
+        "pt-signature-pad"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-display-time": {
+      "composedBy": [
+        "t-maintenance-page"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-feedback-alert": {
+      "composedBy": [
+        "m-form-field",
+        "o-auth-form",
+        "pt-client-fetch",
+        "pt-form-state",
+        "pt-form-validation",
+        "pt-transactions"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-feedback-badge-notification": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-feedback-progress": {
+      "composedBy": [
+        "m-password-input"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-feedback-spinner": {
+      "composedBy": [
+        "m-search-input",
+        "pt-autosave",
+        "pt-client-fetch",
+        "pt-form-state",
+        "pt-form-validation",
+        "pt-infinite-scroll",
+        "pt-mutations",
+        "pt-search",
+        "pt-server-actions",
+        "pt-virtual-scroll"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-feedback-toast": {
+      "composedBy": [
+        "pt-mutations",
+        "pt-revalidation",
+        "pt-transactions",
+        "pt-trpc"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-button": {
+      "composedBy": [
+        "m-accordion-item",
+        "m-action-menu",
+        "m-card",
+        "m-color-picker",
+        "m-combobox",
+        "m-copy-button",
+        "m-date-picker",
+        "m-empty-state",
+        "m-error-boundary",
+        "m-inline-edit",
+        "m-key-value",
+        "m-list-item",
+        "m-pagination",
+        "m-password-input",
+        "m-rating",
+        "m-search-input",
+        "m-share-button",
+        "m-sortable-item",
+        "m-stepper",
+        "m-table-row",
+        "m-tabs",
+        "m-tag-input",
+        "m-toolbar",
+        "o-auth-form",
+        "o-checkout-form",
+        "pt-client-fetch",
+        "pt-conditional-fields",
+        "pt-date-pickers",
+        "pt-form-arrays",
+        "pt-form-builder",
+        "pt-form-state",
+        "pt-form-validation",
+        "pt-graphql",
+        "pt-infinite-scroll",
+        "pt-multi-step-forms",
+        "pt-mutations",
+        "pt-optimistic-updates",
+        "pt-pagination",
+        "pt-rich-text-editor",
+        "pt-server-actions",
+        "pt-signature-pad",
+        "pt-sorting",
+        "pt-swr",
+        "pt-trpc",
+        "t-404-page",
+        "t-500-page",
+        "t-coming-soon-page",
+        "t-maintenance-page"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-checkbox": {
+      "composedBy": [
+        "m-table-row",
+        "o-auth-form",
+        "o-checkout-form",
+        "pt-conditional-fields",
+        "pt-filtering",
+        "pt-form-arrays",
+        "pt-form-builder",
+        "pt-form-state",
+        "pt-multi-step-forms",
+        "pt-mutations",
+        "pt-optimistic-updates",
+        "pt-url-state"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-color": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-file": {
+      "composedBy": [
+        "pt-form-builder"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-number": {
+      "composedBy": [
+        "pt-conditional-fields",
+        "pt-form-arrays",
+        "pt-form-builder"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-otp": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-radio": {
+      "composedBy": [
+        "pt-form-builder",
+        "pt-form-state",
+        "pt-multi-step-forms"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-select": {
+      "composedBy": [
+        "m-phone-input",
+        "o-checkout-form",
+        "pt-conditional-fields",
+        "pt-form-builder",
+        "pt-multi-step-forms",
+        "pt-sorting",
+        "pt-url-state"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-slider": {
+      "composedBy": [
+        "m-range-slider",
+        "pt-filtering",
+        "pt-url-state"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-switch": {
+      "composedBy": [
+        "pt-form-builder",
+        "pt-form-state",
+        "t-settings-page"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-text": {
+      "composedBy": [
+        "m-address-input",
+        "m-color-picker",
+        "m-combobox",
+        "m-credit-card-input",
+        "m-date-picker",
+        "m-form-field",
+        "m-inline-edit",
+        "m-mention-input",
+        "m-password-input",
+        "m-phone-input",
+        "m-search-input",
+        "m-tag-input",
+        "o-auth-form",
+        "o-checkout-form",
+        "pt-autosave",
+        "pt-conditional-fields",
+        "pt-form-arrays",
+        "pt-form-builder",
+        "pt-form-state",
+        "pt-form-validation",
+        "pt-multi-step-forms",
+        "pt-search",
+        "pt-server-actions",
+        "pt-url-state"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-input-textarea": {
+      "composedBy": [
+        "pt-autosave",
+        "pt-form-arrays",
+        "pt-form-builder",
+        "pt-form-state"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-interactive-dropdown-trigger": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-interactive-link": {
+      "composedBy": [
+        "m-breadcrumb",
+        "m-nav-link",
+        "t-minimal-layout"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-interactive-popover": {
+      "composedBy": [
+        "pt-date-pickers"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-interactive-tooltip": {
+      "composedBy": [
+        "m-avatar-group",
+        "pt-rich-text-editor"
+      ],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-layout-center": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-layout-divider": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-layout-spacer": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-layout-stack": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-state-button": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-state-checkbox": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-state-input": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-state-link": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-state-select": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "a-state-toggle": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-spacing",
+        "p-typography"
+      ]
+    },
+    "m-accordion-item": {
+      "composedBy": [
+        "o-faq",
+        "pt-filtering"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-action-menu": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-input-button"
+      ]
+    },
+    "m-address-input": {
+      "composedBy": [
+        "t-checkout-page"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-text"
+      ]
+    },
+    "m-avatar-group": {
+      "composedBy": [
+        "o-sidebar",
+        "pt-optimistic-updates",
+        "r-meetup-clone",
+        "t-blog-post-page",
+        "t-profile-page",
+        "t-team-page"
+      ],
+      "composes": [
+        "a-display-avatar",
+        "a-display-text",
+        "a-interactive-tooltip"
+      ]
+    },
+    "m-breadcrumb": {
+      "composedBy": [
+        "t-admin-layout",
+        "t-dashboard-layout",
+        "t-documentation-layout"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-interactive-link"
+      ]
+    },
+    "m-callout": {
+      "composedBy": [
+        "t-500-page",
+        "t-changelog-page",
+        "t-maintenance-page"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text"
+      ]
+    },
+    "m-card": {
+      "composedBy": [
+        "o-blog-post",
+        "o-cart",
+        "o-chart",
+        "o-checkout-summary",
+        "o-cookie-consent",
+        "o-dialog",
+        "o-empty-dashboard",
+        "o-features",
+        "o-hero",
+        "o-kanban-board",
+        "o-media-gallery",
+        "o-mega-menu",
+        "o-pricing",
+        "o-product-card",
+        "o-team",
+        "o-testimonials",
+        "o-timeline",
+        "pt-client-fetch",
+        "pt-graphql",
+        "pt-infinite-scroll",
+        "pt-react-query",
+        "pt-server-components-data",
+        "pt-streaming",
+        "pt-swr",
+        "pt-trpc",
+        "r-job-board",
+        "r-meetup-clone",
+        "t-auth-layout",
+        "t-blog-index",
+        "t-checkout-layout",
+        "t-help-center-page",
+        "t-team-page"
+      ],
+      "composes": [
+        "a-display-heading",
+        "a-display-image",
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-color-picker": {
+      "composedBy": [],
+      "composes": [
+        "a-input-button",
+        "a-input-text"
+      ]
+    },
+    "m-combobox": {
+      "composedBy": [
+        "o-checkout-form",
+        "o-contact-form"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-input-text"
+      ]
+    },
+    "m-copy-button": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-input-button"
+      ]
+    },
+    "m-credit-card-input": {
+      "composedBy": [
+        "t-checkout-page"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-text"
+      ]
+    },
+    "m-date-picker": {
+      "composedBy": [
+        "pt-date-pickers",
+        "r-meetup-clone"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-input-text"
+      ]
+    },
+    "m-empty-state": {
+      "composedBy": [
+        "o-empty-dashboard",
+        "t-notifications-page",
+        "t-search-results-page"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-error-boundary": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-form-field": {
+      "composedBy": [
+        "o-auth-form",
+        "o-checkout-form",
+        "o-contact-form",
+        "o-cta",
+        "o-file-uploader",
+        "o-footer",
+        "o-multi-step-form",
+        "o-onboarding-flow",
+        "o-review-form",
+        "pt-autosave",
+        "pt-conditional-fields",
+        "pt-date-pickers",
+        "pt-form-arrays",
+        "pt-form-builder",
+        "pt-form-state",
+        "pt-form-validation",
+        "pt-magic-links",
+        "pt-multi-step-forms",
+        "pt-password-reset",
+        "pt-rich-text-editor",
+        "pt-server-actions",
+        "pt-signature-pad",
+        "r-job-board",
+        "r-newsletter",
+        "t-cart-page",
+        "t-coming-soon-page",
+        "t-profile-page",
+        "t-settings-page"
+      ],
+      "composes": [
+        "a-display-text",
+        "a-feedback-alert",
+        "a-input-text"
+      ]
+    },
+    "m-inline-edit": {
+      "composedBy": [],
+      "composes": [
+        "a-display-text",
+        "a-input-button",
+        "a-input-text"
+      ]
+    },
+    "m-key-value": {
+      "composedBy": [
+        "t-invoice-page"
+      ],
+      "composes": [
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-list-item": {
+      "composedBy": [
+        "pt-mutations",
+        "pt-optimistic-updates",
+        "pt-virtual-scroll"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-media-object": {
+      "composedBy": [
+        "o-comments-section"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-image",
+        "a-display-text"
+      ]
+    },
+    "m-mention-input": {
+      "composedBy": [],
+      "composes": [
+        "a-display-avatar",
+        "a-input-text"
+      ]
+    },
+    "m-nav-link": {
+      "composedBy": [
+        "o-command-palette",
+        "o-footer",
+        "o-header",
+        "o-mega-menu",
+        "o-sidebar"
+      ],
+      "composes": [
+        "a-display-badge",
+        "a-display-icon",
+        "a-interactive-link"
+      ]
+    },
+    "m-notification-badge": {
+      "composedBy": [
+        "o-notification-center"
+      ],
+      "composes": [
+        "a-display-badge",
+        "a-display-text"
+      ]
+    },
+    "m-pagination": {
+      "composedBy": [
+        "pt-pagination",
+        "pt-prisma-patterns",
+        "r-job-board",
+        "r-newsletter",
+        "t-blog-index",
+        "t-product-listing",
+        "t-search-results-page"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-password-input": {
+      "composedBy": [
+        "o-auth-form"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-feedback-progress",
+        "a-input-button",
+        "a-input-text"
+      ]
+    },
+    "m-phone-input": {
+      "composedBy": [],
+      "composes": [
+        "a-input-select",
+        "a-input-text"
+      ]
+    },
+    "m-range-slider": {
+      "composedBy": [
+        "pt-filtering",
+        "r-meditation-app"
+      ],
+      "composes": [
+        "a-display-text",
+        "a-input-slider"
+      ]
+    },
+    "m-rating": {
+      "composedBy": [
+        "o-review-form",
+        "o-testimonials",
+        "t-product-detail"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button"
+      ]
+    },
+    "m-search-input": {
+      "composedBy": [
+        "o-command-palette",
+        "o-header",
+        "pt-search",
+        "r-job-board",
+        "t-404-page",
+        "t-help-center-page",
+        "t-search-results-page"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-feedback-spinner",
+        "a-input-button",
+        "a-input-text"
+      ]
+    },
+    "m-share-button": {
+      "composedBy": [
+        "t-blog-post-page"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button"
+      ]
+    },
+    "m-sortable-item": {
+      "composedBy": [
+        "pt-form-arrays"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button"
+      ]
+    },
+    "m-stat-card": {
+      "composedBy": [
+        "o-stats-dashboard",
+        "pt-server-components-data",
+        "pt-streaming",
+        "r-fitness-tracker",
+        "r-meditation-app",
+        "r-newsletter",
+        "t-dashboard-home"
+      ],
+      "composes": [
+        "a-display-badge",
+        "a-display-icon",
+        "a-display-text"
+      ]
+    },
+    "m-state-card": {
+      "composedBy": [],
+      "composes": []
+    },
+    "m-state-form-field": {
+      "composedBy": [],
+      "composes": []
+    },
+    "m-state-nav-item": {
+      "composedBy": [],
+      "composes": []
+    },
+    "m-stepper": {
+      "composedBy": [
+        "o-multi-step-form",
+        "o-onboarding-flow",
+        "pt-multi-step-forms",
+        "r-fitness-tracker",
+        "r-meditation-app",
+        "t-checkout-layout",
+        "t-checkout-page",
+        "t-onboarding-layout"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-table-row": {
+      "composedBy": [],
+      "composes": [
+        "a-display-text",
+        "a-input-button",
+        "a-input-checkbox"
+      ]
+    },
+    "m-tabs": {
+      "composedBy": [
+        "pt-url-state",
+        "r-meetup-clone",
+        "r-newsletter",
+        "t-blog-index",
+        "t-documentation-layout",
+        "t-gallery-page",
+        "t-notifications-page",
+        "t-product-listing",
+        "t-profile-page",
+        "t-settings-page"
+      ],
+      "composes": [
+        "a-display-text",
+        "a-input-button"
+      ]
+    },
+    "m-tag-input": {
+      "composedBy": [],
+      "composes": [
+        "a-display-badge",
+        "a-input-button",
+        "a-input-text"
+      ]
+    },
+    "m-timeline-item": {
+      "composedBy": [
+        "o-activity-feed"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-display-text"
+      ]
+    },
+    "m-toolbar": {
+      "composedBy": [
+        "pt-rich-text-editor"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button"
+      ]
+    },
+    "o-activity-feed": {
+      "composedBy": [
+        "r-social-network",
+        "t-dashboard-home",
+        "t-profile-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "m-avatar",
+        "m-timeline-item"
+      ]
+    },
+    "o-announcement-banner": {
+      "composedBy": [
+        "t-marketing-layout"
+      ],
+      "composes": [
+        "a-button",
+        "a-icon"
+      ]
+    },
+    "o-auth-form": {
+      "composedBy": [
+        "pt-server-actions",
+        "t-auth-layout"
+      ],
+      "composes": [
+        "a-display-text",
+        "a-feedback-alert",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-text",
+        "m-form-field",
+        "m-password-input"
+      ]
+    },
+    "o-blog-post": {
+      "composedBy": [
+        "r-blog-platform",
+        "t-blog-post-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "m-avatar",
+        "m-card"
+      ]
+    },
+    "o-calendar": {
+      "composedBy": [
+        "r-fitness-tracker",
+        "r-meditation-app",
+        "r-meetup-clone",
+        "r-recipe-app"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "m-popover"
+      ]
+    },
+    "o-cart": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-restaurant-ordering",
+        "t-cart-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-input",
+        "a-separator",
+        "m-card",
+        "m-sheet"
+      ]
+    },
+    "o-chart": {
+      "composedBy": [
+        "pt-streaming",
+        "r-analytics-dashboard",
+        "r-fitness-tracker",
+        "r-newsletter",
+        "r-rental-management",
+        "r-saas-dashboard",
+        "t-dashboard-home"
+      ],
+      "composes": [
+        "a-badge",
+        "a-skeleton",
+        "m-card"
+      ]
+    },
+    "o-checkout-form": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-restaurant-ordering",
+        "t-checkout-page"
+      ],
+      "composes": [
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-select",
+        "a-input-text",
+        "m-combobox",
+        "m-form-field"
+      ]
+    },
+    "o-checkout-summary": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-restaurant-ordering",
+        "t-cart-page",
+        "t-checkout-layout",
+        "t-checkout-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-separator",
+        "m-card",
+        "m-collapsible"
+      ]
+    },
+    "o-command-palette": {
+      "composedBy": [
+        "pt-search",
+        "r-saas-dashboard",
+        "t-dashboard-layout"
+      ],
+      "composes": [
+        "a-button",
+        "a-kbd",
+        "m-nav-link",
+        "m-search-input"
+      ]
+    },
+    "o-comments-section": {
+      "composedBy": [
+        "r-meetup-clone",
+        "r-social-network",
+        "t-blog-post-page"
+      ],
+      "composes": [
+        "a-button",
+        "a-icon",
+        "a-textarea",
+        "m-avatar",
+        "m-media-object"
+      ]
+    },
+    "o-comparison-table": {
+      "composedBy": [],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "m-tooltip"
+      ]
+    },
+    "o-contact-form": {
+      "composedBy": [
+        "r-property-listing"
+      ],
+      "composes": [
+        "a-button",
+        "a-input",
+        "a-textarea",
+        "m-combobox",
+        "m-form-field"
+      ]
+    },
+    "o-cookie-consent": {
+      "composedBy": [
+        "t-marketing-layout"
+      ],
+      "composes": [
+        "a-button",
+        "a-switch",
+        "m-card",
+        "m-dialog"
+      ]
+    },
+    "o-cta": {
+      "composedBy": [
+        "t-about-page",
+        "t-landing-page"
+      ],
+      "composes": [
+        "a-button",
+        "a-input",
+        "m-form-field"
+      ]
+    },
+    "o-data-table": {
+      "composedBy": [
+        "pt-graphql",
+        "pt-pagination",
+        "pt-prisma-patterns",
+        "pt-react-query",
+        "pt-sorting",
+        "pt-trpc",
+        "pt-url-state",
+        "pt-virtual-scroll",
+        "r-analytics-dashboard",
+        "r-crm",
+        "r-ecommerce",
+        "r-job-board",
+        "r-newsletter",
+        "r-project-management",
+        "r-rental-management",
+        "r-saas-dashboard"
+      ],
+      "composes": [
+        "a-button",
+        "a-checkbox",
+        "a-input",
+        "a-select",
+        "m-dropdown-menu"
+      ]
+    },
+    "o-dialog": {
+      "composedBy": [
+        "pt-mutations",
+        "r-project-management"
+      ],
+      "composes": [
+        "a-button",
+        "a-input",
+        "m-card"
+      ]
+    },
+    "o-drawer": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-separator"
+      ]
+    },
+    "o-empty-dashboard": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-icon",
+        "m-card",
+        "m-empty-state"
+      ]
+    },
+    "o-faq": {
+      "composedBy": [
+        "t-help-center-page",
+        "t-landing-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-input",
+        "m-accordion-item"
+      ]
+    },
+    "o-features": {
+      "composedBy": [
+        "t-about-page",
+        "t-landing-page"
+      ],
+      "composes": [
+        "a-badge",
+        "m-card"
+      ]
+    },
+    "o-file-uploader": {
+      "composedBy": [
+        "pt-server-actions",
+        "r-job-board",
+        "r-meetup-clone",
+        "r-property-listing",
+        "r-recipe-app",
+        "r-rental-management",
+        "r-restaurant-ordering",
+        "r-social-network"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-progress",
+        "m-form-field"
+      ]
+    },
+    "o-footer": {
+      "composedBy": [
+        "t-marketing-layout"
+      ],
+      "composes": [
+        "a-button",
+        "a-input",
+        "m-form-field",
+        "m-nav-link"
+      ]
+    },
+    "o-header": {
+      "composedBy": [
+        "t-admin-layout",
+        "t-dashboard-layout",
+        "t-marketing-layout",
+        "t-minimal-layout"
+      ],
+      "composes": [
+        "a-button",
+        "m-nav-link",
+        "m-search-input"
+      ]
+    },
+    "o-hero": {
+      "composedBy": [
+        "r-job-board",
+        "r-meetup-clone",
+        "t-404-page",
+        "t-about-page",
+        "t-blog-index",
+        "t-coming-soon-page",
+        "t-landing-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "m-card"
+      ]
+    },
+    "o-invoice-table": {
+      "composedBy": [
+        "r-rental-management",
+        "t-invoice-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-input",
+        "m-dropdown-menu",
+        "m-table"
+      ]
+    },
+    "o-kanban-board": {
+      "composedBy": [
+        "r-project-management"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "m-avatar",
+        "m-card",
+        "m-dropdown-menu"
+      ]
+    },
+    "o-keyboard-shortcuts": {
+      "composedBy": [],
+      "composes": [
+        "a-icon",
+        "a-input",
+        "a-kbd",
+        "m-dialog"
+      ]
+    },
+    "o-language-switcher": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-icon",
+        "m-dropdown-menu"
+      ]
+    },
+    "o-media-gallery": {
+      "composedBy": [
+        "r-meetup-clone",
+        "r-property-listing",
+        "r-recipe-app",
+        "t-gallery-page",
+        "t-product-detail"
+      ],
+      "composes": [
+        "a-button",
+        "a-image",
+        "m-card",
+        "m-dialog"
+      ]
+    },
+    "o-mega-menu": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "m-card",
+        "m-nav-link"
+      ]
+    },
+    "o-multi-step-form": {
+      "composedBy": [
+        "r-recipe-app",
+        "t-onboarding-layout"
+      ],
+      "composes": [
+        "a-button",
+        "a-progress",
+        "m-form-field",
+        "m-stepper"
+      ]
+    },
+    "o-notification-center": {
+      "composedBy": [
+        "r-social-network",
+        "t-notifications-page"
+      ],
+      "composes": [
+        "a-avatar",
+        "a-badge",
+        "a-button",
+        "m-notification-badge",
+        "m-popover"
+      ]
+    },
+    "o-onboarding-flow": {
+      "composedBy": [
+        "r-meditation-app",
+        "t-onboarding-layout"
+      ],
+      "composes": [
+        "a-button",
+        "a-icon",
+        "a-input",
+        "m-form-field",
+        "m-stepper"
+      ]
+    },
+    "o-pricing": {
+      "composedBy": [
+        "t-landing-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-switch",
+        "m-card"
+      ]
+    },
+    "o-product-card": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-restaurant-ordering",
+        "t-product-detail",
+        "t-product-listing"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-skeleton",
+        "m-card",
+        "m-tooltip"
+      ]
+    },
+    "o-review-form": {
+      "composedBy": [
+        "t-product-detail"
+      ],
+      "composes": [
+        "a-button",
+        "a-input",
+        "a-textarea",
+        "m-form-field",
+        "m-rating"
+      ]
+    },
+    "o-scroll-animations": {
+      "composedBy": [],
+      "composes": []
+    },
+    "o-search-modal": {
+      "composedBy": [
+        "pt-search",
+        "r-job-board",
+        "r-property-listing",
+        "t-documentation-layout"
+      ],
+      "composes": [
+        "a-button",
+        "a-input",
+        "m-dialog"
+      ]
+    },
+    "o-sheet": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-separator",
+        "m-scroll-area"
+      ]
+    },
+    "o-sidebar": {
+      "composedBy": [
+        "pt-filtering",
+        "pt-url-state",
+        "r-documentation",
+        "r-saas-dashboard",
+        "t-admin-layout",
+        "t-dashboard-layout",
+        "t-documentation-layout",
+        "t-product-listing",
+        "t-search-results-page"
+      ],
+      "composes": [
+        "a-button",
+        "a-tooltip",
+        "m-avatar-group",
+        "m-nav-link"
+      ]
+    },
+    "o-social-share": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-icon"
+      ]
+    },
+    "o-stats-dashboard": {
+      "composedBy": [
+        "pt-server-components-data",
+        "pt-streaming",
+        "r-fitness-tracker",
+        "r-meditation-app",
+        "r-newsletter",
+        "r-rental-management",
+        "t-dashboard-home"
+      ],
+      "composes": [
+        "a-icon",
+        "m-chart",
+        "m-stat-card"
+      ]
+    },
+    "o-team": {
+      "composedBy": [
+        "t-about-page",
+        "t-team-page"
+      ],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "m-avatar",
+        "m-card"
+      ]
+    },
+    "o-testimonials": {
+      "composedBy": [
+        "t-auth-layout",
+        "t-landing-page"
+      ],
+      "composes": [
+        "a-button",
+        "m-avatar",
+        "m-card",
+        "m-rating"
+      ]
+    },
+    "o-theme-switcher": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-icon",
+        "m-dropdown-menu"
+      ]
+    },
+    "o-timeline": {
+      "composedBy": [
+        "t-about-page",
+        "t-changelog-page"
+      ],
+      "composes": [
+        "a-badge",
+        "m-avatar",
+        "m-card"
+      ]
+    },
+    "o-user-menu": {
+      "composedBy": [
+        "r-project-management",
+        "r-social-network"
+      ],
+      "composes": [
+        "a-badge",
+        "m-avatar",
+        "m-dropdown-menu"
+      ]
+    },
+    "pt-ab-testing": {
+      "composedBy": [
+        "r-newsletter"
+      ],
+      "composes": []
+    },
+    "pt-accessibility-testing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-alerting": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-algolia": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-analytics-events": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-animations": {
+      "composedBy": [
+        "r-portfolio"
+      ],
+      "composes": []
+    },
+    "pt-api-documentation": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-api-keys": {
+      "composedBy": [],
+      "composes": [
+        "a-badge",
+        "a-button",
+        "a-input",
+        "m-api-key-card",
+        "m-copy-to-clipboard",
+        "m-scope-selector",
+        "o-api-keys-list",
+        "o-create-api-key-dialog"
+      ]
+    },
+    "pt-api-testing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-api-types": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-api-versioning": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-app-router": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-auth-middleware": {
+      "composedBy": [],
+      "composes": [
+        "m-redirect-handler",
+        "m-route-guard"
+      ]
+    },
+    "pt-autosave": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-feedback-spinner",
+        "a-input-text",
+        "a-input-textarea",
+        "m-form-field"
+      ]
+    },
+    "pt-background-jobs": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-barcode-scanner": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-blue-green": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-branded-types": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-bundle-optimization": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-cache-aside": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-cache-headers": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-cache-invalidation": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-cache-stampede": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-cache-warming": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-calendar-integration": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-canary": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-catch-all": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-client-fetch": {
+      "composedBy": [],
+      "composes": [
+        "a-display-skeleton",
+        "a-feedback-alert",
+        "a-feedback-spinner",
+        "a-input-button",
+        "m-card"
+      ]
+    },
+    "pt-clipboard-api": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-code-splitting": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-collaboration": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-conditional-fields": {
+      "composedBy": [],
+      "composes": [
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-number",
+        "a-input-select",
+        "a-input-text",
+        "m-form-field"
+      ]
+    },
+    "pt-conditional-types": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-content-negotiation": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-content-security-policy": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-contentful": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-context": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-contract-testing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-cookie-management": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-critical-css": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-cron-jobs": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-csrf-protection": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-data-cache": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-date-formatting": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-date-pickers": {
+      "composedBy": [
+        "r-booking-app"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-interactive-popover",
+        "m-date-picker",
+        "m-form-field"
+      ]
+    },
+    "pt-debugging": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-deep-linking": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-dev-tools": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-device-sessions": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-device-icon",
+        "a-location-badge",
+        "m-device-info-display",
+        "m-session-card",
+        "o-session-list",
+        "o-suspicious-activity-alert"
+      ]
+    },
+    "pt-discriminated-unions": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-distributed-cache": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-docker": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-download-files": {
+      "composedBy": [
+        "r-file-sharing"
+      ],
+      "composes": []
+    },
+    "pt-dynamic-rendering": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-dynamic-routes": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-edge-cache": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-edge-config": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-edge-functions": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-edge-kv": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-edge-middleware": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-edge-rendering": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-email-templates": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-email-verification": {
+      "composedBy": [],
+      "composes": [
+        "a-alert",
+        "a-button",
+        "a-icon",
+        "m-countdown-timer",
+        "m-resend-verification",
+        "o-verification-pending-card",
+        "o-verification-success-card"
+      ]
+    },
+    "pt-environment-variables": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-error-boundaries": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-error-handling": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-error-recovery": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-error-reporting": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-error-tracking": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-eslint-config": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-export-data": {
+      "composedBy": [
+        "r-survey-builder"
+      ],
+      "composes": []
+    },
+    "pt-fallback-ui": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-feature-flags": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-file-storage": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-file-system-api": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-file-upload": {
+      "composedBy": [
+        "r-crowdfunding",
+        "r-expense-tracker",
+        "r-file-sharing",
+        "r-helpdesk"
+      ],
+      "composes": []
+    },
+    "pt-filtering": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-job-board",
+        "r-meetup-clone",
+        "r-property-listing"
+      ],
+      "composes": [
+        "a-display-badge",
+        "a-input-checkbox",
+        "a-input-slider",
+        "m-accordion-item",
+        "m-range-slider",
+        "o-sidebar"
+      ]
+    },
+    "pt-focus-management": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-fonts": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-form-arrays": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-number",
+        "a-input-text",
+        "a-input-textarea",
+        "m-form-field",
+        "m-sortable-item"
+      ]
+    },
+    "pt-form-builder": {
+      "composedBy": [],
+      "composes": [
+        "a-display-text",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-file",
+        "a-input-number",
+        "a-input-radio",
+        "a-input-select",
+        "a-input-switch",
+        "a-input-text",
+        "a-input-textarea",
+        "m-form-field"
+      ]
+    },
+    "pt-form-state": {
+      "composedBy": [],
+      "composes": [
+        "a-feedback-alert",
+        "a-feedback-spinner",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-radio",
+        "a-input-switch",
+        "a-input-text",
+        "a-input-textarea",
+        "m-form-field"
+      ]
+    },
+    "pt-form-validation": {
+      "composedBy": [
+        "r-job-board",
+        "r-newsletter",
+        "r-portfolio",
+        "r-survey-builder"
+      ],
+      "composes": [
+        "a-feedback-alert",
+        "a-feedback-spinner",
+        "a-input-button",
+        "a-input-text",
+        "m-form-field"
+      ]
+    },
+    "pt-full-text-search": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-generics": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-geolocation": {
+      "composedBy": [
+        "r-link-shortener"
+      ],
+      "composes": []
+    },
+    "pt-global-error": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-graphql": {
+      "composedBy": [],
+      "composes": [
+        "a-display-skeleton",
+        "a-input-button",
+        "m-card",
+        "o-data-table"
+      ]
+    },
+    "pt-hot-reload": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-i18n-routing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-image-optimization": {
+      "composedBy": [
+        "r-blog-platform",
+        "r-ecommerce",
+        "r-portfolio",
+        "r-property-listing"
+      ],
+      "composes": []
+    },
+    "pt-image-processing": {
+      "composedBy": [
+        "r-expense-tracker"
+      ],
+      "composes": []
+    },
+    "pt-impersonation": {
+      "composedBy": [],
+      "composes": [
+        "a-alert-banner",
+        "a-button",
+        "a-input",
+        "m-impersonation-timer",
+        "m-user-search-select",
+        "o-impersonation-banner",
+        "o-user-impersonation-form"
+      ]
+    },
+    "pt-import-data": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-indexed-db": {
+      "composedBy": [
+        "r-fitness-tracker",
+        "r-meditation-app"
+      ],
+      "composes": []
+    },
+    "pt-inference": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-infinite-scroll-bidirectional": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-infinite-scroll": {
+      "composedBy": [
+        "r-social-network"
+      ],
+      "composes": [
+        "a-display-skeleton",
+        "a-feedback-spinner",
+        "a-input-button",
+        "m-card"
+      ]
+    },
+    "pt-input-sanitization": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-intercepting-routes": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-jotai": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-jwt-tokens": {
+      "composedBy": [],
+      "composes": [
+        "a-secure-cookie",
+        "m-auth-header-provider",
+        "m-token-refresh-handler"
+      ]
+    },
+    "pt-keyboard-navigation": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-lazy-loading": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-lighthouse-optimization": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-live-updates": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-load-testing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-local-storage": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-locale-detection": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-logging": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-lru-cache": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-magic-links": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-icon",
+        "a-input",
+        "m-email-sent-confirmation",
+        "m-form-field",
+        "o-magic-link-form"
+      ]
+    },
+    "pt-mapped-types": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-maps-integration": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-mdx": {
+      "composedBy": [
+        "r-documentation"
+      ],
+      "composes": []
+    },
+    "pt-memory-optimization": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-metadata-api": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-metrics": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-micro-interactions": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-mocking": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-multi-step-forms": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-radio",
+        "a-input-select",
+        "a-input-text",
+        "m-form-field",
+        "m-stepper"
+      ]
+    },
+    "pt-multipart-upload": {
+      "composedBy": [
+        "r-file-sharing"
+      ],
+      "composes": []
+    },
+    "pt-mutations": {
+      "composedBy": [
+        "r-recipe-app"
+      ],
+      "composes": [
+        "a-feedback-spinner",
+        "a-feedback-toast",
+        "a-input-button",
+        "a-input-checkbox",
+        "m-list-item",
+        "o-dialog"
+      ]
+    },
+    "pt-next-auth": {
+      "composedBy": [
+        "r-saas-dashboard"
+      ],
+      "composes": [
+        "a-avatar",
+        "a-button",
+        "a-input",
+        "m-credentials-form",
+        "m-oauth-buttons",
+        "m-session-provider-wrapper",
+        "o-sign-in-form",
+        "o-user-button"
+      ]
+    },
+    "pt-not-found": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-notifications": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-number-formatting": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-oauth-providers": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-icon",
+        "a-spinner",
+        "m-oauth-button",
+        "m-provider-icon",
+        "o-linked-accounts-manager",
+        "o-oauth-buttons-group"
+      ]
+    },
+    "pt-offline-mode": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-on-demand-revalidation": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-open-graph": {
+      "composedBy": [
+        "r-portfolio"
+      ],
+      "composes": []
+    },
+    "pt-optimistic-updates": {
+      "composedBy": [
+        "r-meetup-clone",
+        "r-project-management",
+        "r-realtime-app",
+        "r-restaurant-ordering",
+        "r-social-network"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-input-checkbox",
+        "m-avatar-group",
+        "m-list-item"
+      ]
+    },
+    "pt-pagination": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-job-board",
+        "r-newsletter"
+      ],
+      "composes": [
+        "a-display-skeleton",
+        "a-input-button",
+        "m-pagination",
+        "o-data-table"
+      ]
+    },
+    "pt-parallel-routes": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-password-reset": {
+      "composedBy": [],
+      "composes": [
+        "a-alert",
+        "a-button",
+        "a-input",
+        "a-progress",
+        "m-form-field",
+        "m-password-strength-indicator",
+        "o-forgot-password-form",
+        "o-reset-password-form"
+      ]
+    },
+    "pt-passwordless": {
+      "composedBy": [],
+      "composes": [
+        "a-biometric-icon",
+        "a-button",
+        "a-input",
+        "m-otp-input",
+        "m-passkey-authenticate",
+        "m-passkey-register",
+        "o-passwordless-auth-form",
+        "o-webauthn-setup"
+      ]
+    },
+    "pt-payment-request-api": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-pdf-generation": {
+      "composedBy": [
+        "r-learning-platform"
+      ],
+      "composes": []
+    },
+    "pt-performance-testing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-persistence": {
+      "composedBy": [
+        "r-fitness-tracker",
+        "r-meditation-app"
+      ],
+      "composes": []
+    },
+    "pt-polling": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-ppr": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-prefetching": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-preloading": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-presence": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-prettier-config": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-preview-deployments": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-print-styles": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-prisma-patterns": {
+      "composedBy": [
+        "r-analytics-dashboard",
+        "r-ecommerce"
+      ],
+      "composes": [
+        "m-pagination",
+        "o-data-table"
+      ]
+    },
+    "pt-progressive-enhancement": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-push-notifications": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-qr-codes": {
+      "composedBy": [
+        "r-link-shortener"
+      ],
+      "composes": []
+    },
+    "pt-queues": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-rate-limiting": {
+      "composedBy": [
+        "r-link-shortener"
+      ],
+      "composes": []
+    },
+    "pt-rbac": {
+      "composedBy": [
+        "r-rental-management",
+        "r-saas-dashboard",
+        "r-subscription-billing"
+      ],
+      "composes": [
+        "a-badge",
+        "a-checkbox",
+        "a-tooltip",
+        "m-permission-checkbox-group",
+        "m-role-badge",
+        "o-permission-matrix",
+        "o-role-management-panel"
+      ]
+    },
+    "pt-react-query": {
+      "composedBy": [
+        "r-analytics-dashboard",
+        "r-meetup-clone",
+        "r-newsletter",
+        "r-saas-dashboard",
+        "r-social-network"
+      ],
+      "composes": [
+        "a-display-skeleton",
+        "m-card",
+        "o-data-table"
+      ]
+    },
+    "pt-recoil": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-redis-cache": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-redux-toolkit": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-request-memoization": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-resource-hints": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-responsive-images": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-rest-api-design": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-retry-logic": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-revalidation": {
+      "composedBy": [],
+      "composes": [
+        "a-feedback-toast"
+      ]
+    },
+    "pt-rich-text-editor": {
+      "composedBy": [
+        "r-helpdesk",
+        "r-newsletter",
+        "r-project-management"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-interactive-tooltip",
+        "m-form-field",
+        "m-toolbar"
+      ]
+    },
+    "pt-rollback": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-route-groups": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-route-handlers": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-router-cache": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-rum": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-sanity": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-scheduled-tasks": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-scroll-effects": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-search": {
+      "composedBy": [
+        "r-documentation",
+        "r-job-board",
+        "r-meetup-clone",
+        "r-property-listing",
+        "r-recipe-app"
+      ],
+      "composes": [
+        "a-display-icon",
+        "a-feedback-spinner",
+        "a-input-text",
+        "m-search-input",
+        "o-command-palette",
+        "o-search-modal"
+      ]
+    },
+    "pt-security-headers": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-seeding": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-server-actions": {
+      "composedBy": [],
+      "composes": [
+        "a-feedback-spinner",
+        "a-input-button",
+        "a-input-text",
+        "m-form-field",
+        "o-auth-form",
+        "o-file-uploader"
+      ]
+    },
+    "pt-server-components-data": {
+      "composedBy": [],
+      "composes": [
+        "a-display-skeleton",
+        "m-card",
+        "m-stat-card",
+        "o-stats-dashboard"
+      ]
+    },
+    "pt-server-sent-events": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-server-state": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-service-worker": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-session-management": {
+      "composedBy": [],
+      "composes": [
+        "a-cookie-consent",
+        "m-session-refresh-handler",
+        "m-session-status",
+        "o-session-provider"
+      ]
+    },
+    "pt-share-api": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-signature-pad": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-display-text",
+        "a-input-button",
+        "m-form-field"
+      ]
+    },
+    "pt-sitemap": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-skeleton-loading": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-snapshot-testing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-social-auth": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-social-sharing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-soft-delete": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-sorting": {
+      "composedBy": [],
+      "composes": [
+        "a-display-icon",
+        "a-input-button",
+        "a-input-select",
+        "o-data-table"
+      ]
+    },
+    "pt-speech-recognition": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-speech-synthesis": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-sso": {
+      "composedBy": [],
+      "composes": [
+        "a-button",
+        "a-file-upload",
+        "a-input",
+        "m-certificate-upload",
+        "m-domain-verification",
+        "m-sso-test-connection",
+        "o-sso-configuration-form",
+        "o-sso-login-redirect"
+      ]
+    },
+    "pt-stale-while-revalidate": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-state-machines": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-static-rendering": {
+      "composedBy": [
+        "r-blog-platform"
+      ],
+      "composes": []
+    },
+    "pt-streaming": {
+      "composedBy": [
+        "r-ai-application"
+      ],
+      "composes": [
+        "a-display-skeleton",
+        "m-card",
+        "m-stat-card",
+        "o-chart",
+        "o-stats-dashboard"
+      ]
+    },
+    "pt-stripe-billing-portal": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-stripe-checkout": {
+      "composedBy": [
+        "r-ecommerce"
+      ],
+      "composes": []
+    },
+    "pt-stripe-subscriptions": {
+      "composedBy": [
+        "r-saas-dashboard",
+        "r-subscription-billing"
+      ],
+      "composes": []
+    },
+    "pt-stripe-webhooks": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-structured-data": {
+      "composedBy": [
+        "r-portfolio"
+      ],
+      "composes": []
+    },
+    "pt-swr": {
+      "composedBy": [],
+      "composes": [
+        "a-display-skeleton",
+        "a-input-button",
+        "m-card"
+      ]
+    },
+    "pt-synthetic-monitoring": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-tag-based-revalidation": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-template-literals": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-test-fixtures": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-testing-api": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-testing-components": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-testing-e2e": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-testing-hooks": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-testing-integration": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-testing-unit": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-tracing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-transactional-email": {
+      "composedBy": [
+        "r-portfolio"
+      ],
+      "composes": []
+    },
+    "pt-transactions": {
+      "composedBy": [
+        "r-rental-management"
+      ],
+      "composes": [
+        "a-feedback-alert",
+        "a-feedback-toast"
+      ]
+    },
+    "pt-transitions": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-translations": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-trpc": {
+      "composedBy": [],
+      "composes": [
+        "a-display-skeleton",
+        "a-feedback-toast",
+        "a-input-button",
+        "m-card",
+        "o-data-table"
+      ]
+    },
+    "pt-two-factor": {
+      "composedBy": [],
+      "composes": [
+        "a-alert",
+        "a-button",
+        "a-input",
+        "a-qr-code",
+        "m-backup-codes-display",
+        "m-otp-input",
+        "o-two-factor-setup-dialog"
+      ]
+    },
+    "pt-type-guards": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-type-safety": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-url-state": {
+      "composedBy": [
+        "r-job-board"
+      ],
+      "composes": [
+        "a-input-checkbox",
+        "a-input-select",
+        "a-input-slider",
+        "a-input-text",
+        "m-tabs",
+        "o-data-table",
+        "o-sidebar"
+      ]
+    },
+    "pt-url-sync": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-user-analytics": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-utility-types": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-valtio": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-vercel-deployment": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-virtual-scroll": {
+      "composedBy": [],
+      "composes": [
+        "a-display-skeleton",
+        "a-feedback-spinner",
+        "m-list-item",
+        "o-data-table"
+      ]
+    },
+    "pt-visual-regression": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-vscode-integration": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-web-vitals": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-web-workers": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-webhooks": {
+      "composedBy": [
+        "r-subscription-billing"
+      ],
+      "composes": []
+    },
+    "pt-websockets": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-write-through": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-xss-prevention": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-xstate-react": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-zero-downtime": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-zod-schemas": {
+      "composedBy": [],
+      "composes": []
+    },
+    "pt-zustand": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-fitness-tracker",
+        "r-meditation-app",
+        "r-restaurant-ordering"
+      ],
+      "composes": []
+    },
+    "p-accessibility": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-aspect-ratios": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-borders": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-brand-expression": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-breakpoints": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-colors": {
+      "composedBy": [
+        "a-display-avatar",
+        "a-display-badge",
+        "a-display-code",
+        "a-display-currency",
+        "a-display-heading",
+        "a-display-icon",
+        "a-display-image",
+        "a-display-percentage",
+        "a-display-skeleton",
+        "a-display-text",
+        "a-display-time",
+        "a-feedback-alert",
+        "a-feedback-badge-notification",
+        "a-feedback-progress",
+        "a-feedback-spinner",
+        "a-feedback-toast",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-color",
+        "a-input-file",
+        "a-input-number",
+        "a-input-otp",
+        "a-input-radio",
+        "a-input-select",
+        "a-input-slider",
+        "a-input-switch",
+        "a-input-text",
+        "a-input-textarea",
+        "a-interactive-dropdown-trigger",
+        "a-interactive-link",
+        "a-interactive-popover",
+        "a-interactive-tooltip",
+        "a-layout-center",
+        "a-layout-divider",
+        "a-layout-spacer",
+        "a-layout-stack",
+        "a-state-button",
+        "a-state-checkbox",
+        "a-state-input",
+        "a-state-link",
+        "a-state-select",
+        "a-state-toggle",
+        "t-root-layout"
+      ],
+      "composes": []
+    },
+    "p-container-queries": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-dark-mode": {
+      "composedBy": [
+        "t-root-layout"
+      ],
+      "composes": []
+    },
+    "p-fluid-design": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-grid-systems": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-iconography": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-interaction-timing": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-logical-properties": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-motion": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-shadows": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-spacing": {
+      "composedBy": [
+        "a-display-avatar",
+        "a-display-badge",
+        "a-display-code",
+        "a-display-currency",
+        "a-display-heading",
+        "a-display-icon",
+        "a-display-image",
+        "a-display-percentage",
+        "a-display-skeleton",
+        "a-display-text",
+        "a-display-time",
+        "a-feedback-alert",
+        "a-feedback-badge-notification",
+        "a-feedback-progress",
+        "a-feedback-spinner",
+        "a-feedback-toast",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-color",
+        "a-input-file",
+        "a-input-number",
+        "a-input-otp",
+        "a-input-radio",
+        "a-input-select",
+        "a-input-slider",
+        "a-input-switch",
+        "a-input-text",
+        "a-input-textarea",
+        "a-interactive-dropdown-trigger",
+        "a-interactive-link",
+        "a-interactive-popover",
+        "a-interactive-tooltip",
+        "a-layout-center",
+        "a-layout-divider",
+        "a-layout-spacer",
+        "a-layout-stack",
+        "a-state-button",
+        "a-state-checkbox",
+        "a-state-input",
+        "a-state-link",
+        "a-state-select",
+        "a-state-toggle"
+      ],
+      "composes": []
+    },
+    "p-token-system": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-typography": {
+      "composedBy": [
+        "a-display-avatar",
+        "a-display-badge",
+        "a-display-code",
+        "a-display-currency",
+        "a-display-heading",
+        "a-display-icon",
+        "a-display-image",
+        "a-display-percentage",
+        "a-display-skeleton",
+        "a-display-text",
+        "a-display-time",
+        "a-feedback-alert",
+        "a-feedback-badge-notification",
+        "a-feedback-progress",
+        "a-feedback-spinner",
+        "a-feedback-toast",
+        "a-input-button",
+        "a-input-checkbox",
+        "a-input-color",
+        "a-input-file",
+        "a-input-number",
+        "a-input-otp",
+        "a-input-radio",
+        "a-input-select",
+        "a-input-slider",
+        "a-input-switch",
+        "a-input-text",
+        "a-input-textarea",
+        "a-interactive-dropdown-trigger",
+        "a-interactive-link",
+        "a-interactive-popover",
+        "a-interactive-tooltip",
+        "a-layout-center",
+        "a-layout-divider",
+        "a-layout-spacer",
+        "a-layout-stack",
+        "a-state-button",
+        "a-state-checkbox",
+        "a-state-input",
+        "a-state-link",
+        "a-state-select",
+        "a-state-toggle",
+        "t-root-layout"
+      ],
+      "composes": []
+    },
+    "p-visual-hierarchy": {
+      "composedBy": [],
+      "composes": []
+    },
+    "p-z-index": {
+      "composedBy": [],
+      "composes": []
+    },
+    "r-ai-application": {
+      "composedBy": [],
+      "composes": [
+        "pt-streaming",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-analytics-dashboard": {
+      "composedBy": [],
+      "composes": [
+        "o-chart",
+        "o-data-table",
+        "pt-prisma-patterns",
+        "pt-react-query",
+        "t-dashboard-home",
+        "t-dashboard-layout"
+      ]
+    },
+    "r-blog-platform": {
+      "composedBy": [],
+      "composes": [
+        "o-blog-post",
+        "pt-image-optimization",
+        "pt-static-rendering",
+        "t-blog-index",
+        "t-blog-post-page",
+        "t-marketing-layout"
+      ]
+    },
+    "r-booking-app": {
+      "composedBy": [],
+      "composes": [
+        "o-availability-editor",
+        "o-booking-form",
+        "o-calendar-picker",
+        "o-time-slots",
+        "pt-date-pickers",
+        "pt-email",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-crm": {
+      "composedBy": [],
+      "composes": [
+        "o-activity-timeline",
+        "o-contact-card",
+        "o-data-table",
+        "o-deal-pipeline",
+        "pt-charts",
+        "pt-search-filters",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-crowdfunding": {
+      "composedBy": [],
+      "composes": [
+        "o-campaign-card",
+        "o-campaign-progress",
+        "o-pledge-form",
+        "o-reward-selector",
+        "pt-file-upload",
+        "pt-stripe",
+        "t-checkout-page",
+        "t-dashboard-layout",
+        "t-landing-page"
+      ]
+    },
+    "r-documentation": {
+      "composedBy": [],
+      "composes": [
+        "o-code-block",
+        "o-search-dialog",
+        "o-sidebar",
+        "o-table-of-contents",
+        "o-version-selector",
+        "pt-mdx",
+        "pt-search",
+        "t-documentation-layout",
+        "t-marketing-layout"
+      ]
+    },
+    "r-ecommerce": {
+      "composedBy": [],
+      "composes": [
+        "o-cart",
+        "o-checkout-form",
+        "o-checkout-summary",
+        "o-data-table",
+        "o-product-card",
+        "pt-filtering",
+        "pt-image-optimization",
+        "pt-pagination",
+        "pt-prisma-patterns",
+        "pt-stripe-checkout",
+        "pt-zustand",
+        "t-cart-page",
+        "t-checkout-page",
+        "t-marketing-layout",
+        "t-product-detail",
+        "t-product-listing"
+      ]
+    },
+    "r-expense-tracker": {
+      "composedBy": [],
+      "composes": [
+        "pt-charts",
+        "pt-file-upload",
+        "pt-image-processing",
+        "pt-mobile-first",
+        "pt-offline-sync",
+        "pt-pwa",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-file-sharing": {
+      "composedBy": [],
+      "composes": [
+        "pt-download-files",
+        "pt-drag-and-drop",
+        "pt-file-upload",
+        "pt-multipart-upload",
+        "pt-sharing-links",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-fitness-tracker": {
+      "composedBy": [],
+      "composes": [
+        "m-stat-card",
+        "m-stepper",
+        "o-calendar",
+        "o-chart",
+        "o-stats-dashboard",
+        "pt-indexed-db",
+        "pt-persistence",
+        "pt-zustand",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-helpdesk": {
+      "composedBy": [],
+      "composes": [
+        "pt-file-upload",
+        "pt-real-time-updates",
+        "pt-rich-text-editor",
+        "pt-search-filters",
+        "pt-ticket-management",
+        "t-dashboard-layout",
+        "t-help-center-page",
+        "t-settings-page"
+      ]
+    },
+    "r-job-board": {
+      "composedBy": [],
+      "composes": [
+        "m-card",
+        "m-form-field",
+        "m-pagination",
+        "m-search-input",
+        "o-data-table",
+        "o-file-uploader",
+        "o-hero",
+        "o-search-modal",
+        "pt-filtering",
+        "pt-form-validation",
+        "pt-pagination",
+        "pt-search",
+        "pt-url-state",
+        "t-dashboard-layout",
+        "t-marketing-layout",
+        "t-search-results-page"
+      ]
+    },
+    "r-learning-platform": {
+      "composedBy": [],
+      "composes": [
+        "pt-payments",
+        "pt-pdf-generation",
+        "pt-progress-tracking",
+        "pt-quiz-engine",
+        "pt-video-player",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-marketing-layout"
+      ]
+    },
+    "r-link-shortener": {
+      "composedBy": [],
+      "composes": [
+        "pt-analytics",
+        "pt-geolocation",
+        "pt-qr-codes",
+        "pt-rate-limiting",
+        "pt-url-validation",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-landing-page"
+      ]
+    },
+    "r-marketplace": {
+      "composedBy": [],
+      "composes": [
+        "pt-checkout",
+        "pt-product-listings",
+        "pt-reviews",
+        "pt-search-filters",
+        "pt-shopping-cart",
+        "t-checkout-page",
+        "t-dashboard-layout",
+        "t-product-detail",
+        "t-product-listing"
+      ]
+    },
+    "r-meditation-app": {
+      "composedBy": [],
+      "composes": [
+        "m-range-slider",
+        "m-stat-card",
+        "m-stepper",
+        "o-calendar",
+        "o-onboarding-flow",
+        "o-stats-dashboard",
+        "pt-indexed-db",
+        "pt-persistence",
+        "pt-zustand",
+        "t-dashboard-layout",
+        "t-onboarding-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-meetup-clone": {
+      "composedBy": [],
+      "composes": [
+        "m-avatar-group",
+        "m-card",
+        "m-date-picker",
+        "m-tabs",
+        "o-calendar",
+        "o-comments-section",
+        "o-file-uploader",
+        "o-hero",
+        "o-media-gallery",
+        "pt-filtering",
+        "pt-optimistic-updates",
+        "pt-react-query",
+        "pt-search",
+        "t-dashboard-layout",
+        "t-marketing-layout",
+        "t-search-results-page"
+      ]
+    },
+    "r-newsletter": {
+      "composedBy": [],
+      "composes": [
+        "m-form-field",
+        "m-pagination",
+        "m-stat-card",
+        "m-tabs",
+        "o-chart",
+        "o-data-table",
+        "o-settings-form",
+        "o-stats-dashboard",
+        "pt-ab-testing",
+        "pt-form-validation",
+        "pt-pagination",
+        "pt-react-query",
+        "pt-rich-text-editor",
+        "t-dashboard-layout",
+        "t-email-template-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-portfolio": {
+      "composedBy": [],
+      "composes": [
+        "pt-animations",
+        "pt-form-validation",
+        "pt-image-optimization",
+        "pt-open-graph",
+        "pt-structured-data",
+        "pt-transactional-email",
+        "t-blog-index",
+        "t-gallery-page",
+        "t-marketing-layout"
+      ]
+    },
+    "r-project-management": {
+      "composedBy": [],
+      "composes": [
+        "o-data-table",
+        "o-dialog",
+        "o-kanban-board",
+        "o-user-menu",
+        "pt-optimistic-updates",
+        "pt-rich-text-editor",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-property-listing": {
+      "composedBy": [],
+      "composes": [
+        "o-contact-form",
+        "o-file-uploader",
+        "o-media-gallery",
+        "o-search-modal",
+        "pt-filtering",
+        "pt-image-optimization",
+        "pt-search",
+        "t-marketing-layout",
+        "t-product-detail",
+        "t-search-results-page"
+      ]
+    },
+    "r-realtime-app": {
+      "composedBy": [],
+      "composes": [
+        "m-live-cursors",
+        "m-presence-avatars",
+        "o-collaborative-editor",
+        "pt-optimistic-updates",
+        "pt-websocket",
+        "t-dashboard-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-recipe-app": {
+      "composedBy": [],
+      "composes": [
+        "o-calendar",
+        "o-file-uploader",
+        "o-media-gallery",
+        "o-multi-step-form",
+        "pt-mutations",
+        "pt-search",
+        "t-dashboard-layout",
+        "t-gallery-page",
+        "t-search-results-page"
+      ]
+    },
+    "r-rental-management": {
+      "composedBy": [],
+      "composes": [
+        "o-chart",
+        "o-data-table",
+        "o-file-uploader",
+        "o-invoice-table",
+        "o-stats-dashboard",
+        "pt-rbac",
+        "pt-transactions",
+        "t-dashboard-layout",
+        "t-invoice-page",
+        "t-settings-page"
+      ]
+    },
+    "r-restaurant-ordering": {
+      "composedBy": [],
+      "composes": [
+        "o-cart",
+        "o-checkout-form",
+        "o-checkout-summary",
+        "o-file-uploader",
+        "o-product-card",
+        "pt-optimistic-updates",
+        "pt-zustand",
+        "t-cart-page",
+        "t-checkout-page",
+        "t-dashboard-layout",
+        "t-product-listing"
+      ]
+    },
+    "r-saas-dashboard": {
+      "composedBy": [],
+      "composes": [
+        "o-chart",
+        "o-command-palette",
+        "o-data-table",
+        "o-settings-form",
+        "o-sidebar",
+        "pt-next-auth",
+        "pt-rbac",
+        "pt-react-query",
+        "pt-stripe-subscriptions",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-marketing-layout",
+        "t-settings-page"
+      ]
+    },
+    "r-social-network": {
+      "composedBy": [],
+      "composes": [
+        "o-activity-feed",
+        "o-comments-section",
+        "o-file-uploader",
+        "o-notification-center",
+        "o-user-menu",
+        "pt-infinite-scroll",
+        "pt-optimistic-updates",
+        "pt-react-query",
+        "t-notifications-page",
+        "t-profile-page",
+        "t-settings-page"
+      ]
+    },
+    "r-subscription-billing": {
+      "composedBy": [],
+      "composes": [
+        "pt-audit-logging",
+        "pt-multi-tenancy",
+        "pt-rbac",
+        "pt-stripe-subscriptions",
+        "pt-usage-metering",
+        "pt-webhooks",
+        "t-checkout-page",
+        "t-dashboard-layout",
+        "t-invoice-page",
+        "t-settings-page"
+      ]
+    },
+    "r-survey-builder": {
+      "composedBy": [],
+      "composes": [
+        "pt-analytics",
+        "pt-conditional-logic",
+        "pt-drag-and-drop",
+        "pt-export-data",
+        "pt-form-validation",
+        "t-dashboard-home",
+        "t-dashboard-layout",
+        "t-onboarding-layout"
+      ]
+    },
+    "r-video-streaming": {
+      "composedBy": [],
+      "composes": [
+        "pt-hls-streaming",
+        "pt-progress-tracking",
+        "pt-video-player",
+        "pt-video-thumbnails",
+        "pt-video-upload",
+        "t-dashboard-layout",
+        "t-gallery-page",
+        "t-marketing-layout"
+      ]
+    },
+    "t-404-page": {
+      "composedBy": [],
+      "composes": [
+        "a-input-button",
+        "m-search-input",
+        "o-hero"
+      ]
+    },
+    "t-500-page": {
+      "composedBy": [],
+      "composes": [
+        "a-input-button",
+        "m-callout"
+      ]
+    },
+    "t-about-page": {
+      "composedBy": [],
+      "composes": [
+        "o-cta",
+        "o-features",
+        "o-hero",
+        "o-team",
+        "o-timeline"
+      ]
+    },
+    "t-admin-layout": {
+      "composedBy": [],
+      "composes": [
+        "m-breadcrumb",
+        "o-header",
+        "o-sidebar"
+      ]
+    },
+    "t-auth-layout": {
+      "composedBy": [],
+      "composes": [
+        "m-card",
+        "o-auth-form",
+        "o-testimonials"
+      ]
+    },
+    "t-blog-index": {
+      "composedBy": [
+        "r-blog-platform",
+        "r-portfolio"
+      ],
+      "composes": [
+        "m-card",
+        "m-pagination",
+        "m-tabs",
+        "o-hero"
+      ]
+    },
+    "t-blog-post-page": {
+      "composedBy": [
+        "r-blog-platform"
+      ],
+      "composes": [
+        "m-avatar-group",
+        "m-share-button",
+        "o-blog-post",
+        "o-comments-section"
+      ]
+    },
+    "t-cart-page": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-restaurant-ordering"
+      ],
+      "composes": [
+        "m-form-field",
+        "o-cart",
+        "o-checkout-summary"
+      ]
+    },
+    "t-changelog-page": {
+      "composedBy": [],
+      "composes": [
+        "a-display-badge",
+        "m-callout",
+        "o-timeline"
+      ]
+    },
+    "t-checkout-layout": {
+      "composedBy": [],
+      "composes": [
+        "m-card",
+        "m-stepper",
+        "o-checkout-summary"
+      ]
+    },
+    "t-checkout-page": {
+      "composedBy": [
+        "r-crowdfunding",
+        "r-ecommerce",
+        "r-marketplace",
+        "r-restaurant-ordering",
+        "r-subscription-billing"
+      ],
+      "composes": [
+        "m-address-input",
+        "m-credit-card-input",
+        "m-stepper",
+        "o-checkout-form",
+        "o-checkout-summary"
+      ]
+    },
+    "t-coming-soon-page": {
+      "composedBy": [],
+      "composes": [
+        "a-input-button",
+        "m-form-field",
+        "o-hero"
+      ]
+    },
+    "t-dashboard-home": {
+      "composedBy": [
+        "r-analytics-dashboard",
+        "r-crm",
+        "r-expense-tracker",
+        "r-fitness-tracker",
+        "r-learning-platform",
+        "r-link-shortener",
+        "r-project-management",
+        "r-saas-dashboard",
+        "r-survey-builder"
+      ],
+      "composes": [
+        "m-stat-card",
+        "o-activity-feed",
+        "o-chart",
+        "o-stats-dashboard"
+      ]
+    },
+    "t-dashboard-layout": {
+      "composedBy": [
+        "r-ai-application",
+        "r-analytics-dashboard",
+        "r-booking-app",
+        "r-crm",
+        "r-crowdfunding",
+        "r-expense-tracker",
+        "r-file-sharing",
+        "r-fitness-tracker",
+        "r-helpdesk",
+        "r-job-board",
+        "r-learning-platform",
+        "r-link-shortener",
+        "r-marketplace",
+        "r-meditation-app",
+        "r-meetup-clone",
+        "r-newsletter",
+        "r-project-management",
+        "r-realtime-app",
+        "r-recipe-app",
+        "r-rental-management",
+        "r-restaurant-ordering",
+        "r-saas-dashboard",
+        "r-subscription-billing",
+        "r-survey-builder",
+        "r-video-streaming"
+      ],
+      "composes": [
+        "m-breadcrumb",
+        "o-command-palette",
+        "o-header",
+        "o-sidebar"
+      ]
+    },
+    "t-documentation-layout": {
+      "composedBy": [
+        "r-documentation"
+      ],
+      "composes": [
+        "m-breadcrumb",
+        "m-tabs",
+        "o-search-modal",
+        "o-sidebar"
+      ]
+    },
+    "t-gallery-page": {
+      "composedBy": [
+        "r-portfolio",
+        "r-recipe-app",
+        "r-video-streaming"
+      ],
+      "composes": [
+        "a-display-image",
+        "m-tabs",
+        "o-media-gallery"
+      ]
+    },
+    "t-help-center-page": {
+      "composedBy": [
+        "r-helpdesk"
+      ],
+      "composes": [
+        "m-card",
+        "m-search-input",
+        "o-faq"
+      ]
+    },
+    "t-invoice-page": {
+      "composedBy": [
+        "r-rental-management",
+        "r-subscription-billing"
+      ],
+      "composes": [
+        "a-display-currency",
+        "m-key-value",
+        "o-invoice-table"
+      ]
+    },
+    "t-landing-page": {
+      "composedBy": [
+        "r-crowdfunding",
+        "r-link-shortener"
+      ],
+      "composes": [
+        "o-cta",
+        "o-faq",
+        "o-features",
+        "o-hero",
+        "o-pricing",
+        "o-testimonials"
+      ]
+    },
+    "t-maintenance-page": {
+      "composedBy": [],
+      "composes": [
+        "a-display-time",
+        "a-input-button",
+        "m-callout"
+      ]
+    },
+    "t-marketing-layout": {
+      "composedBy": [
+        "r-blog-platform",
+        "r-documentation",
+        "r-ecommerce",
+        "r-job-board",
+        "r-learning-platform",
+        "r-meetup-clone",
+        "r-portfolio",
+        "r-property-listing",
+        "r-saas-dashboard",
+        "r-video-streaming"
+      ],
+      "composes": [
+        "o-announcement-banner",
+        "o-cookie-consent",
+        "o-footer",
+        "o-header"
+      ]
+    },
+    "t-minimal-layout": {
+      "composedBy": [],
+      "composes": [
+        "a-interactive-link",
+        "o-header"
+      ]
+    },
+    "t-notifications-page": {
+      "composedBy": [
+        "r-social-network"
+      ],
+      "composes": [
+        "m-empty-state",
+        "m-tabs",
+        "o-notification-center"
+      ]
+    },
+    "t-onboarding-layout": {
+      "composedBy": [
+        "r-meditation-app",
+        "r-survey-builder"
+      ],
+      "composes": [
+        "m-stepper",
+        "o-multi-step-form",
+        "o-onboarding-flow"
+      ]
+    },
+    "t-product-detail": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-marketplace",
+        "r-property-listing"
+      ],
+      "composes": [
+        "a-display-currency",
+        "m-rating",
+        "o-media-gallery",
+        "o-product-card",
+        "o-review-form"
+      ]
+    },
+    "t-product-listing": {
+      "composedBy": [
+        "r-ecommerce",
+        "r-marketplace",
+        "r-restaurant-ordering"
+      ],
+      "composes": [
+        "m-pagination",
+        "m-tabs",
+        "o-product-card",
+        "o-sidebar"
+      ]
+    },
+    "t-profile-page": {
+      "composedBy": [
+        "r-social-network"
+      ],
+      "composes": [
+        "m-avatar-group",
+        "m-form-field",
+        "m-tabs",
+        "o-activity-feed"
+      ]
+    },
+    "t-root-layout": {
+      "composedBy": [],
+      "composes": [
+        "p-colors",
+        "p-dark-mode",
+        "p-typography"
+      ]
+    },
+    "t-search-results-page": {
+      "composedBy": [
+        "r-job-board",
+        "r-meetup-clone",
+        "r-property-listing",
+        "r-recipe-app"
+      ],
+      "composes": [
+        "m-empty-state",
+        "m-pagination",
+        "m-search-input",
+        "o-sidebar"
+      ]
+    },
+    "t-settings-page": {
+      "composedBy": [
+        "r-ai-application",
+        "r-booking-app",
+        "r-crm",
+        "r-expense-tracker",
+        "r-file-sharing",
+        "r-fitness-tracker",
+        "r-helpdesk",
+        "r-meditation-app",
+        "r-newsletter",
+        "r-project-management",
+        "r-realtime-app",
+        "r-rental-management",
+        "r-saas-dashboard",
+        "r-social-network",
+        "r-subscription-billing"
+      ],
+      "composes": [
+        "a-input-switch",
+        "m-form-field",
+        "m-tabs",
+        "o-settings-form"
+      ]
+    },
+    "t-team-page": {
+      "composedBy": [],
+      "composes": [
+        "m-avatar-group",
+        "m-card",
+        "o-team"
+      ]
+    }
+  },
+  "orphans": [
+    "a-display-code",
+    "a-display-percentage",
+    "a-feedback-badge-notification",
+    "a-input-color",
+    "a-input-otp",
+    "a-interactive-dropdown-trigger",
+    "a-layout-center",
+    "a-layout-divider",
+    "a-layout-spacer",
+    "a-layout-stack",
+    "a-state-button",
+    "a-state-checkbox",
+    "a-state-input",
+    "a-state-link",
+    "a-state-select",
+    "a-state-toggle",
+    "m-action-menu",
+    "m-color-picker",
+    "m-copy-button",
+    "m-error-boundary",
+    "m-inline-edit",
+    "m-mention-input",
+    "m-phone-input",
+    "m-state-card",
+    "m-state-form-field",
+    "m-state-nav-item",
+    "m-table-row",
+    "m-tag-input",
+    "o-comparison-table",
+    "o-drawer",
+    "o-empty-dashboard",
+    "o-keyboard-shortcuts",
+    "o-language-switcher",
+    "o-mega-menu",
+    "o-scroll-animations",
+    "o-sheet",
+    "o-social-share",
+    "o-theme-switcher",
+    "pt-accessibility-testing",
+    "pt-alerting",
+    "pt-algolia",
+    "pt-analytics-events",
+    "pt-api-documentation",
+    "pt-api-keys",
+    "pt-api-testing",
+    "pt-api-types",
+    "pt-api-versioning",
+    "pt-app-router",
+    "pt-auth-middleware",
+    "pt-autosave",
+    "pt-background-jobs",
+    "pt-barcode-scanner",
+    "pt-blue-green",
+    "pt-branded-types",
+    "pt-bundle-optimization",
+    "pt-cache-aside",
+    "pt-cache-headers",
+    "pt-cache-invalidation",
+    "pt-cache-stampede",
+    "pt-cache-warming",
+    "pt-calendar-integration",
+    "pt-canary",
+    "pt-catch-all",
+    "pt-client-fetch",
+    "pt-clipboard-api",
+    "pt-code-splitting",
+    "pt-collaboration",
+    "pt-conditional-fields",
+    "pt-conditional-types",
+    "pt-content-negotiation",
+    "pt-content-security-policy",
+    "pt-contentful",
+    "pt-context",
+    "pt-contract-testing",
+    "pt-cookie-management",
+    "pt-critical-css",
+    "pt-cron-jobs",
+    "pt-csrf-protection",
+    "pt-data-cache",
+    "pt-date-formatting",
+    "pt-debugging",
+    "pt-deep-linking",
+    "pt-dev-tools",
+    "pt-device-sessions",
+    "pt-discriminated-unions",
+    "pt-distributed-cache",
+    "pt-docker",
+    "pt-dynamic-rendering",
+    "pt-dynamic-routes",
+    "pt-edge-cache",
+    "pt-edge-config",
+    "pt-edge-functions",
+    "pt-edge-kv",
+    "pt-edge-middleware",
+    "pt-edge-rendering",
+    "pt-email-templates",
+    "pt-email-verification",
+    "pt-environment-variables",
+    "pt-error-boundaries",
+    "pt-error-handling",
+    "pt-error-recovery",
+    "pt-error-reporting",
+    "pt-error-tracking",
+    "pt-eslint-config",
+    "pt-fallback-ui",
+    "pt-feature-flags",
+    "pt-file-storage",
+    "pt-file-system-api",
+    "pt-focus-management",
+    "pt-fonts",
+    "pt-form-arrays",
+    "pt-form-builder",
+    "pt-form-state",
+    "pt-full-text-search",
+    "pt-generics",
+    "pt-global-error",
+    "pt-graphql",
+    "pt-hot-reload",
+    "pt-i18n-routing",
+    "pt-impersonation",
+    "pt-import-data",
+    "pt-inference",
+    "pt-infinite-scroll-bidirectional",
+    "pt-input-sanitization",
+    "pt-intercepting-routes",
+    "pt-jotai",
+    "pt-jwt-tokens",
+    "pt-keyboard-navigation",
+    "pt-lazy-loading",
+    "pt-lighthouse-optimization",
+    "pt-live-updates",
+    "pt-load-testing",
+    "pt-local-storage",
+    "pt-locale-detection",
+    "pt-logging",
+    "pt-lru-cache",
+    "pt-magic-links",
+    "pt-mapped-types",
+    "pt-maps-integration",
+    "pt-memory-optimization",
+    "pt-metadata-api",
+    "pt-metrics",
+    "pt-micro-interactions",
+    "pt-mocking",
+    "pt-multi-step-forms",
+    "pt-not-found",
+    "pt-notifications",
+    "pt-number-formatting",
+    "pt-oauth-providers",
+    "pt-offline-mode",
+    "pt-on-demand-revalidation",
+    "pt-parallel-routes",
+    "pt-password-reset",
+    "pt-passwordless",
+    "pt-payment-request-api",
+    "pt-performance-testing",
+    "pt-polling",
+    "pt-ppr",
+    "pt-prefetching",
+    "pt-preloading",
+    "pt-presence",
+    "pt-prettier-config",
+    "pt-preview-deployments",
+    "pt-print-styles",
+    "pt-progressive-enhancement",
+    "pt-push-notifications",
+    "pt-queues",
+    "pt-recoil",
+    "pt-redis-cache",
+    "pt-redux-toolkit",
+    "pt-request-memoization",
+    "pt-resource-hints",
+    "pt-responsive-images",
+    "pt-rest-api-design",
+    "pt-retry-logic",
+    "pt-revalidation",
+    "pt-rollback",
+    "pt-route-groups",
+    "pt-route-handlers",
+    "pt-router-cache",
+    "pt-rum",
+    "pt-sanity",
+    "pt-scheduled-tasks",
+    "pt-scroll-effects",
+    "pt-security-headers",
+    "pt-seeding",
+    "pt-server-actions",
+    "pt-server-components-data",
+    "pt-server-sent-events",
+    "pt-server-state",
+    "pt-service-worker",
+    "pt-session-management",
+    "pt-share-api",
+    "pt-signature-pad",
+    "pt-sitemap",
+    "pt-skeleton-loading",
+    "pt-snapshot-testing",
+    "pt-social-auth",
+    "pt-social-sharing",
+    "pt-soft-delete",
+    "pt-sorting",
+    "pt-speech-recognition",
+    "pt-speech-synthesis",
+    "pt-sso",
+    "pt-stale-while-revalidate",
+    "pt-state-machines",
+    "pt-stripe-billing-portal",
+    "pt-stripe-webhooks",
+    "pt-swr",
+    "pt-synthetic-monitoring",
+    "pt-tag-based-revalidation",
+    "pt-template-literals",
+    "pt-test-fixtures",
+    "pt-testing-api",
+    "pt-testing-components",
+    "pt-testing-e2e",
+    "pt-testing-hooks",
+    "pt-testing-integration",
+    "pt-testing-unit",
+    "pt-tracing",
+    "pt-transitions",
+    "pt-translations",
+    "pt-trpc",
+    "pt-two-factor",
+    "pt-type-guards",
+    "pt-type-safety",
+    "pt-url-sync",
+    "pt-user-analytics",
+    "pt-utility-types",
+    "pt-valtio",
+    "pt-vercel-deployment",
+    "pt-virtual-scroll",
+    "pt-visual-regression",
+    "pt-vscode-integration",
+    "pt-web-vitals",
+    "pt-web-workers",
+    "pt-websockets",
+    "pt-write-through",
+    "pt-xss-prevention",
+    "pt-xstate-react",
+    "pt-zero-downtime",
+    "pt-zod-schemas",
+    "t-404-page",
+    "t-500-page",
+    "t-about-page",
+    "t-admin-layout",
+    "t-auth-layout",
+    "t-changelog-page",
+    "t-checkout-layout",
+    "t-coming-soon-page",
+    "t-maintenance-page",
+    "t-minimal-layout",
+    "t-root-layout",
+    "t-team-page"
+  ],
+  "mostReused": [
+    {
+      "id": "a-button",
+      "usedBy": 50
+    },
+    {
+      "id": "a-input-button",
+      "usedBy": 48
+    },
+    {
+      "id": "p-colors",
+      "usedBy": 43
+    },
+    {
+      "id": "p-typography",
+      "usedBy": 43
+    },
+    {
+      "id": "p-spacing",
+      "usedBy": 42
+    },
+    {
+      "id": "a-display-icon",
+      "usedBy": 33
+    },
+    {
+      "id": "m-card",
+      "usedBy": 32
+    },
+    {
+      "id": "m-form-field",
+      "usedBy": 28
+    },
+    {
+      "id": "t-dashboard-layout",
+      "usedBy": 25
+    },
+    {
+      "id": "a-input-text",
+      "usedBy": 24
+    }
+  ],
+  "mostDependencies": [
+    {
+      "id": "r-ecommerce",
+      "dependsOn": 16
+    },
+    {
+      "id": "r-job-board",
+      "dependsOn": 16
+    },
+    {
+      "id": "r-meetup-clone",
+      "dependsOn": 16
+    },
+    {
+      "id": "r-newsletter",
+      "dependsOn": 16
+    },
+    {
+      "id": "r-saas-dashboard",
+      "dependsOn": 13
+    },
+    {
+      "id": "r-meditation-app",
+      "dependsOn": 12
+    },
+    {
+      "id": "pt-form-builder",
+      "dependsOn": 11
+    },
+    {
+      "id": "r-fitness-tracker",
+      "dependsOn": 11
+    },
+    {
+      "id": "r-restaurant-ordering",
+      "dependsOn": 11
+    },
+    {
+      "id": "r-social-network",
+      "dependsOn": 11
+    }
+  ],
+  "formulas": {
+    "m-accordion-item": "AccordionItem = InputButton(a-input-button) + DisplayIcon(a-display-icon) + DisplayText(a-display-text)",
+    "m-action-menu": "ActionMenu = TriggerButton(a-input-button) + MenuIcon(a-display-icon) + MenuItem[]",
+    "m-address-input": "AddressInput = Input(a-input-text) + Icon(a-display-icon)",
+    "m-avatar-group": "AvatarGroup = DisplayAvatar(a-display-avatar) + DisplayText(a-display-text) + InteractiveTooltip(a-interactive-tooltip)",
+    "m-breadcrumb": "Breadcrumb = Link(a-interactive-link) + Separator(a-display-icon) + CurrentPage(a-display-text)",
+    "m-callout": "Callout = DisplayIcon(a-display-icon) + DisplayText(a-display-text)",
+    "m-card": "Card = Title(a-display-heading) + Description(a-display-text) + Image(a-display-image) + Action(a-input-button)",
+    "m-color-picker": "ColorPicker = Input(a-input-text) + Button(a-input-button)",
+    "m-combobox": "Combobox = InputText(a-input-text) + InputButton(a-input-button) + DisplayIcon(a-display-icon)",
+    "m-copy-button": "CopyButton = Button(a-input-button) + StateIcon(a-display-icon)",
+    "m-credit-card-input": "CreditCardInput = Input(a-input-text) + Icon(a-display-icon)",
+    "m-date-picker": "DatePicker = InputText(a-input-text) + InputButton(a-input-button) + DisplayIcon(a-display-icon)",
+    "m-empty-state": "EmptyState = DisplayIcon(a-display-icon) + DisplayText(a-display-text) + InputButton(a-input-button)",
+    "m-error-boundary": "ErrorBoundary = ErrorIcon(a-display-icon) + ErrorMessage(a-display-text) + RetryButton(a-input-button)",
+    "m-form-field": "FormField = Label(a-display-text) + Input(a-input-text) + Error(a-feedback-alert)",
+    "m-inline-edit": "InlineEdit = DisplayText(a-display-text) + InputText(a-input-text) + SaveButton(a-input-button) + CancelButton(a-input-button)",
+    "m-key-value": "KeyValue = Label(a-display-text) + Value(a-display-text) + CopyButton(a-input-button)",
+    "m-list-item": "ListItem = Icon(a-display-icon) + PrimaryText(a-display-text) + SecondaryText(a-display-text) + Action(a-input-button)",
+    "m-media-object": "MediaObject = Image(a-display-image) + Icon(a-display-icon) + Text(a-display-text)",
+    "m-mention-input": "MentionInput = Input(a-input-text) + Avatar(a-display-avatar)",
+    "m-nav-link": "NavLink = Link(a-interactive-link) + Icon(a-display-icon) + Badge(a-display-badge)",
+    "m-notification-badge": "NotificationBadge = Badge(a-display-badge) + Count(a-display-text) + ChildElement",
+    "m-pagination": "Pagination = PageButton(a-input-button) + Arrow(a-display-icon) + PageNumber(a-display-text)",
+    "m-password-input": "PasswordInput = InputText(a-input-text) + InputButton(a-input-button) + DisplayIcon(a-display-icon) + FeedbackProgress(a-feedback-progress)",
+    "m-phone-input": "PhoneInput = Input(a-input-text) + Select(a-input-select)",
+    "m-range-slider": "RangeSlider = Slider(a-input-slider) + Text(a-display-text)",
+    "m-rating": "Rating = StarIcon(a-display-icon)[] + ClickArea(a-input-button)[]",
+    "m-search-input": "SearchInput = Input(a-input-text) + SearchIcon(a-display-icon) + ClearButton(a-input-button) + Spinner(a-feedback-spinner)",
+    "m-share-button": "ShareButton = TriggerButton(a-input-button) + ShareIcon(a-display-icon) + SocialIcons(a-display-icon)[]",
+    "m-sortable-item": "SortableItem = DragHandle(a-input-button) + Content(children) + DisplayIcon(a-display-icon) + DndKitContext",
+    "m-stat-card": "StatCard = DisplayText(a-display-text) + DisplayIcon(a-display-icon) + DisplayBadge(a-display-badge)",
+    "m-state-card": "StateCard = Card(m-card) + StateManager(interaction/visual states) + LoadingOverlay + DragSupport",
+    "m-state-form-field": "StateFormField = FormField(m-form-field) + ValidationState(empty|focus|valid|invalid) + Icons(a-display-icon) + ErrorAnimation",
+    "m-state-nav-item": "StateNavItem = NavLink(m-nav-link) + ActiveIndicator(left|bottom|background|dot|pill) + ExpandIcon(a-display-icon) + NestedItems",
+    "m-stepper": "Stepper = StepIcon(a-display-icon) + StepLabel(a-display-text) + StepButton(a-input-button)",
+    "m-table-row": "TableRow = SelectCheckbox(a-input-checkbox) + CellText(a-display-text)[] + ActionButton(a-input-button)",
+    "m-tabs": "Tabs = TabTrigger(a-input-button) + TabLabel(a-display-text)",
+    "m-tag-input": "TagInput = Input(a-input-text) + Badge(a-display-badge) + Button(a-input-button)",
+    "m-timeline-item": "TimelineItem = EventIcon(a-display-icon) + ConnectorLine + Title(a-display-text) + Description(a-display-text) + Timestamp(a-display-text)",
+    "m-toolbar": "Toolbar = ToolbarButton(a-input-button) + ToolbarIcon(a-display-icon) + Separator + ToggleGroup",
+    "o-activity-feed": "ActivityFeed = TimelineItem(m-timeline-item)[] + Avatar(m-avatar) + Button(a-button) + Badge(a-badge) + FilterControls + InfiniteScroll",
+    "o-announcement-banner": "AnnouncementBanner = Icon(a-icon) + Message(text) + ActionButton(a-button) + DismissButton(a-button) + CountdownTimer",
+    "o-auth-form": "AuthForm = FormField(m-form-field) + PasswordInput(m-password-input) + Button(a-button) + Checkbox(a-checkbox) + Alert(a-alert) + OAuth buttons",
+    "o-blog-post": "BlogPost = Avatar(m-avatar) + Badge(a-badge)[] + MDXContent + TableOfContents + SocialShare(Button[]) + RelatedPosts(Card[])",
+    "o-calendar": "Calendar = ViewSelector(Button[]) + Navigation(Button[]) + CalendarGrid + EventPopover(m-popover) + Badge(a-badge)[] + EventCreator",
+    "o-cart": "Cart = CartItem(Card + QuantityInput + RemoveButton)[] + OrderSummary + PromoCode(Input) + CheckoutButton(a-button) + Separator(a-separator)",
+    "o-chart": "Chart = Card(m-card) + ChartHeader + Legend(Badge[]) + RechartsVisualization + Tooltip + Skeleton(a-skeleton)",
+    "o-checkout-form": "CheckoutForm = FormField + FormFieldGroup + Combobox + Button + Input + Checkbox + Select + Card",
+    "o-checkout-summary": "CheckoutSummary = Card(m-card) + Collapsible(m-collapsible) + Badge(a-badge) + Button(a-button) + Separator(a-separator)",
+    "o-command-palette": "Dialog + SearchInput + CommandGroup[] + CommandItem[] + KeyboardShortcuts",
+    "o-comments-section": "CommentsSection = MediaObject(m-media-object) + Avatar(m-avatar) + Button(a-button) + Textarea(a-textarea) + Icon(a-icon)",
+    "o-comparison-table": "ComparisonTable = Tooltip(m-tooltip) + Badge(a-badge) + Button(a-button)",
+    "o-contact-form": "ContactForm = FormField[] + Select + Button + Textarea + Input + FileUpload",
+    "o-cookie-consent": "CookieConsent = Dialog(m-dialog) + Card(m-card) + Button(a-button) + Switch(a-switch)",
+    "o-cta": "CTA = FormField(m-form-field) + Button(a-button) + Input(a-input)",
+    "o-data-table": "DataTable = DropdownMenu(m-dropdown-menu) + Input(a-input) + Button(a-button) + Checkbox(a-checkbox) + Select(a-select)",
+    "o-dialog": "Dialog = Card(m-card) + Button(a-button) + Input(a-input)",
+    "o-drawer": "Drawer = Button(a-button) + Separator(a-separator) + DrawerContent + DrawerOverlay",
+    "o-empty-dashboard": "EmptyDashboard = Card(m-card) + EmptyState(m-empty-state) + Button(a-button) + Icon(a-icon)",
+    "o-faq": "FAQ = AccordionItem(m-accordion-item)[] + Input(a-input) + Button(a-button) + Badge(a-badge)",
+    "o-features": "Features = Card(m-card)[] + Badge(a-badge)",
+    "o-file-uploader": "FileUploader = DropZone + FileList(FilePreviewItem(Progress + Button + Badge))",
+    "o-footer": "Footer = NavLink(m-nav-link)[] + FormField(m-form-field) + Button(a-button) + Input(a-input)",
+    "o-header": "Header = NavLink(m-nav-link)[] + SearchInput(m-search-input) + Button(a-button) + MobileMenu(Sheet)",
+    "o-hero": "Hero = Card(m-card) + Button(a-button)[] + Badge(a-badge)",
+    "o-invoice-table": "InvoiceTable = Table(m-table) + DropdownMenu(m-dropdown-menu) + Button(a-button) + Badge(a-badge) + Input(a-input)",
+    "o-kanban-board": "KanbanBoard = Card(m-card) + Avatar(m-avatar) + DropdownMenu(m-dropdown-menu) + Badge(a-badge) + Button(a-button)",
+    "o-keyboard-shortcuts": "KeyboardShortcuts = Dialog(m-dialog) + Input(a-input) + Kbd(a-kbd) + Icon(a-icon)",
+    "o-language-switcher": "LanguageSwitcher = DropdownMenu(m-dropdown-menu) + Button(a-button) + Icon(a-icon)",
+    "o-media-gallery": "MediaGallery = Dialog(m-dialog) + Card(m-card) + Button(a-button) + Image(a-image)",
+    "o-mega-menu": "MegaMenu = NavLink[] + Card + Button + (Icon + Image + Animation)",
+    "o-multi-step-form": "MultiStepForm = Stepper + FormField[] + Button[back,next,submit] + Progress + AnimatedStepContainer",
+    "o-notification-center": "NotificationCenter = Popover(m-popover) + NotificationBadge(m-notification-badge) + Button(a-button) + Avatar(a-avatar) + Badge(a-badge)",
+    "o-onboarding-flow": "OnboardingFlow = Stepper(m-stepper) + FormField(m-form-field) + Button(a-button) + Input(a-input) + Icon(a-icon)",
+    "o-pricing": "Pricing = Card(m-card) + Button(a-button) + Badge(a-badge) + Switch(a-switch)",
+    "o-product-card": "ProductCard = Card(m-card) + Tooltip(m-tooltip) + Badge(a-badge) + Button(a-button) + Skeleton(a-skeleton)",
+    "o-review-form": "ReviewForm = FormField(m-form-field) + Rating(m-rating) + Button(a-button) + Textarea(a-textarea) + Input(a-input)",
+    "o-scroll-animations": "ScrollAnimations = (standalone utilities)",
+    "o-search-modal": "SearchModal = Dialog(m-dialog) + Input(a-input) + Button(a-button)",
+    "o-sheet": "Sheet = ScrollArea(m-scroll-area) + Button(a-button) + Separator(a-separator)",
+    "o-sidebar": "Sidebar = NavLink[] + AvatarGroup + Button + Tooltip + ScrollArea + Collapsible",
+    "o-social-share": "SocialShare = Button(a-button) + Icon(a-icon)",
+    "o-stats-dashboard": "StatsDashboard = StatCard(m-stat-card) + Chart(m-chart) + Icon(a-icon)",
+    "o-team": "Team = Avatar(m-avatar) + Card(m-card) + Badge(a-badge) + Button(a-button)",
+    "o-testimonials": "Testimonials = Card(m-card) + Avatar(m-avatar) + Rating(m-rating) + Button(a-button)",
+    "o-theme-switcher": "ThemeSwitcher = DropdownMenu(m-dropdown-menu) + Button(a-button) + Icon(a-icon)",
+    "o-timeline": "Timeline = Avatar(m-avatar) + Card(m-card) + Badge(a-badge)",
+    "o-user-menu": "UserMenu = DropdownMenu(m-dropdown-menu) + Avatar(m-avatar) + Badge(a-badge)",
+    "pt-ab-testing": "ab_testing = variant_assignment + cookie_persistence + analytics_tracking + statistical_significance",
+    "pt-accessibility-testing": "axe-core + Playwright + jest-axe = WCAG compliance validation",
+    "pt-alerting": "metrics + thresholds + channels + escalation = proactive incident response",
+    "pt-algolia": "AlgoliaSearch = ClientSetup + IndexConfig + InstantSearchComponents + DataSync + Autocomplete",
+    "pt-analytics-events": "event definitions + provider abstraction + type safety = unified multi-provider analytics",
+    "pt-animations": "Framer Motion + Variants + AnimatePresence + Layout = Complex Animations",
+    "pt-api-documentation": "APIDocs = OpenAPISchema + SwaggerUI + ZodToOpenAPI + AutoGeneration",
+    "pt-api-keys": "APIKeys = KeyGeneration (hashed) + ScopePermissions + RateLimiting + ManagementUI (create + revoke)",
+    "pt-api-testing": "Route Handlers + MSW + Vitest = API validation",
+    "pt-api-types": "ApiResponse<T> = SuccessResponse<T> | ErrorResponse where validation = Zod.parse(input)",
+    "pt-api-versioning": "APIVersioning = VersionDetection + VersionRouting + DeprecationHeaders + MigrationHelpers",
+    "pt-app-router": "App Router = File Conventions + Server Components + Async APIs + Nested Layouts",
+    "pt-auth-middleware": "AuthMiddleware = RouteMatching + SessionVerification + (Redirect | Allow | Deny)",
+    "pt-autosave": "Autosave = useAutosave hook + debounce(use-debounce) + AutosaveIndicator + FormField(m-form-field) + Server Actions",
+    "pt-background-jobs": "Inngest/Trigger.dev + Functions + Events = Reliable Background Processing",
+    "pt-barcode-scanner": "Camera API + ZXing/BarcodeDetector + Image Processing = Barcode Scanning",
+    "pt-blue-green": "Dual Environments + Health Verification + Atomic Switch = Zero-Downtime Deployment",
+    "pt-branded-types": "Brand<T, B> = T & { [brand]: B } where brand = unique symbol",
+    "pt-bundle-optimization": "bundle_size = tree_shaking + dynamic_imports + module_replacement + chunk_splitting + compression",
+    "pt-cache-aside": "cacheGet() || (fetchFn() + cacheSet()) = Lazy-loaded cache with fallback",
+    "pt-cache-headers": "Cache-Control + s-maxage + stale-while-revalidate + Vary + ETag = Multi-layer HTTP caching",
+    "pt-cache-invalidation": "CacheTags + revalidateTag() + Event Handlers + Pattern Matching = Precise cache control",
+    "pt-cache-stampede": "Distributed Lock + XFetch Algorithm + Staggered TTL + Request Coalescing = Stampede-proof caching",
+    "pt-cache-warming": "Deployment Hook + Cron Job + Analytics Data + Priority Queue = Zero cold-start latency",
+    "pt-calendar-integration": "OAuth + Calendar API + Event Types = Calendar Sync",
+    "pt-canary": "Traffic Splitting + Metrics Collection + Auto-Promotion = Safe Progressive Rollout",
+    "pt-catch-all": "Catch-All = [...slug] or [[...slug]] + path.join('/') + hierarchical content",
+    "pt-client-fetch": "ClientFetch = useFetch + useQuery + useSWR + Skeleton(a-display-skeleton) + Alert(a-feedback-alert)",
+    "pt-clipboard-api": "Clipboard API + Permissions + Fallback = Copy/Paste Functionality",
+    "pt-code-splitting": "code_splitting = route_based_splitting + component_dynamic_imports + library_lazy_loading + prefetch_on_interaction",
+    "pt-collaboration": "Collaboration = Liveblocks/Yjs + Presence + CRDT/OT + Live Cursors + Conflict Resolution",
+    "pt-conditional-fields": "ConditionalFields = useWatch + discriminatedUnion(Zod) + FormField(m-form-field) + Select(a-input-select) + conditional rendering",
+    "pt-conditional-types": "T extends U ? X : Y (distributes over unions when T is naked type parameter)",
+    "pt-content-negotiation": "ContentNegotiation = AcceptHeaderParser + FormatDetection + ResponseFormatter + ContentTypeHeader",
+    "pt-content-security-policy": "Nonces + Directives + Third-Party Config + Reporting = Robust CSP",
+    "pt-contentful": "Contentful Client + GraphQL/REST + Rich Text Renderer + Draft Mode = Enterprise Content Management",
+    "pt-context": "React Context + Provider Pattern + Custom Hooks = Scoped State Sharing",
+    "pt-contract-testing": "Pact + OpenAPI + Zod = consumer-provider contract validation",
+    "pt-cookie-management": "Cookie Consent + Category Preferences + Compliance = GDPR Cookies",
+    "pt-critical-css": "critical_css = inline_above_fold + defer_non_critical + route_specific + skeleton_styles",
+    "pt-cron-jobs": "Vercel Cron + Route Handler + Cron Expression = Scheduled Automation",
+    "pt-csrf-protection": "Server Actions (auto) + Token Validation + SameSite Cookies = CSRF Protection",
+    "pt-data-cache": "'use cache' directive + cacheLife() + cacheTag() + revalidateTag() = Optimal data freshness",
+    "pt-date-formatting": "Intl.DateTimeFormat + Locale + Timezone + Relative Time = Locale-Aware Dates",
+    "pt-date-pickers": "DatePickers = react-day-picker + Popover(a-interactive-popover) + Button(a-input-button) + Icon(a-display-icon) + Controller(react-hook-form)",
+    "pt-debugging": "breakpoints + structured logging + DevTools integration = efficient issue resolution",
+    "pt-deep-linking": "Deep Link = Universal Link Config + App Association Files + Redirect Handler + Fallback Web UI",
+    "pt-dev-tools": "scripts + automation + validation + analysis = efficient development workflow",
+    "pt-device-sessions": "DeviceSessions = DeviceFingerprint + SessionList (current + revoke) + SuspiciousActivityDetection",
+    "pt-discriminated-unions": "type Union = { type: 'A'; dataA } | { type: 'B'; dataB } (discriminant enables exhaustive switch)",
+    "pt-distributed-cache": "Multi-Region Redis + Write Replication + Read-Your-Writes + Geo Routing = Global low-latency caching",
+    "pt-docker": "Multi-Stage Build + Output Tracing + Non-Root User = Optimized Container",
+    "pt-download-files": "Signed URLs + Streaming Response + Progress Tracking = Reliable Downloads",
+    "pt-dynamic-rendering": "dynamic_rendering = cookies + headers + searchParams + noStore + real_time_data",
+    "pt-dynamic-routes": "Dynamic Route = [param]/ + page.tsx + generateStaticParams() + generateMetadata()",
+    "pt-edge-cache": "Cache-Control Headers + CDN + Edge KV + Tag Invalidation = Global Edge Caching",
+    "pt-edge-config": "Edge Config + Feature Flags + Middleware = Dynamic Configuration at Scale",
+    "pt-edge-functions": "runtime='edge' + Web APIs + Edge KV = Ultra-Low Latency Functions",
+    "pt-edge-kv": "Vercel KV / Upstash + Edge Functions = Global State at the Edge",
+    "pt-edge-middleware": "middleware.ts + Request Interception + Headers/Cookies = Pre-Request Processing",
+    "pt-edge-rendering": "Edge Runtime + Personalization + Caching = Low-Latency Dynamic Content",
+    "pt-email-templates": "React Email + Component Library + Inline Styles + Resend = Beautiful Responsive Emails",
+    "pt-email-verification": "EmailVerification = Registration -> VerificationPending (resend + countdown) -> VerifyToken -> Success",
+    "pt-environment-variables": "Config Validation + Type Safety + Environment Separation = Secure Environment Management",
+    "pt-error-boundaries": "ErrorBoundary + FallbackUI + ErrorReporting = Resilient Component Tree",
+    "pt-error-handling": "error.tsx + global-error.tsx + Custom Error Classes + Error Logging = Comprehensive Error Strategy",
+    "pt-error-recovery": "Retry + CircuitBreaker + Fallback + UserAction = Resilient Application",
+    "pt-error-reporting": "error capture + breadcrumbs + session replay + notifications = comprehensive error visibility",
+    "pt-error-tracking": "error capture + grouping + context enrichment + alerts = proactive error resolution",
+    "pt-eslint-config": "Flat Config + TypeScript Plugin + a11y Rules = Comprehensive Code Quality",
+    "pt-export-data": "Data Query + Format Conversion + Streaming = Scalable Data Export",
+    "pt-fallback-ui": "Skeleton + Suspense + ErrorBoundary = Smooth Loading Experience",
+    "pt-feature-flags": "Flag Registry + Evaluation Context + Deterministic Assignment = Controlled Feature Rollout",
+    "pt-file-storage": "S3 Client + Presigned URLs + ACL + CDN = Secure Scalable Storage",
+    "pt-file-system-api": "File System Access API + Permissions + Handles = Native File Operations",
+    "pt-file-upload": "Drag-Drop UI + Validation + Presigned URLs + Progress = Robust Uploads",
+    "pt-filtering": "Filtering = URLSearchParams + Checkbox(a-input-checkbox) + Slider(m-range-slider) + Badge(a-display-badge) + Accordion",
+    "pt-focus-management": "Focus Trap + Focus Restoration + Visible Indicators = Accessible UI",
+    "pt-fonts": "font_optimization = next_font + display_swap + preload + fallback_adjustment + variable_fonts",
+    "pt-form-arrays": "FormArrays = useFieldArray + FormField(m-form-field) + SortableItem(m-sortable-item) + dnd-kit + Button(a-input-button) + Icons (add/remove/drag)",
+    "pt-form-builder": "FormBuilder = JSON Schema + schemaToZod + FormProvider + dynamic field rendering + Input atoms + Zod validation",
+    "pt-form-state": "FormState = useActionState + useFormStatus + react-hook-form + Zod + FormField(m-form-field) + Input atoms + Server Actions",
+    "pt-form-validation": "FormValidation = Zod schema + react-hook-form + FormField(m-form-field) + Input(a-input-text) + Button(a-input-button) + Server Actions",
+    "pt-full-text-search": "tsvector + GIN Index + ts_rank + Facets = Fast Full-Text Search",
+    "pt-generics": "Generic<T extends Constraint = Default> = (input: T) => Transform<T>",
+    "pt-geolocation": "request.geo + Regional Config + Middleware = Location-Aware Experience",
+    "pt-global-error": "global-error.tsx + error.tsx + Error Tracking = Complete Error Coverage",
+    "pt-graphql": "GraphQL = GraphQLYoga + ApolloClient + useQuery + useMutation + Skeleton(a-display-skeleton)",
+    "pt-hot-reload": "Fast Refresh + State Preservation + Named Exports = Instant Development Feedback",
+    "pt-i18n-routing": "next-intl + Middleware + [locale] Routes + Language Switcher = Multi-Language Application",
+    "pt-image-optimization": "image_optimization = next_image + responsive_sizes + priority_loading + blur_placeholder + format_optimization",
+    "pt-image-processing": "Sharp + S3 Storage + Background Jobs = Scalable Image Processing",
+    "pt-impersonation": "Impersonation = AdminCheck + ImpersonationToken + Banner (timer + end) + AuditLog",
+    "pt-import-data": "DataImport = FileParsing + ColumnMapping + ZodValidation + PreviewStep + ErrorReporting",
+    "pt-indexed-db": "IndexedDB + idb Library + Sync Queue + React Hooks = Offline-First Storage",
+    "pt-inference": "type T = z.infer<typeof schema> | ReturnType<typeof fn> | typeof value[key]",
+    "pt-infinite-scroll-bidirectional": "BidirectionalScroll = DualCursors + ScrollPositionMaintenance + IntersectionObserver + ReactQuery",
+    "pt-infinite-scroll": "InfiniteScroll = IntersectionObserver + useInfiniteQuery + Skeleton(a-display-skeleton) + Spinner(a-feedback-spinner)",
+    "pt-input-sanitization": "Zod Schema + Transform + Server Validation = Safe Input Handling",
+    "pt-intercepting-routes": "Intercepting Route = @slot/ + (.)pattern + dialog/sheet + fallback page",
+    "pt-jotai": "Jotai Atoms + Derived State + atomFamily = Fine-Grained Reactivity",
+    "pt-jwt-tokens": "JWTAuth = AccessToken (short-lived) + RefreshToken (long-lived) + Rotation + Middleware",
+    "pt-keyboard-navigation": "KeyboardNav = RovingFocus + ArrowKeys + FocusTrap + Shortcuts + SkipLinks",
+    "pt-lazy-loading": "lazy_loading = dynamic_import + suspense_boundary + intersection_observer + loading_state",
+    "pt-lighthouse-optimization": "lighthouse_score = LCP_optimization + CLS_prevention + TBT_reduction + accessibility + SEO + best_practices",
+    "pt-live-updates": "Live Updates = LiveProvider + useLiveData Hook + WebSocket/SSE Transport + Optimistic Updates + Reconnection",
+    "pt-load-testing": "k6 + Artillery + thresholds = capacity validation",
+    "pt-local-storage": "localStorage + SSR-Safe Hooks + Cross-Tab Sync = Persistent Client State",
+    "pt-locale-detection": "Accept-Language + Geolocation + Cookie + User Preference = Optimal Locale Selection",
+    "pt-logging": "structured format + context propagation + log aggregation = actionable insights",
+    "pt-lru-cache": "Map + TTL Expiry + Size Limit + Eviction Policy = Fast in-process caching",
+    "pt-magic-links": "MagicLinkAuth = EmailForm -> EmailService -> VerifyRequest -> Dashboard",
+    "pt-mapped-types": "{ [P in keyof T as Filter<P>]: Transform<T[P]> }",
+    "pt-maps-integration": "MapsIntegration = MapProvider + MarkerClustering + Geocoding + AddressAutocomplete + InfoWindows",
+    "pt-mdx": "next-mdx-remote + gray-matter + rehype-pretty-code + Custom Components = Developer Documentation",
+    "pt-memory-optimization": "memory_optimization = LRU_cache + WeakMap + virtualization + abort_controller + cleanup_hooks",
+    "pt-metadata-api": "Static Metadata + generateMetadata + JSON-LD + File Conventions = Complete SEO",
+    "pt-metrics": "counters + histograms + gauges + labels = quantitative system health",
+    "pt-micro-interactions": "Framer Motion + AnimatePresence + State Changes = Delightful Feedback",
+    "pt-mocking": "vi.mock + MSW + factories = isolated unit testing",
+    "pt-multi-step-forms": "MultiStepForms = Zustand(persist) + StepIndicator(m-stepper) + FormField(m-form-field) + Zod schemas per step + Button(a-input-button)",
+    "pt-multipart-upload": "MultipartUpload = ChunkSplitting + ParallelUpload + ProgressTracking + PauseResume + ChunkReassembly",
+    "pt-mutations": "Mutation = useOptimistic + useTransition + Button(a-input-button) + Toast(a-feedback-toast) + Dialog(o-dialog)",
+    "pt-next-auth": "NextAuth = Config (providers + callbacks) + Handlers + SessionProvider + UI (SignIn + UserButton)",
+    "pt-not-found": "not-found.tsx + notFound() + Helpful Navigation = User-Friendly 404",
+    "pt-notifications": "Notifications = Service + Redis Pub/Sub + SSE Stream + useNotifications Hook + Toast + Preferences",
+    "pt-number-formatting": "Intl.NumberFormat + Locale + Currency/Percent/Unit Options = Locale-Aware Numbers",
+    "pt-oauth-providers": "OAuthLogin = ProviderButtons (Google + GitHub + ...) + Callbacks (signIn + jwt + session) + AccountLinking",
+    "pt-offline-mode": "Service Worker + IndexedDB + Background Sync = Offline-First PWA",
+    "pt-on-demand-revalidation": "Server Action + revalidateTag()/revalidatePath() + Webhook Handler = Event-driven freshness",
+    "pt-open-graph": "Metadata API + OG Tags + Twitter Cards + Dynamic Images = Social Share Optimization",
+    "pt-optimistic-updates": "OptimisticUpdate = useOptimistic + useTransition + ListItem(m-list-item) + Icon(a-display-icon)",
+    "pt-pagination": "Pagination = URLSearchParams + PaginationNav(m-pagination) + Button(a-input-button) + DataTable(o-data-table)",
+    "pt-parallel-routes": "Parallel Route = @slot/ + layout.tsx slots + default.tsx + independent loading/error",
+    "pt-password-reset": "PasswordResetFlow = ForgotPasswordForm (email) -> EmailService -> ResetPasswordForm (password + strength)",
+    "pt-passwordless": "Passwordless = (MagicLink | OTP | WebAuthn/Passkeys) + EmailVerification + DeviceRegistration",
+    "pt-payment-request-api": "Payment Request + Stripe/Backend + Token Processing = Native Checkout",
+    "pt-pdf-generation": "React-PDF/Puppeteer + Templates + Streaming = Professional Documents",
+    "pt-performance-testing": "Lighthouse CI + Web Vitals + Playwright = performance validation",
+    "pt-persistence": "Zustand Persist + IndexedDB + Cross-Tab Sync = Multi-Layer Persistence",
+    "pt-polling": "Polling = useQuery + refetchInterval + Exponential Backoff + Visibility Awareness + Delta Updates",
+    "pt-ppr": "ppr = static_shell + suspense_boundaries + dynamic_holes + streaming_ssr",
+    "pt-prefetching": "prefetching = link_prefetch + hover_prefetch + intersection_observer + react_query_hydration",
+    "pt-preloading": "preload = early_fetch + cache_population + priority_hints + network_aware_loading",
+    "pt-presence": "Presence = Redis TTL Keys + Heartbeat API + usePresence Hook + Status Indicators + Room Membership",
+    "pt-prettier-config": "Format Rules + Tailwind Plugin + Editor Integration = Consistent Code Style",
+    "pt-preview-deployments": "Branch Detection + Isolated Environment + PR Integration = Preview Deployment System",
+    "pt-print-styles": "PrintStyles = MediaQueries + PageBreaks + HeaderFooter + ColorAdjustment + HiddenElements",
+    "pt-prisma-patterns": "Prisma = PrismaClient + Repository + DataTable(o-data-table) + Pagination(m-pagination)",
+    "pt-progressive-enhancement": "ProgressiveEnhancement = NoJSFallback + CSSOnlyInteractions + HydratedEnhancements + FeatureDetection",
+    "pt-push-notifications": "PushNotification = VAPIDKeys + ServiceWorker + SubscriptionManagement + PayloadDelivery + ClickHandling",
+    "pt-qr-codes": "QRCode = DataEncoding + CanvasGeneration + LogoOverlay + ExportFormats + ShareIntegration",
+    "pt-queues": "Queue Service + Handlers + DLQ + Retries = Reliable Async Processing",
+    "pt-rate-limiting": "Upstash/Redis + Sliding Window + Headers = API Protection",
+    "pt-rbac": "RBAC = Roles (hierarchy) + Permissions (granular) + Middleware (enforcement) + UI (gates)",
+    "pt-react-query": "ReactQuery = QueryClientProvider + useQuery + useMutation + Skeleton(a-display-skeleton) + Card(m-card)",
+    "pt-recoil": "Recoil Atoms + Selectors + atomFamily + Effects = Atomic State with Async",
+    "pt-redis-cache": "Upstash Redis + Connection Singleton + Type-safe Operations + Tag Tracking = Serverless-ready caching",
+    "pt-redux-toolkit": "Redux Slices + RTK Query + Persist + Hydration = Enterprise State Management",
+    "pt-request-memoization": "React cache() + Module-level definition + Primitive args = Zero-cost request deduplication",
+    "pt-resource-hints": "resource_hints = preconnect(critical_origins) + dns_prefetch(secondary_origins) + preload(critical_assets) + prefetch(likely_navigations)",
+    "pt-responsive-images": "ResponsiveImage = NextImage + SrcsetSizes + BlurPlaceholder + ArtDirection + LazyLoading",
+    "pt-rest-api-design": "REST API = ResourceRoutes + HTTPMethods + ValidationMiddleware + PaginatedResponses + ErrorHandling",
+    "pt-retry-logic": "ExponentialBackoff + Jitter + StatusCodeHandling = Robust Retry Strategy",
+    "pt-revalidation": "Revalidation = revalidatePath + revalidateTag + cacheTag + cacheLife + Toast(a-feedback-toast)",
+    "pt-rich-text-editor": "RichTextEditor = Tiptap(EditorContent) + EditorToolbar(m-toolbar) + ToolbarButton(a-input-button) + Icons(a-display-icon) + Controller(react-hook-form)",
+    "pt-rollback": "Version Tracking + Health Monitoring + Automated Triggers = Safe Rollback Strategy",
+    "pt-route-groups": "Route Groups = (folderName) + layout.tsx + Shared UI Components",
+    "pt-route-handlers": "RouteHandler = HTTPMethod + RequestValidation + ResponseFormatting + ErrorHandling",
+    "pt-router-cache": "Link prefetch + staleTimes config + router.refresh() + revalidatePath() = Instant client navigation",
+    "pt-rum": "performance APIs + error capture + session context + sampling = real user experience data",
+    "pt-sanity": "Sanity Client + GROQ Queries + Portable Text + Draft Mode = Headless Content Management",
+    "pt-scheduled-tasks": "QStash/Inngest + Delay + Callback = Future Task Execution",
+    "pt-scroll-effects": "useScroll + useTransform + useInView = Scroll-Linked Animations",
+    "pt-search": "Search = useDebouncedValue + URLSearchParams + SearchInput(m-search-input) + CommandPalette(o-command-palette)",
+    "pt-security-headers": "next.config.ts Headers + Middleware + CSP = Comprehensive Protection",
+    "pt-seeding": "Faker + Factory Pattern + Environment Detection + Prisma = Reproducible Test Data",
+    "pt-server-actions": "ServerAction = useActionState + FormField(m-form-field) + Button(a-input-button) + Spinner(a-feedback-spinner)",
+    "pt-server-components-data": "ServerComponentData = async/await + Suspense + Skeleton(a-display-skeleton) + StatCard(m-stat-card)",
+    "pt-server-sent-events": "SSE = ReadableStream + text/event-stream + useEventSource Hook + Heartbeat + Reconnection",
+    "pt-server-state": "Server Components + unstable_cache + Server Actions = Zero-Client State",
+    "pt-service-worker": "next-pwa + Workbox + Caching Strategies = PWA with Offline Support",
+    "pt-session-management": "SessionManagement = (JWT | DatabaseSession) + RefreshToken + Middleware + SessionProvider",
+    "pt-share-api": "WebShareAPI = NativeShare + ClipboardFallback + ShareDialog + FileSharing",
+    "pt-signature-pad": "SignaturePad = signature_pad(canvas) + ToolbarButtons(a-input-button) + Icons(a-display-icon) + Controller(react-hook-form)",
+    "pt-sitemap": "sitemap.ts + Database Query + Pagination + Revalidation = Search Engine Indexing",
+    "pt-skeleton-loading": "SkeletonLoading = BaseSkeleton + VariantComponents + AnimationStyles + SuspenseIntegration",
+    "pt-snapshot-testing": "toMatchSnapshot + inline snapshots + serializers = DOM change detection",
+    "pt-social-auth": "SocialAuth = NextAuthConfig + OAuthProviders + SessionCallbacks + ProtectedRoutes",
+    "pt-social-sharing": "SocialSharing = PlatformURLs + ShareDialog + CopyToClipboard + OpenGraphMeta",
+    "pt-soft-delete": "deletedAt Field + Prisma Extension + Auto-Filter + Cleanup Job = Recoverable Data",
+    "pt-sorting": "Sorting = URLSearchParams + Select(a-input-select) + SortIcon(a-display-icon) + DataTable(o-data-table)",
+    "pt-speech-recognition": "SpeechRecognition = WebSpeechAPI + TranscriptionState + CommandMatching + ErrorHandling",
+    "pt-speech-synthesis": "SpeechSynthesis = WebSpeechAPI + VoiceSelection + PlaybackControls + QueueManagement",
+    "pt-sso": "SSO = DomainDetection + (SAML | OIDC) Config + IdPRedirect + CallbackHandler + SessionCreate",
+    "pt-stale-while-revalidate": "Cached Data + Background Revalidation + cacheLife() + React Query = Instant UX with eventual freshness",
+    "pt-state-machines": "XState Machine + Guards + Actions + Actors = Predictable Complex State",
+    "pt-static-rendering": "static_rendering = build_time_generation + generateStaticParams + ISR_revalidation + use_cache",
+    "pt-streaming": "Streaming = Suspense + loading.tsx + Skeleton(a-display-skeleton) + StatCard(m-stat-card)",
+    "pt-stripe-billing-portal": "Portal Configuration + Session Creation + Return URL = Self-Service Billing",
+    "pt-stripe-checkout": "Checkout Session + Success/Cancel URLs + Webhooks = Payment Flow",
+    "pt-stripe-subscriptions": "Plans + Checkout + Webhooks + Database Sync = SaaS Billing",
+    "pt-stripe-webhooks": "Signature Verification + Event Handlers + Idempotency = Reliable Payment Processing",
+    "pt-structured-data": "JSON-LD + Schema.org Types + Page Content = Rich Search Results",
+    "pt-swr": "SWR = SWRConfig + useSWR + useSWRMutation + Skeleton(a-display-skeleton) + Card(m-card)",
+    "pt-synthetic-monitoring": "automated tests + scheduled execution + geographic distribution = proactive availability monitoring",
+    "pt-tag-based-revalidation": "CacheTags hierarchy + unstable_cache tags + cacheTag() + revalidateTag() = Semantic invalidation",
+    "pt-template-literals": "type Route = `/${Segment}/${Param}` | `${Prefix}${Capitalize<Key>}`",
+    "pt-test-fixtures": "Faker.js + factories + database seeding = reusable test data",
+    "pt-testing-api": "Server Actions + Route Handlers + MSW = backend validation",
+    "pt-testing-components": "RTL + userEvent + jest-axe = component behavior validation",
+    "pt-testing-e2e": "Playwright + fixtures + assertions = full user journey validation",
+    "pt-testing-hooks": "renderHook + act + waitFor = hook behavior validation",
+    "pt-testing-integration": "Real database + API routes + MSW = full stack validation",
+    "pt-testing-unit": "Vitest + RTL + vi.mock = isolated unit validation",
+    "pt-tracing": "spans + context propagation + trace exporters = end-to-end request visibility",
+    "pt-transactional-email": "Resend + BullMQ Queue + Webhooks + Delivery Tracking = Reliable Email Delivery",
+    "pt-transactions": "Transaction = $transaction + retry + Toast(a-feedback-toast) + Alert(a-feedback-alert)",
+    "pt-transitions": "CSS Transitions + Tailwind Utilities + GPU Properties = Smooth State Changes",
+    "pt-translations": "Message Files + Namespaces + ICU Format + Type Safety = Scalable Localization",
+    "pt-trpc": "tRPC = router + procedure + useQuery + useMutation + Skeleton(a-display-skeleton) + Toast(a-feedback-toast)",
+    "pt-two-factor": "TwoFactorSetup = Dialog + (QRCode | ManualCode) + OTPInput + BackupCodesDisplay",
+    "pt-type-guards": "function isType(value: unknown): value is T { return runtimeCheck(value) }",
+    "pt-type-safety": "Schema -> Validation -> Inference -> Narrowing -> Safe Operations",
+    "pt-url-state": "URLState = nuqs + useQueryState + Input(a-input-text) + Select(a-input-select) + Tabs(m-tabs)",
+    "pt-url-sync": "nuqs Parsers + URL State + React Query = Shareable Filterable UI",
+    "pt-user-analytics": "events + sessions + consent + identity = privacy-compliant behavioral insights",
+    "pt-utility-types": "UtilityType<T> = MappedType<T, Transformation> | ConditionalType<T, Check, Result>",
+    "pt-valtio": "Valtio Proxy + derive() + Subscriptions = Mutable Reactive State",
+    "pt-vercel-deployment": "Vercel Platform + Edge Functions + Zero-Config = Optimized Next.js Deployment",
+    "pt-virtual-scroll": "VirtualScroll = useVirtualizer + ListItem(m-list-item) + Skeleton(a-display-skeleton) + DataTable(o-data-table)",
+    "pt-visual-regression": "Playwright screenshots + Chromatic + thresholds = visual diff detection",
+    "pt-vscode-integration": "Extensions + Settings + Snippets + Tasks = Optimized Developer Experience",
+    "pt-web-vitals": "LCP + FID/INP + CLS + reporting = SEO-friendly user experience measurement",
+    "pt-web-workers": "Worker Thread + Message Passing + Comlink = Non-Blocking Computation",
+    "pt-webhooks": "Webhook = SignatureVerification + EventRouting + IdempotencyCheck + AsyncProcessing",
+    "pt-websockets": "WebSocket = External Service (Pusher/Ably) + Auth Endpoint + useChannel Hook + Event Handlers",
+    "pt-write-through": "DB Write + Cache Write + Tag Invalidation + Transaction Wrapper = Consistent cache state",
+    "pt-xss-prevention": "React Escaping + DOMPurify + CSP + URL Validation = XSS Protection",
+    "pt-xstate-react": "XState Machine + useMachine + Actors + Guards = Complex UI Workflow",
+    "pt-zero-downtime": "Graceful Shutdown + Health Probes + Rolling Updates = Zero-Downtime Operations",
+    "pt-zod-schemas": "const schema = z.object({...}); type T = z.infer<typeof schema>",
+    "pt-zustand": "Zustand Store + Persist Middleware + Selectors = Lightweight Global State",
+    "r-ai-application": "AIApplication = DashboardLayout(t-dashboard-layout) + SettingsPage(t-settings-page) + ChatInterface(o-chat-interface) + MessageList(o-message-list) + ChatInput(o-chat-input) + Streaming(pt-streaming) + RAG(pt-rag)",
+    "r-analytics-dashboard": "AnalyticsDashboard = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + MetricCard(o-metric-card) + AreaChart(o-area-chart) + BarChart(o-bar-chart) + PieChart(o-pie-chart) + DataTable(o-data-table) + DateRangePicker(o-date-range-picker)",
+    "r-blog-platform": "BlogPlatform = BlogIndex(t-blog-index) + BlogPostPage(t-blog-post-page) + MarketingLayout(t-marketing-layout) + BlogPostCard(o-blog-post-card) + TableOfContents(o-table-of-contents) + AuthorCard(o-author-card) + NewsletterForm(o-newsletter-form) + MDXRemote(pt-mdx) + SyntaxHighlighting(pt-syntax-highlighting)",
+    "r-booking-app": "BookingApp = DashboardLayout(t-dashboard-layout) + SettingsPage(t-settings-page) + CalendarPicker(o-calendar-picker) + TimeSlots(o-time-slots) + BookingForm(o-booking-form) + AvailabilityEditor(o-availability-editor) + DatePickers(pt-date-pickers) + TransactionalEmail(pt-email)",
+    "r-crm": "CRM = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + SettingsPage(t-settings-page) + ContactCard(o-contact-card) + DealPipeline(o-deal-pipeline) + ActivityTimeline(o-activity-timeline) + DataTable(o-data-table) + Charts(pt-charts) + SearchFilters(pt-search-filters)",
+    "r-crowdfunding": "Crowdfunding = LandingPage(t-landing-page) + CheckoutPage(t-checkout-page) + DashboardLayout(t-dashboard-layout) + CampaignCard(o-campaign-card) + CampaignProgress(o-campaign-progress) + RewardSelector(o-reward-selector) + PledgeForm(o-pledge-form) + StripePayments(pt-stripe) + FileUpload(pt-file-upload)",
+    "r-documentation": "Documentation = DocumentationLayout(t-documentation-layout) + MarketingLayout(t-marketing-layout) + Sidebar(o-sidebar) + TableOfContents(o-table-of-contents) + CodeBlock(o-code-block) + SearchDialog(o-search-dialog) + VersionSelector(o-version-selector) + MDXRemote(pt-mdx) + Pagefind(pt-search)",
+    "r-ecommerce": "Ecommerce = ProductListing(t-product-listing) + ProductDetail(t-product-detail) + CartPage(t-cart-page) + CheckoutPage(t-checkout-page) + MarketingLayout(t-marketing-layout) + ProductCard(o-product-card) + Cart(o-cart) + CheckoutForm(o-checkout-form) + StripePayments(pt-stripe)",
+    "r-expense-tracker": "ExpenseTracker = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + SettingsPage(t-settings-page)",
+    "r-file-sharing": "FileSharing = DashboardLayout(t-dashboard-layout) + SettingsPage(t-settings-page)",
+    "r-fitness-tracker": "FitnessTracker = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + SettingsPage(t-settings-page)",
+    "r-helpdesk": "Helpdesk = DashboardLayout(t-dashboard-layout) + HelpCenterPage(t-help-center-page) + SettingsPage(t-settings-page)",
+    "r-job-board": "JobBoard = SearchResultsPage(t-search-results-page) + DashboardLayout(t-dashboard-layout) + MarketingLayout(t-marketing-layout)",
+    "r-learning-platform": "LearningPlatform = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + MarketingLayout(t-marketing-layout)",
+    "r-link-shortener": "LinkShortener = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + LandingPage(t-landing-page)",
+    "r-marketplace": "Marketplace = ProductListing(t-product-listing) + ProductDetail(t-product-detail) + DashboardLayout(t-dashboard-layout) + CheckoutPage(t-checkout-page)",
+    "r-meditation-app": "MeditationApp = DashboardLayout(t-dashboard-layout) + OnboardingLayout(t-onboarding-layout) + SettingsPage(t-settings-page)",
+    "r-meetup-clone": "MeetupClone = SearchResultsPage(t-search-results-page) + DashboardLayout(t-dashboard-layout) + MarketingLayout(t-marketing-layout)",
+    "r-newsletter": "Newsletter = DashboardLayout(t-dashboard-layout) + EmailTemplateLayout(t-email-template-layout) + SettingsPage(t-settings-page)",
+    "r-portfolio": "Portfolio = MarketingLayout(t-marketing-layout) + GalleryPage(t-gallery-page) + BlogIndex(t-blog-index)",
+    "r-project-management": "ProjectManagement = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + SettingsPage(t-settings-page)",
+    "r-property-listing": "PropertyListing = SearchResultsPage(t-search-results-page) + ProductDetail(t-product-detail) + MarketingLayout(t-marketing-layout)",
+    "r-realtime-app": "RealtimeApp = DashboardLayout(t-dashboard-layout) + SettingsPage(t-settings-page)",
+    "r-recipe-app": "RecipeApp = DashboardLayout(t-dashboard-layout) + SearchResultsPage(t-search-results-page) + GalleryPage(t-gallery-page)",
+    "r-rental-management": "RentalManagement = DashboardLayout(t-dashboard-layout) + SettingsPage(t-settings-page) + InvoicePage(t-invoice-page)",
+    "r-restaurant-ordering": "RestaurantOrdering = ProductListing(t-product-listing) + CartPage(t-cart-page) + CheckoutPage(t-checkout-page) + DashboardLayout(t-dashboard-layout)",
+    "r-saas-dashboard": "SaasDashboard = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + SettingsPage(t-settings-page) + MarketingLayout(t-marketing-layout)",
+    "r-social-network": "SocialNetwork = ProfilePage(t-profile-page) + NotificationsPage(t-notifications-page) + SettingsPage(t-settings-page)",
+    "r-subscription-billing": "SubscriptionBilling = CheckoutPage(t-checkout-page) + DashboardLayout(t-dashboard-layout) + SettingsPage(t-settings-page) + InvoicePage(t-invoice-page)",
+    "r-survey-builder": "SurveyBuilder = DashboardLayout(t-dashboard-layout) + DashboardHome(t-dashboard-home) + OnboardingLayout(t-onboarding-layout)",
+    "r-video-streaming": "VideoStreaming = DashboardLayout(t-dashboard-layout) + GalleryPage(t-gallery-page) + MarketingLayout(t-marketing-layout)",
+    "t-404-page": "404Page = Hero(o-hero) + SearchInput(m-search-input) + Button(a-input-button) + SuggestedLinks + HelpLink",
+    "t-500-page": "500Page = ErrorIcon + ErrorMessage + Callout(m-callout) + ActionButtons(a-input-button) + TechnicalDetails + HelpLinks",
+    "t-about-page": "AboutPage = Hero(o-hero) + Stats + Mission + Features(o-features) + Timeline(o-timeline) + Team(o-team) + Offices + CTA(o-cta)",
+    "t-admin-layout": "AdminLayout = Sidebar(o-sidebar) + Header(o-header) + Breadcrumb(m-breadcrumb) + MainContent",
+    "t-auth-layout": "AuthLayout = BrandingPanel(Testimonials(o-testimonials) + TrustBadges) + AuthCard(Card(m-card) + AuthForm(o-auth-form)) + Footer",
+    "t-blog-index": "BlogIndex = Hero(o-hero) + FeaturedPost + CategoryTabs(m-tabs) + PostGrid(Card(m-card)) + Pagination(m-pagination) + NewsletterCTA",
+    "t-blog-post-page": "BlogPostPage = BlogPost(o-blog-post) + AuthorCard(AvatarGroup(m-avatar-group)) + ShareButtons(m-share-button) + TableOfContents + Comments(o-comments-section) + RelatedPosts",
+    "t-cart-page": "CartPage = Cart(o-cart) + CheckoutSummary(o-checkout-summary) + PromoCodeField(m-form-field) + RecentlyViewed",
+    "t-changelog-page": "ChangelogPage = Timeline(o-timeline) + Callout(m-callout) + DisplayBadge(a-display-badge)",
+    "t-checkout-layout": "CheckoutLayout = CheckoutSummary(o-checkout-summary) + Stepper(m-stepper) + Card(m-card)",
+    "t-checkout-page": "CheckoutPage = CheckoutForm(o-checkout-form) + CheckoutSummary(o-checkout-summary) + Stepper(m-stepper) + AddressInput(m-address-input) + CreditCardInput(m-credit-card-input)",
+    "t-coming-soon-page": "ComingSoonPage = Hero(o-hero) + FormField(m-form-field) + InputButton(a-input-button)",
+    "t-dashboard-home": "DashboardHome = StatsDashboard(o-stats-dashboard) + Chart(o-chart) + ActivityFeed(o-activity-feed) + StatCard(m-stat-card)",
+    "t-dashboard-layout": "DashboardLayout = Sidebar(o-sidebar) + Header(o-header) + CommandPalette(o-command-palette) + Breadcrumb(m-breadcrumb)",
+    "t-documentation-layout": "DocumentationLayout = Sidebar(o-sidebar) + SearchModal(o-search-modal) + Breadcrumb(m-breadcrumb) + Tabs(m-tabs)",
+    "t-gallery-page": "GalleryPage = MediaGallery(o-media-gallery) + Tabs(m-tabs) + DisplayImage(a-display-image)",
+    "t-help-center-page": "HelpCenterPage = FAQ(o-faq) + SearchInput(m-search-input) + Card(m-card)",
+    "t-invoice-page": "InvoicePage = InvoiceTable(o-invoice-table) + KeyValue(m-key-value) + DisplayCurrency(a-display-currency)",
+    "t-landing-page": "LandingPage = Hero(o-hero) + Features(o-features) + Testimonials(o-testimonials) + Pricing(o-pricing) + CTA(o-cta) + FAQ(o-faq)",
+    "t-maintenance-page": "MaintenancePage = Callout(m-callout) + DisplayTime(a-display-time) + InputButton(a-input-button)",
+    "t-marketing-layout": "MarketingLayout = Header(o-header) + Footer(o-footer) + AnnouncementBanner(o-announcement-banner) + CookieConsent(o-cookie-consent)",
+    "t-minimal-layout": "MinimalLayout = Header(o-header) + InteractiveLink(a-interactive-link)",
+    "t-notifications-page": "NotificationsPage = NotificationCenter(o-notification-center) + Tabs(m-tabs) + EmptyState(m-empty-state)",
+    "t-onboarding-layout": "OnboardingLayout = OnboardingFlow(o-onboarding-flow) + MultiStepForm(o-multi-step-form) + Stepper(m-stepper)",
+    "t-product-detail": "ProductDetail = ProductCard(o-product-card) + MediaGallery(o-media-gallery) + ReviewForm(o-review-form) + Rating(m-rating) + DisplayCurrency(a-display-currency)",
+    "t-product-listing": "ProductListing = ProductCard(o-product-card) + Sidebar(o-sidebar) + Pagination(m-pagination) + Tabs(m-tabs)",
+    "t-profile-page": "ProfilePage = ActivityFeed(o-activity-feed) + AvatarGroup(m-avatar-group) + Tabs(m-tabs) + FormField(m-form-field)",
+    "t-root-layout": "RootLayout = Typography(p-typography) + Colors(p-colors) + DarkMode(p-dark-mode)",
+    "t-search-results-page": "SearchResultsPage = Sidebar(o-sidebar) + SearchInput(m-search-input) + Pagination(m-pagination) + EmptyState(m-empty-state)",
+    "t-settings-page": "SettingsPage = SettingsForm(o-settings-form) + Tabs(m-tabs) + FormField(m-form-field) + InputSwitch(a-input-switch)",
+    "t-team-page": "TeamPage = Team(o-team) + Card(m-card) + AvatarGroup(m-avatar-group)"
+  }
+}

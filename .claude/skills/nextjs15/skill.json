@@ -1,0 +1,158 @@
+{
+  "$schema": "https://skill.schema.json",
+  "name": "nextjs15-atomic-design",
+  "version": "2.1.0",
+  "description": "Complete atomic design system for building A+++ grade Next.js 15 websites",
+  "author": "Claude Code Skills",
+  "license": "MIT",
+  "repository": "https://github.com/anomalyco/nextjs15-skills",
+  "keywords": [
+    "nextjs",
+    "nextjs15",
+    "react",
+    "react19",
+    "atomic-design",
+    "tailwindcss",
+    "shadcn",
+    "typescript"
+  ],
+  "compatibility": {
+    "next": ">=15.0.0",
+    "react": ">=19.0.0",
+    "node": ">=20.0.0"
+  },
+  "layers": {
+    "L0": {
+      "name": "primitives",
+      "description": "Design tokens - colors, typography, spacing, motion, etc.",
+      "count": 20,
+      "path": "references/primitives",
+      "idPrefix": "p-",
+      "canCompose": []
+    },
+    "L1": {
+      "name": "atoms",
+      "description": "Base UI components - buttons, inputs, text, badges, etc.",
+      "count": 42,
+      "path": "references/atoms",
+      "idPrefix": "a-",
+      "canCompose": ["L0"]
+    },
+    "L2": {
+      "name": "molecules",
+      "description": "Composed UI units - form fields, cards, nav items, etc.",
+      "count": 40,
+      "path": "references/molecules",
+      "idPrefix": "m-",
+      "canCompose": ["L0", "L1"]
+    },
+    "L3": {
+      "name": "organisms",
+      "description": "Complex feature blocks - headers, heroes, data tables, etc.",
+      "count": 50,
+      "path": "references/organisms",
+      "idPrefix": "o-",
+      "canCompose": ["L0", "L1", "L2"]
+    },
+    "L4": {
+      "name": "templates",
+      "description": "Page layouts and page compositions",
+      "count": 32,
+      "path": "references/templates",
+      "idPrefix": "t-",
+      "canCompose": ["L0", "L1", "L2", "L3"]
+    },
+    "L5": {
+      "name": "patterns",
+      "description": "Architectural patterns - routing, data, auth, caching, etc.",
+      "count": 244,
+      "path": "references/patterns",
+      "idPrefix": "pt-",
+      "canCompose": ["L0", "L1", "L2", "L3", "L4"]
+    },
+    "L6": {
+      "name": "recipes",
+      "description": "Complete application implementation guides",
+      "count": 37,
+      "path": "references/recipes",
+      "idPrefix": "r-",
+      "canCompose": ["L0", "L1", "L2", "L3", "L4", "L5"]
+    }
+  },
+  "totalSkills": 465,
+  "dependencies": {
+    "core": {
+      "next": "15.0.0",
+      "react": "19.0.0",
+      "react-dom": "19.0.0",
+      "typescript": "5.6.0"
+    },
+    "styling": {
+      "tailwindcss": "4.0.0",
+      "class-variance-authority": "0.7.1",
+      "clsx": "2.1.1",
+      "tailwind-merge": "2.5.5"
+    },
+    "ui": {
+      "@radix-ui/react-slot": "1.1.0",
+      "lucide-react": "0.460.0",
+      "framer-motion": "11.0.0"
+    },
+    "data": {
+      "@prisma/client": "6.0.0",
+      "zod": "3.23.0",
+      "@tanstack/react-query": "5.60.0"
+    },
+    "auth": {
+      "next-auth": "5.0.0-beta.25"
+    }
+  },
+  "targets": {
+    "performance": {
+      "lcp": "<1.2s",
+      "inp": "<100ms",
+      "cls": "<0.05",
+      "lighthouse": "95+"
+    }
+  },
+  "references": {
+    "schema": "_schema.json",
+    "layerRules": "_layer-rules.json",
+    "validate": "_validate.ts",
+    "sections": "_sections.md",
+    "registry": "registry.json",
+    "compositions": "_compositions.json"
+  },
+  "changelog": {
+    "2.1.0": {
+      "date": "2025-01-18",
+      "changes": [
+        "Added formula notation to all L2-L6 skill files",
+        "Added composition diagrams to all molecules, organisms, templates, recipes",
+        "Updated _schema.json with formula field validation",
+        "Updated _layer-rules.json with mustCompose and minCompositions",
+        "Added Composition Diagram to required sections for L2+",
+        "Enhanced patterns (L5) with explicit component references",
+        "Prepared for _compositions.json registry generation"
+      ]
+    },
+    "2.0.0": {
+      "date": "2025-01-18",
+      "changes": [
+        "Standardized all skill files to canonical schema",
+        "Added explicit composition references to all files",
+        "Unified layer naming (L0-L6)",
+        "Added ID prefixes per layer (p-, a-, m-, o-, t-, pt-, r-)",
+        "Created validation tooling (_schema.json, _validate.ts)",
+        "Added layer README files",
+        "Updated skill counts to reflect actual files"
+      ]
+    },
+    "1.0.0": {
+      "date": "2025-01-16",
+      "changes": [
+        "Initial release"
+      ]
+    }
+  }
+}

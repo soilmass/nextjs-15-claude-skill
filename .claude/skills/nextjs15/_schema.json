@@ -1,0 +1,209 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Next.js 15 Skill File Schema",
+  "description": "Canonical schema for all skill documentation files in the atomic design system",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "layer",
+    "category",
+    "description",
+    "tags"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique identifier with layer prefix",
+      "pattern": "^(p|a|m|o|t|pt|r)-[a-z][a-z0-9-]*$",
+      "examples": ["p-colors", "a-button", "m-form-field", "o-header", "t-landing-page", "pt-server-actions", "r-marketing-site"]
+    },
+    "name": {
+      "type": "string",
+      "description": "Human-readable name",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "version": {
+      "type": "string",
+      "description": "Semantic version",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "default": "2.0.0"
+    },
+    "layer": {
+      "type": "string",
+      "description": "Layer in the atomic hierarchy",
+      "enum": ["L0", "L1", "L2", "L3", "L4", "L5", "L6"]
+    },
+    "category": {
+      "type": "string",
+      "description": "Subcategory within the layer",
+      "minLength": 2
+    },
+    "description": {
+      "type": "string",
+      "description": "One-line description of the skill",
+      "minLength": 10,
+      "maxLength": 200
+    },
+    "tags": {
+      "type": "array",
+      "description": "Searchable keywords",
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z][a-z0-9-]*$"
+      },
+      "minItems": 1
+    },
+    "composes": {
+      "type": "array",
+      "description": "Relative paths to files from lower layers that this skill composes",
+      "items": {
+        "type": "string",
+        "pattern": "^\\.\\./[a-z]+/[a-z0-9-]+\\.md$"
+      },
+      "default": []
+    },
+    "formula": {
+      "type": "string",
+      "description": "Composition equation showing how the component is built from lower layers",
+      "pattern": "^[A-Z][a-zA-Z0-9]+ = .+$",
+      "examples": [
+        "FormField = Label(a-display-text) + Input(a-input-text) + Error(a-feedback-alert)",
+        "Header = Logo(a-display-image) + Navigation(m-nav-link[]) + AuthButtons(m-auth-buttons)"
+      ]
+    },
+    "dependencies": {
+      "type": "object",
+      "description": "External npm packages required",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "performance": {
+      "type": "object",
+      "description": "Performance impact ratings",
+      "properties": {
+        "impact": {
+          "type": "string",
+          "enum": ["none", "low", "medium", "high", "critical"]
+        },
+        "lcp": {
+          "type": "string",
+          "enum": ["neutral", "positive", "negative"]
+        },
+        "cls": {
+          "type": "string",
+          "enum": ["neutral", "positive", "negative"]
+        }
+      }
+    },
+    "accessibility": {
+      "type": "object",
+      "description": "Accessibility compliance",
+      "properties": {
+        "wcag": {
+          "type": "string",
+          "enum": ["A", "AA", "AAA"]
+        },
+        "keyboard": {
+          "type": "boolean"
+        },
+        "screen-reader": {
+          "type": "boolean"
+        }
+      }
+    },
+    "complexity": {
+      "type": "string",
+      "description": "Implementation complexity",
+      "enum": ["beginner", "intermediate", "advanced"]
+    },
+    "estimated_time": {
+      "type": "string",
+      "description": "Estimated implementation time",
+      "pattern": "^\\d+-\\d+ (minutes|hours|days)$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": { "layer": { "const": "L0" } }
+      },
+      "then": {
+        "properties": {
+          "id": { "pattern": "^p-[a-z][a-z0-9-]*$" },
+          "category": { "enum": ["colors", "typography", "spacing", "motion", "layout", "accessibility", "theming", "visual"] },
+          "composes": { "maxItems": 0 }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "layer": { "const": "L1" } }
+      },
+      "then": {
+        "properties": {
+          "id": { "pattern": "^a-[a-z][a-z0-9-]*$" },
+          "category": { "enum": ["display", "input", "feedback", "layout", "interactive", "state"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "layer": { "const": "L2" } }
+      },
+      "then": {
+        "properties": {
+          "id": { "pattern": "^m-[a-z][a-z0-9-]*$" },
+          "category": { "enum": ["navigation", "forms", "content", "data", "interactive", "state"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "layer": { "const": "L3" } }
+      },
+      "then": {
+        "properties": {
+          "id": { "pattern": "^o-[a-z][a-z0-9-]*$" },
+          "category": { "enum": ["navigation", "forms", "marketing", "data", "commerce", "overlays", "user", "utility"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "layer": { "const": "L4" } }
+      },
+      "then": {
+        "properties": {
+          "id": { "pattern": "^t-[a-z][a-z0-9-]*$" },
+          "category": { "enum": ["layouts", "pages"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "layer": { "const": "L5" } }
+      },
+      "then": {
+        "properties": {
+          "id": { "pattern": "^pt-[a-z][a-z0-9-]*$" },
+          "category": { "enum": ["routing", "data", "state", "auth", "cache", "testing", "performance", "forms", "errors", "i18n", "realtime", "payments", "seo", "edge", "security", "typescript", "devops", "observability", "database", "files", "browser", "background", "email", "cms", "animation"] }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": { "layer": { "const": "L6" } }
+      },
+      "then": {
+        "properties": {
+          "id": { "pattern": "^r-[a-z][a-z0-9-]*$" },
+          "category": { "enum": ["business", "commerce", "content", "social", "booking", "tech", "health", "finance", "utility"] }
+        }
+      }
+    }
+  ]
+}

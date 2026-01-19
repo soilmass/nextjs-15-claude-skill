@@ -1,0 +1,3062 @@
+{
+  "$schema": "https://registry.schema.json",
+  "name": "nextjs15-atomic-design",
+  "version": "1.0.0",
+  "generated": "2026-01-16T00:00:00Z",
+  "totalSkills": 338,
+  "skills": {
+    "primitives": [
+      {
+        "id": "p-colors",
+        "name": "colors",
+        "file": "primitives/colors.md",
+        "version": "1.0.0",
+        "description": "OKLCH color system with 22 hues x 11 steps + semantic tokens",
+        "tags": ["design-tokens", "colors", "oklch", "dark-mode"]
+      },
+      {
+        "id": "p-typography",
+        "name": "typography",
+        "file": "primitives/typography.md",
+        "version": "1.0.0",
+        "description": "Typography scale with fluid sizing and font system",
+        "tags": ["design-tokens", "typography", "fonts", "fluid"]
+      },
+      {
+        "id": "p-spacing",
+        "name": "spacing",
+        "file": "primitives/spacing.md",
+        "version": "1.0.0",
+        "description": "4px base unit spacing scale with semantic tokens",
+        "tags": ["design-tokens", "spacing", "layout"]
+      },
+      {
+        "id": "p-shadows",
+        "name": "shadows",
+        "file": "primitives/shadows.md",
+        "version": "1.0.0",
+        "description": "Elevation shadow system with dark mode variants",
+        "tags": ["design-tokens", "shadows", "elevation"]
+      },
+      {
+        "id": "p-borders",
+        "name": "borders",
+        "file": "primitives/borders.md",
+        "version": "1.0.0",
+        "description": "Border radius and width scales",
+        "tags": ["design-tokens", "borders", "radius"]
+      },
+      {
+        "id": "p-breakpoints",
+        "name": "breakpoints",
+        "file": "primitives/breakpoints.md",
+        "version": "1.0.0",
+        "description": "Responsive breakpoints and container sizes",
+        "tags": ["design-tokens", "responsive", "breakpoints"]
+      },
+      {
+        "id": "p-z-index",
+        "name": "z-index",
+        "file": "primitives/z-index.md",
+        "version": "1.0.0",
+        "description": "Z-index layering scale",
+        "tags": ["design-tokens", "z-index", "layers"]
+      },
+      {
+        "id": "p-motion",
+        "name": "motion",
+        "file": "primitives/motion.md",
+        "version": "1.0.0",
+        "description": "Duration, easing, and animation definitions",
+        "tags": ["design-tokens", "motion", "animation", "easing"]
+      },
+      {
+        "id": "p-interaction-timing",
+        "name": "interaction-timing",
+        "file": "primitives/interaction-timing.md",
+        "version": "1.0.0",
+        "description": "Micro-interaction timing patterns",
+        "tags": ["design-tokens", "timing", "interactions"]
+      },
+      {
+        "id": "p-visual-hierarchy",
+        "name": "visual-hierarchy",
+        "file": "primitives/visual-hierarchy.md",
+        "version": "1.0.0",
+        "description": "Contrast levels, size scales, whitespace rhythm",
+        "tags": ["design-tokens", "hierarchy", "contrast"]
+      },
+      {
+        "id": "p-accessibility",
+        "name": "accessibility",
+        "file": "primitives/accessibility.md",
+        "version": "1.0.0",
+        "description": "Touch targets, focus indicators, motion preferences",
+        "tags": ["design-tokens", "a11y", "wcag"]
+      },
+      {
+        "id": "p-dark-mode",
+        "name": "dark-mode",
+        "file": "primitives/dark-mode.md",
+        "version": "1.0.0",
+        "description": "Dark mode color system and adaptations",
+        "tags": ["design-tokens", "dark-mode", "theming"]
+      },
+      {
+        "id": "p-fluid-design",
+        "name": "fluid-design",
+        "file": "primitives/fluid-design.md",
+        "version": "1.0.0",
+        "description": "Fluid typography, spacing, and container queries",
+        "tags": ["design-tokens", "fluid", "responsive"]
+      },
+      {
+        "id": "p-brand-expression",
+        "name": "brand-expression",
+        "file": "primitives/brand-expression.md",
+        "version": "1.0.0",
+        "description": "Brand accent system and icon/illustration variables",
+        "tags": ["design-tokens", "brand", "icons"]
+      },
+      {
+        "id": "p-token-system",
+        "name": "token-system",
+        "file": "primitives/token-system.md",
+        "version": "1.0.0",
+        "description": "Primitive to semantic to component token flow",
+        "tags": ["design-tokens", "architecture", "tokens"]
+      }
+    ],
+    "atoms": [
+      {
+        "id": "a-text",
+        "name": "display-text",
+        "file": "atoms/display-text.md",
+        "version": "1.0.0",
+        "description": "Text component with sizes, weights, colors, truncation",
+        "tags": ["display", "typography"],
+        "dependencies": []
+      },
+      {
+        "id": "a-heading",
+        "name": "display-heading",
+        "file": "atoms/display-heading.md",
+        "version": "1.0.0",
+        "description": "Heading component H1-H6 with scroll margin and balance",
+        "tags": ["display", "typography"],
+        "dependencies": []
+      },
+      {
+        "id": "a-code",
+        "name": "display-code",
+        "file": "atoms/display-code.md",
+        "version": "1.0.0",
+        "description": "Code component with syntax highlighting",
+        "tags": ["display", "code"],
+        "dependencies": ["shiki"]
+      },
+      {
+        "id": "a-badge",
+        "name": "display-badge",
+        "file": "atoms/display-badge.md",
+        "version": "1.0.0",
+        "description": "Badge component with variants and sizes",
+        "tags": ["display", "badge"],
+        "dependencies": ["class-variance-authority"]
+      },
+      {
+        "id": "a-avatar",
+        "name": "display-avatar",
+        "file": "atoms/display-avatar.md",
+        "version": "1.0.0",
+        "description": "Avatar with fallback, sizes, and shapes",
+        "tags": ["display", "avatar"],
+        "dependencies": ["@radix-ui/react-avatar"]
+      },
+      {
+        "id": "a-icon",
+        "name": "display-icon",
+        "file": "atoms/display-icon.md",
+        "version": "1.0.0",
+        "description": "Icon wrapper with sizes and accessibility",
+        "tags": ["display", "icon"],
+        "dependencies": ["lucide-react"]
+      },
+      {
+        "id": "a-image",
+        "name": "display-image",
+        "file": "atoms/display-image.md",
+        "version": "1.0.0",
+        "description": "Optimized image with loading states and aspect ratios",
+        "tags": ["display", "image"],
+        "dependencies": ["next/image"]
+      },
+      {
+        "id": "a-skeleton",
+        "name": "display-skeleton",
+        "file": "atoms/display-skeleton.md",
+        "version": "1.0.0",
+        "description": "Skeleton loader with pulse animation and shapes",
+        "tags": ["display", "loading"],
+        "dependencies": []
+      },
+      {
+        "id": "a-button",
+        "name": "input-button",
+        "file": "atoms/input-button.md",
+        "version": "1.0.0",
+        "description": "Button with 6 variants, 4 sizes, loading state",
+        "tags": ["input", "button"],
+        "dependencies": ["@radix-ui/react-slot", "class-variance-authority"]
+      },
+      {
+        "id": "a-input",
+        "name": "input-text",
+        "file": "atoms/input-text.md",
+        "version": "1.0.0",
+        "description": "Text input with error state and prefix/suffix",
+        "tags": ["input", "text"],
+        "dependencies": []
+      },
+      {
+        "id": "a-textarea",
+        "name": "input-textarea",
+        "file": "atoms/input-textarea.md",
+        "version": "1.0.0",
+        "description": "Textarea with auto-grow and character count",
+        "tags": ["input", "textarea"],
+        "dependencies": []
+      },
+      {
+        "id": "a-checkbox",
+        "name": "input-checkbox",
+        "file": "atoms/input-checkbox.md",
+        "version": "1.0.0",
+        "description": "Checkbox with indeterminate and error states",
+        "tags": ["input", "checkbox"],
+        "dependencies": ["@radix-ui/react-checkbox"]
+      },
+      {
+        "id": "a-radio",
+        "name": "input-radio",
+        "file": "atoms/input-radio.md",
+        "version": "1.0.0",
+        "description": "Radio group with orientation options",
+        "tags": ["input", "radio"],
+        "dependencies": ["@radix-ui/react-radio-group"]
+      },
+      {
+        "id": "a-switch",
+        "name": "input-switch",
+        "file": "atoms/input-switch.md",
+        "version": "1.0.0",
+        "description": "Toggle switch with on/off states",
+        "tags": ["input", "switch"],
+        "dependencies": ["@radix-ui/react-switch"]
+      },
+      {
+        "id": "a-select",
+        "name": "input-select",
+        "file": "atoms/input-select.md",
+        "version": "1.0.0",
+        "description": "Select with groups, search, and portal",
+        "tags": ["input", "select"],
+        "dependencies": ["@radix-ui/react-select"]
+      },
+      {
+        "id": "a-slider",
+        "name": "input-slider",
+        "file": "atoms/input-slider.md",
+        "version": "1.0.0",
+        "description": "Slider with range, steps, and marks",
+        "tags": ["input", "slider"],
+        "dependencies": ["@radix-ui/react-slider"]
+      },
+      {
+        "id": "a-file",
+        "name": "input-file",
+        "file": "atoms/input-file.md",
+        "version": "1.0.0",
+        "description": "File input with dropzone and preview",
+        "tags": ["input", "file"],
+        "dependencies": []
+      },
+      {
+        "id": "a-spinner",
+        "name": "feedback-spinner",
+        "file": "atoms/feedback-spinner.md",
+        "version": "1.0.0",
+        "description": "Loading spinner with sizes and colors",
+        "tags": ["feedback", "loading"],
+        "dependencies": []
+      },
+      {
+        "id": "a-progress",
+        "name": "feedback-progress",
+        "file": "atoms/feedback-progress.md",
+        "version": "1.0.0",
+        "description": "Progress bar determinate/indeterminate",
+        "tags": ["feedback", "progress"],
+        "dependencies": ["@radix-ui/react-progress"]
+      },
+      {
+        "id": "a-toast",
+        "name": "feedback-toast",
+        "file": "atoms/feedback-toast.md",
+        "version": "1.0.0",
+        "description": "Toast notifications with variants and stacking",
+        "tags": ["feedback", "toast"],
+        "dependencies": ["sonner"]
+      },
+      {
+        "id": "a-alert",
+        "name": "feedback-alert",
+        "file": "atoms/feedback-alert.md",
+        "version": "1.0.0",
+        "description": "Alert component with variants and dismissible",
+        "tags": ["feedback", "alert"],
+        "dependencies": []
+      },
+      {
+        "id": "a-divider",
+        "name": "layout-divider",
+        "file": "atoms/layout-divider.md",
+        "version": "1.0.0",
+        "description": "Separator horizontal/vertical",
+        "tags": ["layout", "divider"],
+        "dependencies": ["@radix-ui/react-separator"]
+      },
+      {
+        "id": "a-link",
+        "name": "interactive-link",
+        "file": "atoms/interactive-link.md",
+        "version": "1.0.0",
+        "description": "Link with external detection and prefetch",
+        "tags": ["interactive", "link"],
+        "dependencies": ["next/link"]
+      },
+      {
+        "id": "a-tooltip",
+        "name": "interactive-tooltip",
+        "file": "atoms/interactive-tooltip.md",
+        "version": "1.0.0",
+        "description": "Tooltip with delay and positioning",
+        "tags": ["interactive", "tooltip"],
+        "dependencies": ["@radix-ui/react-tooltip"]
+      },
+      {
+        "id": "a-button-states",
+        "name": "state-button",
+        "file": "atoms/state-button.md",
+        "version": "1.0.0",
+        "description": "Button state matrix: default, hover, focus, active, loading, disabled, success, error",
+        "tags": ["state", "button"],
+        "dependencies": []
+      },
+      {
+        "id": "a-input-states",
+        "name": "state-input",
+        "file": "atoms/state-input.md",
+        "version": "1.0.0",
+        "description": "Input state matrix: empty, hover, focus, filled, validating, valid, invalid, disabled, readonly",
+        "tags": ["state", "input"],
+        "dependencies": []
+      },
+      {
+        "id": "a-checkbox-states",
+        "name": "state-checkbox",
+        "file": "atoms/state-checkbox.md",
+        "version": "1.0.0",
+        "description": "Checkbox state matrix with indeterminate",
+        "tags": ["state", "checkbox"],
+        "dependencies": []
+      },
+      {
+        "id": "a-toggle-states",
+        "name": "state-toggle",
+        "file": "atoms/state-toggle.md",
+        "version": "1.0.0",
+        "description": "Toggle/switch state matrix",
+        "tags": ["state", "toggle"],
+        "dependencies": []
+      },
+      {
+        "id": "a-select-states",
+        "name": "state-select",
+        "file": "atoms/state-select.md",
+        "version": "1.0.0",
+        "description": "Select state matrix with open/closed",
+        "tags": ["state", "select"],
+        "dependencies": []
+      },
+      {
+        "id": "a-link-states",
+        "name": "state-link",
+        "file": "atoms/state-link.md",
+        "version": "1.0.0",
+        "description": "Link state matrix: default, hover, active, visited, focus",
+        "tags": ["state", "link"],
+        "dependencies": []
+      }
+    ],
+    "molecules": [
+      {
+        "id": "m-nav-link",
+        "name": "nav-link",
+        "file": "molecules/nav-link.md",
+        "version": "1.0.0",
+        "description": "Navigation link with active state detection and keyboard nav",
+        "tags": ["navigation"],
+        "atoms": ["a-text", "a-icon", "a-link"]
+      },
+      {
+        "id": "m-breadcrumb",
+        "name": "breadcrumb",
+        "file": "molecules/breadcrumb.md",
+        "version": "1.0.0",
+        "description": "Breadcrumb navigation with auto-collapse and ARIA",
+        "tags": ["navigation"],
+        "atoms": ["a-text", "a-icon", "a-button"]
+      },
+      {
+        "id": "m-pagination",
+        "name": "pagination",
+        "file": "molecules/pagination.md",
+        "version": "1.0.0",
+        "description": "Pagination with URL sync and edge detection",
+        "tags": ["navigation"],
+        "atoms": ["a-button", "a-text", "a-icon"]
+      },
+      {
+        "id": "m-tabs",
+        "name": "tabs",
+        "file": "molecules/tabs.md",
+        "version": "1.0.0",
+        "description": "Tabs with roving tabindex and arrow keys",
+        "tags": ["navigation"],
+        "atoms": ["a-button", "a-text"],
+        "dependencies": ["@radix-ui/react-tabs"]
+      },
+      {
+        "id": "m-stepper",
+        "name": "stepper",
+        "file": "molecules/stepper.md",
+        "version": "1.0.0",
+        "description": "Step indicator with validation and linear/non-linear modes",
+        "tags": ["navigation"],
+        "atoms": ["a-text", "a-icon", "a-button"]
+      },
+      {
+        "id": "m-form-field",
+        "name": "form-field",
+        "file": "molecules/form-field.md",
+        "version": "1.0.0",
+        "description": "Form field with label, description, error, and aria-describedby",
+        "tags": ["form"],
+        "atoms": ["a-input", "a-text"]
+      },
+      {
+        "id": "m-search-input",
+        "name": "search-input",
+        "file": "molecules/search-input.md",
+        "version": "1.0.0",
+        "description": "Search input with debounce and Cmd+K trigger",
+        "tags": ["form"],
+        "atoms": ["a-input", "a-icon", "a-button"]
+      },
+      {
+        "id": "m-password-input",
+        "name": "password-input",
+        "file": "molecules/password-input.md",
+        "version": "1.0.0",
+        "description": "Password input with visibility toggle and strength indicator",
+        "tags": ["form"],
+        "atoms": ["a-input", "a-button", "a-icon"]
+      },
+      {
+        "id": "m-date-picker",
+        "name": "date-picker",
+        "file": "molecules/date-picker.md",
+        "version": "1.0.0",
+        "description": "Date picker with calendar popover",
+        "tags": ["form"],
+        "atoms": ["a-input", "a-button"],
+        "dependencies": ["react-day-picker"]
+      },
+      {
+        "id": "m-combobox",
+        "name": "combobox",
+        "file": "molecules/combobox.md",
+        "version": "1.0.0",
+        "description": "Combobox with typeahead and search",
+        "tags": ["form"],
+        "atoms": ["a-input", "a-button"],
+        "dependencies": ["cmdk"]
+      },
+      {
+        "id": "m-rating",
+        "name": "rating",
+        "file": "molecules/rating.md",
+        "version": "1.0.0",
+        "description": "Star rating with half-star support and hover preview",
+        "tags": ["form"],
+        "atoms": ["a-icon", "a-button"]
+      },
+      {
+        "id": "m-table-row",
+        "name": "table-row",
+        "file": "molecules/table-row.md",
+        "version": "1.0.0",
+        "description": "Table row with selection and expansion",
+        "tags": ["data"],
+        "atoms": ["a-text", "a-checkbox"]
+      },
+      {
+        "id": "m-stat-card",
+        "name": "stat-card",
+        "file": "molecules/stat-card.md",
+        "version": "1.0.0",
+        "description": "Stat card with trend calculation and formatting",
+        "tags": ["data"],
+        "atoms": ["a-text", "a-icon", "a-badge"]
+      },
+      {
+        "id": "m-avatar-group",
+        "name": "avatar-group",
+        "file": "molecules/avatar-group.md",
+        "version": "1.0.0",
+        "description": "Avatar group with overflow count and stacking",
+        "tags": ["data"],
+        "atoms": ["a-avatar", "a-text"]
+      },
+      {
+        "id": "m-key-value",
+        "name": "key-value",
+        "file": "molecules/key-value.md",
+        "version": "1.0.0",
+        "description": "Key-value display with copy to clipboard and truncation",
+        "tags": ["data"],
+        "atoms": ["a-text", "a-icon"]
+      },
+      {
+        "id": "m-timeline-item",
+        "name": "timeline-item",
+        "file": "molecules/timeline-item.md",
+        "version": "1.0.0",
+        "description": "Timeline item with connector lines and relative time",
+        "tags": ["data"],
+        "atoms": ["a-icon", "a-text"]
+      },
+      {
+        "id": "m-card",
+        "name": "card",
+        "file": "molecules/card.md",
+        "version": "1.0.0",
+        "description": "Card with interactive states and link wrapping",
+        "tags": ["content"],
+        "atoms": ["a-text"]
+      },
+      {
+        "id": "m-list-item",
+        "name": "list-item",
+        "file": "molecules/list-item.md",
+        "version": "1.0.0",
+        "description": "List item with swipe actions and reordering",
+        "tags": ["content"],
+        "atoms": ["a-text", "a-icon"]
+      },
+      {
+        "id": "m-accordion-item",
+        "name": "accordion-item",
+        "file": "molecules/accordion-item.md",
+        "version": "1.0.0",
+        "description": "Accordion item with expand/collapse animation",
+        "tags": ["content"],
+        "atoms": ["a-text", "a-icon", "a-button"],
+        "dependencies": ["@radix-ui/react-accordion"]
+      },
+      {
+        "id": "m-callout",
+        "name": "callout",
+        "file": "molecules/callout.md",
+        "version": "1.0.0",
+        "description": "Callout with variant colors and dismissible",
+        "tags": ["content"],
+        "atoms": ["a-icon", "a-text"]
+      },
+      {
+        "id": "m-empty-state",
+        "name": "empty-state",
+        "file": "molecules/empty-state.md",
+        "version": "1.0.0",
+        "description": "Empty state with centered layout and actions",
+        "tags": ["feedback"],
+        "atoms": ["a-icon", "a-text", "a-button"]
+      },
+      {
+        "id": "m-error-boundary",
+        "name": "error-boundary",
+        "file": "molecules/error-boundary.md",
+        "version": "1.0.0",
+        "description": "React error boundary with retry functionality",
+        "tags": ["feedback"],
+        "atoms": ["a-icon", "a-text", "a-button"]
+      },
+      {
+        "id": "m-card-states",
+        "name": "state-card",
+        "file": "molecules/state-card.md",
+        "version": "1.0.0",
+        "description": "Card state matrix: default, hover, focus, selected, loading",
+        "tags": ["state"],
+        "atoms": []
+      },
+      {
+        "id": "m-form-field-states",
+        "name": "state-form-field",
+        "file": "molecules/state-form-field.md",
+        "version": "1.0.0",
+        "description": "Form field state matrix with validation states",
+        "tags": ["state"],
+        "atoms": []
+      },
+      {
+        "id": "m-nav-item-states",
+        "name": "state-nav-item",
+        "file": "molecules/state-nav-item.md",
+        "version": "1.0.0",
+        "description": "Navigation item state matrix: default, hover, active, current",
+        "tags": ["state"],
+        "atoms": []
+      }
+    ],
+    "organisms": [
+      {
+        "id": "o-header",
+        "name": "header",
+        "file": "organisms/header.md",
+        "version": "1.0.0",
+        "description": "Site header with navigation, scroll behavior, and actions",
+        "tags": ["navigation"],
+        "molecules": ["m-nav-link"]
+      },
+      {
+        "id": "o-footer",
+        "name": "footer",
+        "file": "organisms/footer.md",
+        "version": "1.0.0",
+        "description": "Site footer with links, newsletter, and social",
+        "tags": ["navigation"],
+        "molecules": ["m-nav-link", "m-form-field"]
+      },
+      {
+        "id": "o-sidebar",
+        "name": "sidebar",
+        "file": "organisms/sidebar.md",
+        "version": "1.0.0",
+        "description": "Collapsible sidebar with nested navigation",
+        "tags": ["navigation"],
+        "molecules": ["m-nav-link"],
+        "dependencies": ["@radix-ui/react-collapsible"]
+      },
+      {
+        "id": "o-mobile-menu",
+        "name": "mobile-menu",
+        "file": "organisms/mobile-menu.md",
+        "version": "1.0.0",
+        "description": "Mobile navigation drawer",
+        "tags": ["navigation"],
+        "molecules": ["m-nav-link"],
+        "dependencies": ["vaul"]
+      },
+      {
+        "id": "o-command-palette",
+        "name": "command-palette",
+        "file": "organisms/command-palette.md",
+        "version": "1.0.0",
+        "description": "Cmd+K command palette with search and actions",
+        "tags": ["navigation"],
+        "molecules": ["m-search-input"],
+        "dependencies": ["cmdk"]
+      },
+      {
+        "id": "o-mega-menu",
+        "name": "mega-menu",
+        "file": "organisms/mega-menu.md",
+        "version": "1.0.0",
+        "description": "Mega menu with columns and featured content",
+        "tags": ["navigation"],
+        "molecules": ["m-nav-link", "m-card"],
+        "dependencies": ["@radix-ui/react-navigation-menu"]
+      },
+      {
+        "id": "o-auth-form",
+        "name": "auth-form",
+        "file": "organisms/auth-form.md",
+        "version": "1.0.0",
+        "description": "Authentication form with login/register modes",
+        "tags": ["form"],
+        "molecules": ["m-form-field", "m-password-input"],
+        "dependencies": ["react-hook-form", "zod"]
+      },
+      {
+        "id": "o-contact-form",
+        "name": "contact-form",
+        "file": "organisms/contact-form.md",
+        "version": "1.0.0",
+        "description": "Contact form with validation and submission",
+        "tags": ["form"],
+        "molecules": ["m-form-field"],
+        "dependencies": ["react-hook-form"]
+      },
+      {
+        "id": "o-checkout-form",
+        "name": "checkout-form",
+        "file": "organisms/checkout-form.md",
+        "version": "1.0.0",
+        "description": "Multi-step checkout with payment integration",
+        "tags": ["form", "commerce"],
+        "molecules": ["m-form-field", "m-stepper"],
+        "dependencies": ["@stripe/react-stripe-js"]
+      },
+      {
+        "id": "o-settings-form",
+        "name": "settings-form",
+        "file": "organisms/settings-form.md",
+        "version": "1.0.0",
+        "description": "Settings form with sections and per-field saving",
+        "tags": ["form"],
+        "molecules": ["m-form-field"],
+        "dependencies": ["react-hook-form"]
+      },
+      {
+        "id": "o-multi-step-form",
+        "name": "multi-step-form",
+        "file": "organisms/multi-step-form.md",
+        "version": "1.0.0",
+        "description": "Multi-step form wizard with validation per step",
+        "tags": ["form"],
+        "molecules": ["m-form-field", "m-stepper"],
+        "dependencies": ["react-hook-form"]
+      },
+      {
+        "id": "o-file-uploader",
+        "name": "file-uploader",
+        "file": "organisms/file-uploader.md",
+        "version": "1.0.0",
+        "description": "File uploader with drag-drop and progress",
+        "tags": ["form"],
+        "atoms": ["a-file", "a-progress"]
+      },
+      {
+        "id": "o-data-table",
+        "name": "data-table",
+        "file": "organisms/data-table.md",
+        "version": "1.0.0",
+        "description": "Data table with sorting, filtering, pagination",
+        "tags": ["data"],
+        "molecules": ["m-table-row", "m-pagination"],
+        "dependencies": ["@tanstack/react-table"]
+      },
+      {
+        "id": "o-kanban-board",
+        "name": "kanban-board",
+        "file": "organisms/kanban-board.md",
+        "version": "1.0.0",
+        "description": "Kanban board with drag-drop columns and cards",
+        "tags": ["data"],
+        "molecules": ["m-card"],
+        "dependencies": ["@dnd-kit/core"]
+      },
+      {
+        "id": "o-calendar",
+        "name": "calendar",
+        "file": "organisms/calendar.md",
+        "version": "1.0.0",
+        "description": "Calendar with day/week/month views and events",
+        "tags": ["data"],
+        "molecules": ["m-date-picker"],
+        "dependencies": ["react-day-picker"]
+      },
+      {
+        "id": "o-chart",
+        "name": "chart",
+        "file": "organisms/chart.md",
+        "version": "1.0.0",
+        "description": "Charts: line, bar, pie, area with tooltips",
+        "tags": ["data"],
+        "atoms": ["a-tooltip"],
+        "dependencies": ["recharts"]
+      },
+      {
+        "id": "o-timeline",
+        "name": "timeline",
+        "file": "organisms/timeline.md",
+        "version": "1.0.0",
+        "description": "Timeline visualization with events and milestones",
+        "tags": ["data"],
+        "molecules": ["m-timeline-item"]
+      },
+      {
+        "id": "o-comparison-table",
+        "name": "comparison-table",
+        "file": "organisms/comparison-table.md",
+        "version": "1.0.0",
+        "description": "Feature comparison table with highlighting",
+        "tags": ["data"],
+        "molecules": ["m-table-row"]
+      },
+      {
+        "id": "o-hero",
+        "name": "hero",
+        "file": "organisms/hero.md",
+        "version": "1.0.0",
+        "description": "Hero section with variants: centered, split, background",
+        "tags": ["content"],
+        "atoms": ["a-text", "a-button", "a-image"],
+        "dependencies": ["framer-motion"]
+      },
+      {
+        "id": "o-features",
+        "name": "features",
+        "file": "organisms/features.md",
+        "version": "1.0.0",
+        "description": "Features grid with icons and descriptions",
+        "tags": ["content"],
+        "molecules": ["m-card"],
+        "dependencies": ["framer-motion"]
+      },
+      {
+        "id": "o-testimonials",
+        "name": "testimonials",
+        "file": "organisms/testimonials.md",
+        "version": "1.0.0",
+        "description": "Testimonials carousel with avatars and quotes",
+        "tags": ["content"],
+        "molecules": ["m-card", "m-avatar-group"],
+        "dependencies": ["embla-carousel-react"]
+      },
+      {
+        "id": "o-pricing",
+        "name": "pricing",
+        "file": "organisms/pricing.md",
+        "version": "1.0.0",
+        "description": "Pricing table with toggle and feature comparison",
+        "tags": ["content"],
+        "molecules": ["m-card"]
+      },
+      {
+        "id": "o-faq",
+        "name": "faq",
+        "file": "organisms/faq.md",
+        "version": "1.0.0",
+        "description": "FAQ accordion with structured data",
+        "tags": ["content"],
+        "molecules": ["m-accordion-item"],
+        "dependencies": ["@radix-ui/react-accordion"]
+      },
+      {
+        "id": "o-cta",
+        "name": "cta",
+        "file": "organisms/cta.md",
+        "version": "1.0.0",
+        "description": "Call-to-action section with actions",
+        "tags": ["content"],
+        "atoms": ["a-text", "a-button"]
+      },
+      {
+        "id": "o-blog-post",
+        "name": "blog-post",
+        "file": "organisms/blog-post.md",
+        "version": "1.0.0",
+        "description": "Blog post with reading progress and TOC",
+        "tags": ["content"],
+        "atoms": ["a-text", "a-image"],
+        "dependencies": ["@mdx-js/react"]
+      },
+      {
+        "id": "o-team",
+        "name": "team",
+        "file": "organisms/team.md",
+        "version": "1.0.0",
+        "description": "Team grid with member cards and social links",
+        "tags": ["content"],
+        "molecules": ["m-card"]
+      },
+      {
+        "id": "o-product-card",
+        "name": "product-card",
+        "file": "organisms/product-card.md",
+        "version": "1.0.0",
+        "description": "Product card with image, price, and quick actions",
+        "tags": ["commerce"],
+        "molecules": ["m-card"],
+        "atoms": ["a-image", "a-button"]
+      },
+      {
+        "id": "o-cart",
+        "name": "cart",
+        "file": "organisms/cart.md",
+        "version": "1.0.0",
+        "description": "Shopping cart with item management",
+        "tags": ["commerce"],
+        "molecules": ["m-list-item"]
+      },
+      {
+        "id": "o-checkout-summary",
+        "name": "checkout-summary",
+        "file": "organisms/checkout-summary.md",
+        "version": "1.0.0",
+        "description": "Checkout summary with totals and promo codes",
+        "tags": ["commerce"],
+        "molecules": ["m-list-item", "m-form-field"]
+      },
+      {
+        "id": "o-dialog",
+        "name": "dialog",
+        "file": "organisms/dialog.md",
+        "version": "1.0.0",
+        "description": "Modal dialog with focus trapping",
+        "tags": ["modal"],
+        "atoms": ["a-button"],
+        "dependencies": ["@radix-ui/react-dialog"]
+      },
+      {
+        "id": "o-drawer",
+        "name": "drawer",
+        "file": "organisms/drawer.md",
+        "version": "1.0.0",
+        "description": "Slide-in drawer with snap points",
+        "tags": ["modal"],
+        "atoms": ["a-button"],
+        "dependencies": ["vaul"]
+      },
+      {
+        "id": "o-sheet",
+        "name": "sheet",
+        "file": "organisms/sheet.md",
+        "version": "1.0.0",
+        "description": "Side sheet panel with positions",
+        "tags": ["modal"],
+        "atoms": ["a-button"],
+        "dependencies": ["@radix-ui/react-dialog"]
+      },
+      {
+        "id": "o-scroll-animations",
+        "name": "scroll-animations",
+        "file": "organisms/scroll-animations.md",
+        "version": "1.0.0",
+        "description": "Scroll-triggered animations and parallax effects",
+        "tags": ["animation"],
+        "dependencies": ["framer-motion"]
+      }
+    ],
+    "templates": [
+      {
+        "id": "t-layout-root",
+        "name": "layout-root",
+        "file": "templates/layout-root.md",
+        "version": "1.0.0",
+        "description": "Root layout with providers, fonts, and metadata",
+        "tags": ["layout"]
+      },
+      {
+        "id": "t-layout-marketing",
+        "name": "layout-marketing",
+        "file": "templates/layout-marketing.md",
+        "version": "1.0.0",
+        "description": "Marketing site layout with header and footer",
+        "tags": ["layout"],
+        "organisms": ["o-header", "o-footer"]
+      },
+      {
+        "id": "t-layout-dashboard",
+        "name": "layout-dashboard",
+        "file": "templates/layout-dashboard.md",
+        "version": "1.0.0",
+        "description": "Dashboard layout with sidebar and breadcrumbs",
+        "tags": ["layout"],
+        "organisms": ["o-sidebar"]
+      },
+      {
+        "id": "t-layout-auth",
+        "name": "layout-auth",
+        "file": "templates/layout-auth.md",
+        "version": "1.0.0",
+        "description": "Auth pages layout (login, register, reset)",
+        "tags": ["layout"]
+      },
+      {
+        "id": "t-layout-docs",
+        "name": "layout-docs",
+        "file": "templates/layout-docs.md",
+        "version": "1.0.0",
+        "description": "Documentation layout with sidebar and TOC",
+        "tags": ["layout"],
+        "organisms": ["o-sidebar"]
+      },
+      {
+        "id": "t-layout-checkout",
+        "name": "layout-checkout",
+        "file": "templates/layout-checkout.md",
+        "version": "1.0.0",
+        "description": "Checkout flow layout with minimal header",
+        "tags": ["layout"]
+      },
+      {
+        "id": "t-page-landing",
+        "name": "page-landing",
+        "file": "templates/page-landing.md",
+        "version": "1.0.0",
+        "description": "Landing page with hero, features, testimonials, pricing, FAQ, CTA",
+        "tags": ["page"],
+        "organisms": ["o-hero", "o-features", "o-testimonials", "o-pricing", "o-faq", "o-cta"]
+      },
+      {
+        "id": "t-page-about",
+        "name": "page-about",
+        "file": "templates/page-about.md",
+        "version": "1.0.0",
+        "description": "About page with mission, team, and values",
+        "tags": ["page"],
+        "organisms": ["o-hero", "o-team"]
+      },
+      {
+        "id": "t-page-blog-index",
+        "name": "page-blog-index",
+        "file": "templates/page-blog-index.md",
+        "version": "1.0.0",
+        "description": "Blog listing with categories and search",
+        "tags": ["page"],
+        "organisms": ["o-data-table"]
+      },
+      {
+        "id": "t-page-blog-post",
+        "name": "page-blog-post",
+        "file": "templates/page-blog-post.md",
+        "version": "1.0.0",
+        "description": "Blog post with content, author, related posts",
+        "tags": ["page"],
+        "organisms": ["o-blog-post"]
+      },
+      {
+        "id": "t-page-product-listing",
+        "name": "page-product-listing",
+        "file": "templates/page-product-listing.md",
+        "version": "1.0.0",
+        "description": "Product listing with filters and sorting",
+        "tags": ["page"],
+        "organisms": ["o-product-card"]
+      },
+      {
+        "id": "t-page-product-detail",
+        "name": "page-product-detail",
+        "file": "templates/page-product-detail.md",
+        "version": "1.0.0",
+        "description": "Product detail with gallery, variants, reviews",
+        "tags": ["page"],
+        "organisms": ["o-product-card"]
+      },
+      {
+        "id": "t-page-cart",
+        "name": "page-cart",
+        "file": "templates/page-cart.md",
+        "version": "1.0.0",
+        "description": "Shopping cart page with summary",
+        "tags": ["page"],
+        "organisms": ["o-cart", "o-checkout-summary"]
+      },
+      {
+        "id": "t-page-checkout",
+        "name": "page-checkout",
+        "file": "templates/page-checkout.md",
+        "version": "1.0.0",
+        "description": "Checkout page with form and summary",
+        "tags": ["page"],
+        "organisms": ["o-checkout-form", "o-checkout-summary"]
+      },
+      {
+        "id": "t-page-dashboard-home",
+        "name": "page-dashboard-home",
+        "file": "templates/page-dashboard-home.md",
+        "version": "1.0.0",
+        "description": "Dashboard home with stats and recent activity",
+        "tags": ["page"],
+        "organisms": ["o-chart", "o-data-table"]
+      },
+      {
+        "id": "t-page-settings",
+        "name": "page-settings",
+        "file": "templates/page-settings.md",
+        "version": "1.0.0",
+        "description": "Settings page with tabbed sections",
+        "tags": ["page"],
+        "organisms": ["o-settings-form"]
+      },
+      {
+        "id": "t-page-404",
+        "name": "page-404",
+        "file": "templates/page-404.md",
+        "version": "1.0.0",
+        "description": "404 error page with navigation",
+        "tags": ["page"],
+        "molecules": ["m-empty-state"]
+      }
+    ],
+    "patterns": [
+      {
+        "id": "pt-routing-app-router",
+        "name": "routing-app-router",
+        "file": "patterns/routing/app-router.md",
+        "version": "1.0.0",
+        "description": "Next.js 15 App Router structure and conventions",
+        "tags": ["routing"],
+        "category": "routing"
+      },
+      {
+        "id": "pt-routing-dynamic",
+        "name": "routing-dynamic",
+        "file": "patterns/routing/dynamic-routes.md",
+        "version": "1.0.0",
+        "description": "Dynamic [slug] and [...catchAll] routes",
+        "tags": ["routing"],
+        "category": "routing"
+      },
+      {
+        "id": "pt-routing-parallel",
+        "name": "routing-parallel",
+        "file": "patterns/routing/parallel-routes.md",
+        "version": "1.0.0",
+        "description": "Parallel routes with @named slots",
+        "tags": ["routing"],
+        "category": "routing"
+      },
+      {
+        "id": "pt-routing-intercepting",
+        "name": "routing-intercepting",
+        "file": "patterns/routing/intercepting-routes.md",
+        "version": "1.0.0",
+        "description": "Intercepting routes with (..) convention",
+        "tags": ["routing"],
+        "category": "routing"
+      },
+      {
+        "id": "pt-routing-groups",
+        "name": "routing-groups",
+        "file": "patterns/routing/route-groups.md",
+        "version": "1.0.0",
+        "description": "Route groups with (folder) convention",
+        "tags": ["routing"],
+        "category": "routing"
+      },
+      {
+        "id": "pt-routing-middleware",
+        "name": "routing-middleware",
+        "file": "patterns/routing/middleware.md",
+        "version": "1.0.0",
+        "description": "Edge middleware for auth, redirects, i18n",
+        "tags": ["routing"],
+        "category": "routing"
+      },
+      {
+        "id": "pt-data-server-components",
+        "name": "data-server-components",
+        "file": "patterns/data/server-components.md",
+        "version": "1.0.0",
+        "description": "Async Server Components for data fetching",
+        "tags": ["data"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-server-actions",
+        "name": "data-server-actions",
+        "file": "patterns/data/server-actions.md",
+        "version": "1.0.0",
+        "description": "Server Actions for mutations with validation",
+        "tags": ["data"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-use-cache",
+        "name": "data-use-cache",
+        "file": "patterns/data/use-cache.md",
+        "version": "1.0.0",
+        "description": "Next.js 15 use cache directive",
+        "tags": ["data", "cache"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-streaming",
+        "name": "data-streaming",
+        "file": "patterns/data/streaming.md",
+        "version": "1.0.0",
+        "description": "Streaming SSR with Suspense boundaries",
+        "tags": ["data", "render"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-prisma",
+        "name": "data-prisma",
+        "file": "patterns/data/prisma.md",
+        "version": "1.0.0",
+        "description": "Prisma ORM setup and patterns",
+        "tags": ["data", "orm"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-drizzle",
+        "name": "data-drizzle",
+        "file": "patterns/data/drizzle.md",
+        "version": "1.0.0",
+        "description": "Drizzle ORM setup and patterns",
+        "tags": ["data", "orm"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-connection-pooling",
+        "name": "data-connection-pooling",
+        "file": "patterns/data/connection-pooling.md",
+        "version": "1.0.0",
+        "description": "Database connection pooling for serverless",
+        "tags": ["data", "database"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-n-plus-one",
+        "name": "data-n-plus-one",
+        "file": "patterns/data/n-plus-one.md",
+        "version": "1.0.0",
+        "description": "N+1 query prevention patterns",
+        "tags": ["data", "performance"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-transactions",
+        "name": "data-transactions",
+        "file": "patterns/data/transactions.md",
+        "version": "1.0.0",
+        "description": "Database transaction patterns",
+        "tags": ["data", "database"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-soft-deletes",
+        "name": "data-soft-deletes",
+        "file": "patterns/data/soft-deletes.md",
+        "version": "1.0.0",
+        "description": "Soft delete implementation pattern",
+        "tags": ["data", "database"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-optimistic-locking",
+        "name": "data-optimistic-locking",
+        "file": "patterns/data/optimistic-locking.md",
+        "version": "1.0.0",
+        "description": "Optimistic locking for concurrent updates",
+        "tags": ["data", "concurrency"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-audit-logging",
+        "name": "data-audit-logging",
+        "file": "patterns/data/audit-logging.md",
+        "version": "1.0.0",
+        "description": "Audit trail and change logging",
+        "tags": ["data", "security"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-multi-tenant",
+        "name": "data-multi-tenant",
+        "file": "patterns/data/multi-tenant.md",
+        "version": "1.0.0",
+        "description": "Multi-tenant database patterns",
+        "tags": ["data", "architecture"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-read-replicas",
+        "name": "data-read-replicas",
+        "file": "patterns/data/read-replicas.md",
+        "version": "1.0.0",
+        "description": "Read replica routing patterns",
+        "tags": ["data", "scaling"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-migrations",
+        "name": "data-migrations",
+        "file": "patterns/data/migrations.md",
+        "version": "1.0.0",
+        "description": "Zero-downtime database migrations",
+        "tags": ["data", "deployment"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-seeding",
+        "name": "data-seeding",
+        "file": "patterns/data/seeding.md",
+        "version": "1.0.0",
+        "description": "Database seeding patterns",
+        "tags": ["data", "development"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-backup-recovery",
+        "name": "data-backup-recovery",
+        "file": "patterns/data/backup-recovery.md",
+        "version": "1.0.0",
+        "description": "Database backup and recovery patterns",
+        "tags": ["data", "operations"],
+        "category": "data"
+      },
+      {
+        "id": "pt-data-query-builders",
+        "name": "data-query-builders",
+        "file": "patterns/data/query-builders.md",
+        "version": "1.0.0",
+        "description": "Dynamic query builder patterns",
+        "tags": ["data", "api"],
+        "category": "data"
+      },
+      {
+        "id": "pt-state-url",
+        "name": "state-url",
+        "file": "patterns/state/url-state.md",
+        "version": "1.0.0",
+        "description": "URL state management with nuqs",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-server",
+        "name": "state-server",
+        "file": "patterns/state/server-state.md",
+        "version": "1.0.0",
+        "description": "Server state with React Query/SWR",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-client",
+        "name": "state-client",
+        "file": "patterns/state/client-state.md",
+        "version": "1.0.0",
+        "description": "Client state with Zustand/Jotai",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-form",
+        "name": "state-form",
+        "file": "patterns/state/form-state.md",
+        "version": "1.0.0",
+        "description": "Form state with react-hook-form",
+        "tags": ["state", "form"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-optimistic",
+        "name": "state-optimistic",
+        "file": "patterns/state/optimistic-updates.md",
+        "version": "1.0.0",
+        "description": "Optimistic updates with useOptimistic",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-cross-tab",
+        "name": "state-cross-tab",
+        "file": "patterns/state/cross-tab.md",
+        "version": "1.0.0",
+        "description": "Cross-tab state synchronization",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-offline",
+        "name": "state-offline",
+        "file": "patterns/state/offline-first.md",
+        "version": "1.0.0",
+        "description": "Offline-first state management",
+        "tags": ["state", "pwa"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-undo-redo",
+        "name": "state-undo-redo",
+        "file": "patterns/state/undo-redo.md",
+        "version": "1.0.0",
+        "description": "Undo/redo state history",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-derived",
+        "name": "state-derived",
+        "file": "patterns/state/derived-state.md",
+        "version": "1.0.0",
+        "description": "Computed/derived state patterns",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-persistence",
+        "name": "state-persistence",
+        "file": "patterns/state/persistence.md",
+        "version": "1.0.0",
+        "description": "Local storage state persistence",
+        "tags": ["state"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-context",
+        "name": "state-context",
+        "file": "patterns/state/context-optimization.md",
+        "version": "1.0.0",
+        "description": "React Context optimization patterns",
+        "tags": ["state", "performance"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-global",
+        "name": "state-global",
+        "file": "patterns/state/global-state.md",
+        "version": "1.0.0",
+        "description": "Global state architecture patterns",
+        "tags": ["state", "architecture"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-concurrent",
+        "name": "state-concurrent",
+        "file": "patterns/state/concurrent-updates.md",
+        "version": "1.0.0",
+        "description": "Handling concurrent state updates",
+        "tags": ["state", "concurrency"],
+        "category": "state"
+      },
+      {
+        "id": "pt-state-validation",
+        "name": "state-validation",
+        "file": "patterns/state/validation.md",
+        "version": "1.0.0",
+        "description": "State validation with Zod",
+        "tags": ["state", "validation"],
+        "category": "state"
+      },
+      {
+        "id": "pt-auth-nextauth",
+        "name": "auth-nextauth",
+        "file": "patterns/auth/nextauth.md",
+        "version": "1.0.0",
+        "description": "Auth.js v5 setup and configuration",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-middleware",
+        "name": "auth-middleware",
+        "file": "patterns/auth/auth-middleware.md",
+        "version": "1.0.0",
+        "description": "Authentication middleware patterns",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-rbac",
+        "name": "auth-rbac",
+        "file": "patterns/auth/rbac.md",
+        "version": "1.0.0",
+        "description": "Role-based access control",
+        "tags": ["auth", "authorization"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-abac",
+        "name": "auth-abac",
+        "file": "patterns/auth/abac.md",
+        "version": "1.0.0",
+        "description": "Attribute-based access control",
+        "tags": ["auth", "authorization"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-api-keys",
+        "name": "auth-api-keys",
+        "file": "patterns/auth/api-keys.md",
+        "version": "1.0.0",
+        "description": "API key authentication",
+        "tags": ["auth", "api"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-jwt",
+        "name": "auth-jwt",
+        "file": "patterns/auth/jwt.md",
+        "version": "1.0.0",
+        "description": "JWT token patterns and refresh",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-session",
+        "name": "auth-session",
+        "file": "patterns/auth/session.md",
+        "version": "1.0.0",
+        "description": "Session management patterns",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-mfa",
+        "name": "auth-mfa",
+        "file": "patterns/auth/mfa.md",
+        "version": "1.0.0",
+        "description": "Multi-factor authentication",
+        "tags": ["auth", "security"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-oauth",
+        "name": "auth-oauth",
+        "file": "patterns/auth/oauth.md",
+        "version": "1.0.0",
+        "description": "OAuth provider integration",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-magic-link",
+        "name": "auth-magic-link",
+        "file": "patterns/auth/magic-link.md",
+        "version": "1.0.0",
+        "description": "Passwordless magic link auth",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-impersonation",
+        "name": "auth-impersonation",
+        "file": "patterns/auth/impersonation.md",
+        "version": "1.0.0",
+        "description": "Admin user impersonation",
+        "tags": ["auth", "admin"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-rate-limiting",
+        "name": "auth-rate-limiting",
+        "file": "patterns/auth/rate-limiting.md",
+        "version": "1.0.0",
+        "description": "Auth rate limiting and brute force protection",
+        "tags": ["auth", "security"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-password-reset",
+        "name": "auth-password-reset",
+        "file": "patterns/auth/password-reset.md",
+        "version": "1.0.0",
+        "description": "Secure password reset flow",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-email-verification",
+        "name": "auth-email-verification",
+        "file": "patterns/auth/email-verification.md",
+        "version": "1.0.0",
+        "description": "Email verification flow",
+        "tags": ["auth"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-auth-audit-trail",
+        "name": "auth-audit-trail",
+        "file": "patterns/auth/audit-trail.md",
+        "version": "1.0.0",
+        "description": "Auth event audit logging",
+        "tags": ["auth", "security"],
+        "category": "auth"
+      },
+      {
+        "id": "pt-cache-redis",
+        "name": "cache-redis",
+        "file": "patterns/cache/redis.md",
+        "version": "1.0.0",
+        "description": "Redis caching patterns with Upstash",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-edge-kv",
+        "name": "cache-edge-kv",
+        "file": "patterns/cache/edge-kv.md",
+        "version": "1.0.0",
+        "description": "Edge KV storage patterns",
+        "tags": ["cache", "edge"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-invalidation",
+        "name": "cache-invalidation",
+        "file": "patterns/cache/invalidation.md",
+        "version": "1.0.0",
+        "description": "Cache invalidation strategies",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-revalidation",
+        "name": "cache-revalidation",
+        "file": "patterns/cache/revalidation.md",
+        "version": "1.0.0",
+        "description": "On-demand revalidation patterns",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-stale-while-revalidate",
+        "name": "cache-stale-while-revalidate",
+        "file": "patterns/cache/stale-while-revalidate.md",
+        "version": "1.0.0",
+        "description": "SWR caching strategy",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-cdn",
+        "name": "cache-cdn",
+        "file": "patterns/cache/cdn.md",
+        "version": "1.0.0",
+        "description": "CDN caching headers and strategies",
+        "tags": ["cache", "performance"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-response",
+        "name": "cache-response",
+        "file": "patterns/cache/response-cache.md",
+        "version": "1.0.0",
+        "description": "Response caching patterns",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-fragment",
+        "name": "cache-fragment",
+        "file": "patterns/cache/fragment-cache.md",
+        "version": "1.0.0",
+        "description": "Fragment/component caching",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-data",
+        "name": "cache-data",
+        "file": "patterns/cache/data-cache.md",
+        "version": "1.0.0",
+        "description": "Data layer caching patterns",
+        "tags": ["cache", "data"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-tags",
+        "name": "cache-tags",
+        "file": "patterns/cache/cache-tags.md",
+        "version": "1.0.0",
+        "description": "Cache tag invalidation",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-warming",
+        "name": "cache-warming",
+        "file": "patterns/cache/cache-warming.md",
+        "version": "1.0.0",
+        "description": "Cache warming strategies",
+        "tags": ["cache", "performance"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-stampede",
+        "name": "cache-stampede",
+        "file": "patterns/cache/stampede-prevention.md",
+        "version": "1.0.0",
+        "description": "Cache stampede prevention",
+        "tags": ["cache", "performance"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-distributed",
+        "name": "cache-distributed",
+        "file": "patterns/cache/distributed-cache.md",
+        "version": "1.0.0",
+        "description": "Distributed caching patterns",
+        "tags": ["cache", "scaling"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-memory",
+        "name": "cache-memory",
+        "file": "patterns/cache/memory-cache.md",
+        "version": "1.0.0",
+        "description": "In-memory caching patterns",
+        "tags": ["cache"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-cache-session",
+        "name": "cache-session",
+        "file": "patterns/cache/session-cache.md",
+        "version": "1.0.0",
+        "description": "Session data caching",
+        "tags": ["cache", "auth"],
+        "category": "cache"
+      },
+      {
+        "id": "pt-render-static",
+        "name": "render-static",
+        "file": "patterns/render/static.md",
+        "version": "1.0.0",
+        "description": "Static site generation patterns",
+        "tags": ["render"],
+        "category": "render"
+      },
+      {
+        "id": "pt-render-dynamic",
+        "name": "render-dynamic",
+        "file": "patterns/render/dynamic.md",
+        "version": "1.0.0",
+        "description": "Dynamic rendering patterns",
+        "tags": ["render"],
+        "category": "render"
+      },
+      {
+        "id": "pt-render-ppr",
+        "name": "render-ppr",
+        "file": "patterns/render/partial-prerendering.md",
+        "version": "1.0.0",
+        "description": "Partial Prerendering (PPR)",
+        "tags": ["render", "nextjs15"],
+        "category": "render"
+      },
+      {
+        "id": "pt-render-streaming",
+        "name": "render-streaming",
+        "file": "patterns/render/streaming-ssr.md",
+        "version": "1.0.0",
+        "description": "Streaming SSR patterns",
+        "tags": ["render"],
+        "category": "render"
+      },
+      {
+        "id": "pt-render-isr",
+        "name": "render-isr",
+        "file": "patterns/render/isr.md",
+        "version": "1.0.0",
+        "description": "Incremental Static Regeneration",
+        "tags": ["render"],
+        "category": "render"
+      },
+      {
+        "id": "pt-perf-code-splitting",
+        "name": "perf-code-splitting",
+        "file": "patterns/performance/code-splitting.md",
+        "version": "1.0.0",
+        "description": "Dynamic imports and code splitting",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-images",
+        "name": "perf-images",
+        "file": "patterns/performance/image-optimization.md",
+        "version": "1.0.0",
+        "description": "Next.js Image optimization",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-fonts",
+        "name": "perf-fonts",
+        "file": "patterns/performance/font-optimization.md",
+        "version": "1.0.0",
+        "description": "Font loading and optimization",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-lazy-loading",
+        "name": "perf-lazy-loading",
+        "file": "patterns/performance/lazy-loading.md",
+        "version": "1.0.0",
+        "description": "Lazy loading patterns",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-prefetching",
+        "name": "perf-prefetching",
+        "file": "patterns/performance/prefetching.md",
+        "version": "1.0.0",
+        "description": "Route and data prefetching",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-bundle-analysis",
+        "name": "perf-bundle-analysis",
+        "file": "patterns/performance/bundle-analysis.md",
+        "version": "1.0.0",
+        "description": "Bundle size analysis and optimization",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-web-vitals",
+        "name": "perf-web-vitals",
+        "file": "patterns/performance/web-vitals.md",
+        "version": "1.0.0",
+        "description": "Core Web Vitals optimization",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-memory",
+        "name": "perf-memory",
+        "file": "patterns/performance/memory-optimization.md",
+        "version": "1.0.0",
+        "description": "Memory leak prevention",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-hydration",
+        "name": "perf-hydration",
+        "file": "patterns/performance/hydration.md",
+        "version": "1.0.0",
+        "description": "Hydration optimization patterns",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-render",
+        "name": "perf-render",
+        "file": "patterns/performance/render-optimization.md",
+        "version": "1.0.0",
+        "description": "React render optimization",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-third-party",
+        "name": "perf-third-party",
+        "file": "patterns/performance/third-party-scripts.md",
+        "version": "1.0.0",
+        "description": "Third-party script optimization",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-critical-css",
+        "name": "perf-critical-css",
+        "file": "patterns/performance/critical-css.md",
+        "version": "1.0.0",
+        "description": "Critical CSS extraction",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-perf-resource-hints",
+        "name": "perf-resource-hints",
+        "file": "patterns/performance/resource-hints.md",
+        "version": "1.0.0",
+        "description": "Preconnect, preload, prefetch hints",
+        "tags": ["performance"],
+        "category": "performance"
+      },
+      {
+        "id": "pt-seo-metadata",
+        "name": "seo-metadata",
+        "file": "patterns/seo/metadata.md",
+        "version": "1.0.0",
+        "description": "Next.js Metadata API patterns",
+        "tags": ["seo"],
+        "category": "seo"
+      },
+      {
+        "id": "pt-seo-og",
+        "name": "seo-og",
+        "file": "patterns/seo/open-graph.md",
+        "version": "1.0.0",
+        "description": "Open Graph and Twitter cards",
+        "tags": ["seo", "social"],
+        "category": "seo"
+      },
+      {
+        "id": "pt-seo-sitemap",
+        "name": "seo-sitemap",
+        "file": "patterns/seo/sitemap.md",
+        "version": "1.0.0",
+        "description": "Dynamic sitemap generation",
+        "tags": ["seo"],
+        "category": "seo"
+      },
+      {
+        "id": "pt-seo-structured-data",
+        "name": "seo-structured-data",
+        "file": "patterns/seo/structured-data.md",
+        "version": "1.0.0",
+        "description": "JSON-LD structured data",
+        "tags": ["seo"],
+        "category": "seo"
+      },
+      {
+        "id": "pt-api-rest",
+        "name": "api-rest",
+        "file": "patterns/api/rest.md",
+        "version": "1.0.0",
+        "description": "REST API route handlers",
+        "tags": ["api"],
+        "category": "api"
+      },
+      {
+        "id": "pt-api-trpc",
+        "name": "api-trpc",
+        "file": "patterns/api/trpc.md",
+        "version": "1.0.0",
+        "description": "tRPC setup and patterns",
+        "tags": ["api", "types"],
+        "category": "api"
+      },
+      {
+        "id": "pt-api-graphql",
+        "name": "api-graphql",
+        "file": "patterns/api/graphql.md",
+        "version": "1.0.0",
+        "description": "GraphQL API patterns",
+        "tags": ["api"],
+        "category": "api"
+      },
+      {
+        "id": "pt-api-versioning",
+        "name": "api-versioning",
+        "file": "patterns/api/versioning.md",
+        "version": "1.0.0",
+        "description": "API versioning strategies",
+        "tags": ["api"],
+        "category": "api"
+      },
+      {
+        "id": "pt-api-pagination",
+        "name": "api-pagination",
+        "file": "patterns/api/pagination.md",
+        "version": "1.0.0",
+        "description": "Cursor and offset pagination",
+        "tags": ["api", "data"],
+        "category": "api"
+      },
+      {
+        "id": "pt-api-error-handling",
+        "name": "api-error-handling",
+        "file": "patterns/api/error-handling.md",
+        "version": "1.0.0",
+        "description": "API error response patterns",
+        "tags": ["api"],
+        "category": "api"
+      },
+      {
+        "id": "pt-api-rate-limiting",
+        "name": "api-rate-limiting",
+        "file": "patterns/api/rate-limiting.md",
+        "version": "1.0.0",
+        "description": "API rate limiting implementation",
+        "tags": ["api", "security"],
+        "category": "api"
+      },
+      {
+        "id": "pt-api-validation",
+        "name": "api-validation",
+        "file": "patterns/api/validation.md",
+        "version": "1.0.0",
+        "description": "Request validation with Zod",
+        "tags": ["api", "validation"],
+        "category": "api"
+      },
+      {
+        "id": "pt-realtime-websocket",
+        "name": "realtime-websocket",
+        "file": "patterns/realtime/websocket.md",
+        "version": "1.0.0",
+        "description": "WebSocket integration patterns",
+        "tags": ["realtime"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-realtime-sse",
+        "name": "realtime-sse",
+        "file": "patterns/realtime/server-sent-events.md",
+        "version": "1.0.0",
+        "description": "Server-Sent Events patterns",
+        "tags": ["realtime"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-realtime-presence",
+        "name": "realtime-presence",
+        "file": "patterns/realtime/presence.md",
+        "version": "1.0.0",
+        "description": "User presence indicators",
+        "tags": ["realtime"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-realtime-cursors",
+        "name": "realtime-cursors",
+        "file": "patterns/realtime/live-cursors.md",
+        "version": "1.0.0",
+        "description": "Live cursor synchronization",
+        "tags": ["realtime", "collaboration"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-realtime-conflict",
+        "name": "realtime-conflict",
+        "file": "patterns/realtime/conflict-resolution.md",
+        "version": "1.0.0",
+        "description": "Conflict resolution patterns",
+        "tags": ["realtime", "data"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-realtime-crdt",
+        "name": "realtime-crdt",
+        "file": "patterns/realtime/crdt.md",
+        "version": "1.0.0",
+        "description": "CRDT for collaborative editing",
+        "tags": ["realtime", "collaboration"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-realtime-rooms",
+        "name": "realtime-rooms",
+        "file": "patterns/realtime/rooms.md",
+        "version": "1.0.0",
+        "description": "Room-based real-time architecture",
+        "tags": ["realtime"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-realtime-notifications",
+        "name": "realtime-notifications",
+        "file": "patterns/realtime/notifications.md",
+        "version": "1.0.0",
+        "description": "Real-time notification system",
+        "tags": ["realtime"],
+        "category": "realtime"
+      },
+      {
+        "id": "pt-jobs-queues",
+        "name": "jobs-queues",
+        "file": "patterns/jobs/queues.md",
+        "version": "1.0.0",
+        "description": "Background job queue patterns",
+        "tags": ["jobs"],
+        "category": "jobs"
+      },
+      {
+        "id": "pt-jobs-cron",
+        "name": "jobs-cron",
+        "file": "patterns/jobs/cron.md",
+        "version": "1.0.0",
+        "description": "Scheduled cron jobs",
+        "tags": ["jobs"],
+        "category": "jobs"
+      },
+      {
+        "id": "pt-jobs-webhooks",
+        "name": "jobs-webhooks",
+        "file": "patterns/jobs/webhooks.md",
+        "version": "1.0.0",
+        "description": "Webhook handling patterns",
+        "tags": ["jobs", "api"],
+        "category": "jobs"
+      },
+      {
+        "id": "pt-jobs-retries",
+        "name": "jobs-retries",
+        "file": "patterns/jobs/retries.md",
+        "version": "1.0.0",
+        "description": "Job retry and exponential backoff",
+        "tags": ["jobs"],
+        "category": "jobs"
+      },
+      {
+        "id": "pt-jobs-dlq",
+        "name": "jobs-dlq",
+        "file": "patterns/jobs/dead-letter-queue.md",
+        "version": "1.0.0",
+        "description": "Dead letter queue patterns",
+        "tags": ["jobs"],
+        "category": "jobs"
+      },
+      {
+        "id": "pt-jobs-idempotency",
+        "name": "jobs-idempotency",
+        "file": "patterns/jobs/idempotency.md",
+        "version": "1.0.0",
+        "description": "Idempotent job processing",
+        "tags": ["jobs"],
+        "category": "jobs"
+      },
+      {
+        "id": "pt-observability-logging",
+        "name": "observability-logging",
+        "file": "patterns/observability/logging.md",
+        "version": "1.0.0",
+        "description": "Structured logging patterns",
+        "tags": ["observability"],
+        "category": "observability"
+      },
+      {
+        "id": "pt-observability-tracing",
+        "name": "observability-tracing",
+        "file": "patterns/observability/tracing.md",
+        "version": "1.0.0",
+        "description": "Distributed tracing patterns",
+        "tags": ["observability"],
+        "category": "observability"
+      },
+      {
+        "id": "pt-observability-metrics",
+        "name": "observability-metrics",
+        "file": "patterns/observability/metrics.md",
+        "version": "1.0.0",
+        "description": "Application metrics collection",
+        "tags": ["observability"],
+        "category": "observability"
+      },
+      {
+        "id": "pt-observability-alerting",
+        "name": "observability-alerting",
+        "file": "patterns/observability/alerting.md",
+        "version": "1.0.0",
+        "description": "Alerting configuration",
+        "tags": ["observability"],
+        "category": "observability"
+      },
+      {
+        "id": "pt-observability-error-tracking",
+        "name": "observability-error-tracking",
+        "file": "patterns/observability/error-tracking.md",
+        "version": "1.0.0",
+        "description": "Error tracking with Sentry",
+        "tags": ["observability"],
+        "category": "observability"
+      },
+      {
+        "id": "pt-observability-health-checks",
+        "name": "observability-health-checks",
+        "file": "patterns/observability/health-checks.md",
+        "version": "1.0.0",
+        "description": "Health check endpoints",
+        "tags": ["observability"],
+        "category": "observability"
+      },
+      {
+        "id": "pt-security-xss",
+        "name": "security-xss",
+        "file": "patterns/security/xss-prevention.md",
+        "version": "1.0.0",
+        "description": "XSS prevention patterns",
+        "tags": ["security"],
+        "category": "security"
+      },
+      {
+        "id": "pt-security-csrf",
+        "name": "security-csrf",
+        "file": "patterns/security/csrf-protection.md",
+        "version": "1.0.0",
+        "description": "CSRF protection patterns",
+        "tags": ["security"],
+        "category": "security"
+      },
+      {
+        "id": "pt-security-headers",
+        "name": "security-headers",
+        "file": "patterns/security/security-headers.md",
+        "version": "1.0.0",
+        "description": "Security headers configuration",
+        "tags": ["security"],
+        "category": "security"
+      },
+      {
+        "id": "pt-security-input-sanitization",
+        "name": "security-input-sanitization",
+        "file": "patterns/security/input-sanitization.md",
+        "version": "1.0.0",
+        "description": "Input sanitization patterns",
+        "tags": ["security"],
+        "category": "security"
+      },
+      {
+        "id": "pt-security-secrets",
+        "name": "security-secrets",
+        "file": "patterns/security/secrets-management.md",
+        "version": "1.0.0",
+        "description": "Secrets management patterns",
+        "tags": ["security"],
+        "category": "security"
+      },
+      {
+        "id": "pt-security-sql-injection",
+        "name": "security-sql-injection",
+        "file": "patterns/security/sql-injection.md",
+        "version": "1.0.0",
+        "description": "SQL injection prevention",
+        "tags": ["security", "data"],
+        "category": "security"
+      },
+      {
+        "id": "pt-edge-functions",
+        "name": "edge-functions",
+        "file": "patterns/edge/functions.md",
+        "version": "1.0.0",
+        "description": "Edge function patterns",
+        "tags": ["edge"],
+        "category": "edge"
+      },
+      {
+        "id": "pt-edge-kv",
+        "name": "edge-kv",
+        "file": "patterns/edge/kv-storage.md",
+        "version": "1.0.0",
+        "description": "Edge KV storage usage",
+        "tags": ["edge", "cache"],
+        "category": "edge"
+      },
+      {
+        "id": "pt-edge-geolocation",
+        "name": "edge-geolocation",
+        "file": "patterns/edge/geolocation.md",
+        "version": "1.0.0",
+        "description": "Geolocation at the edge",
+        "tags": ["edge"],
+        "category": "edge"
+      },
+      {
+        "id": "pt-edge-ab-testing",
+        "name": "edge-ab-testing",
+        "file": "patterns/edge/ab-testing.md",
+        "version": "1.0.0",
+        "description": "A/B testing at the edge",
+        "tags": ["edge", "testing"],
+        "category": "edge"
+      },
+      {
+        "id": "pt-edge-personalization",
+        "name": "edge-personalization",
+        "file": "patterns/edge/personalization.md",
+        "version": "1.0.0",
+        "description": "Edge personalization patterns",
+        "tags": ["edge"],
+        "category": "edge"
+      },
+      {
+        "id": "pt-edge-image-optimization",
+        "name": "edge-image-optimization",
+        "file": "patterns/edge/image-optimization.md",
+        "version": "1.0.0",
+        "description": "Edge image optimization",
+        "tags": ["edge", "performance"],
+        "category": "edge"
+      },
+      {
+        "id": "pt-types-end-to-end",
+        "name": "types-end-to-end",
+        "file": "patterns/types/end-to-end.md",
+        "version": "1.0.0",
+        "description": "End-to-end type safety patterns",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-inference",
+        "name": "types-inference",
+        "file": "patterns/types/inference.md",
+        "version": "1.0.0",
+        "description": "TypeScript type inference patterns",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-api",
+        "name": "types-api",
+        "file": "patterns/types/api-types.md",
+        "version": "1.0.0",
+        "description": "API type generation",
+        "tags": ["types", "api"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-database",
+        "name": "types-database",
+        "file": "patterns/types/database-types.md",
+        "version": "1.0.0",
+        "description": "Database type generation",
+        "tags": ["types", "data"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-branded",
+        "name": "types-branded",
+        "file": "patterns/types/branded-types.md",
+        "version": "1.0.0",
+        "description": "Branded types for domain modeling",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-discriminated",
+        "name": "types-discriminated",
+        "file": "patterns/types/discriminated-unions.md",
+        "version": "1.0.0",
+        "description": "Discriminated union patterns",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-generics",
+        "name": "types-generics",
+        "file": "patterns/types/generics.md",
+        "version": "1.0.0",
+        "description": "Generic type patterns",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-utility",
+        "name": "types-utility",
+        "file": "patterns/types/utility-types.md",
+        "version": "1.0.0",
+        "description": "Custom utility types",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-guards",
+        "name": "types-guards",
+        "file": "patterns/types/type-guards.md",
+        "version": "1.0.0",
+        "description": "Type guard patterns",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-assertions",
+        "name": "types-assertions",
+        "file": "patterns/types/assertions.md",
+        "version": "1.0.0",
+        "description": "Type assertion patterns",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-props",
+        "name": "types-props",
+        "file": "patterns/types/component-props.md",
+        "version": "1.0.0",
+        "description": "Component prop type patterns",
+        "tags": ["types"],
+        "category": "types"
+      },
+      {
+        "id": "pt-types-env",
+        "name": "types-env",
+        "file": "patterns/types/env-variables.md",
+        "version": "1.0.0",
+        "description": "Type-safe environment variables",
+        "tags": ["types", "config"],
+        "category": "types"
+      },
+      {
+        "id": "pt-fetching-react-query",
+        "name": "fetching-react-query",
+        "file": "patterns/fetching/react-query.md",
+        "version": "1.0.0",
+        "description": "TanStack Query patterns",
+        "tags": ["fetching", "state"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-fetching-swr",
+        "name": "fetching-swr",
+        "file": "patterns/fetching/swr.md",
+        "version": "1.0.0",
+        "description": "SWR data fetching patterns",
+        "tags": ["fetching", "state"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-fetching-prefetch",
+        "name": "fetching-prefetch",
+        "file": "patterns/fetching/prefetch.md",
+        "version": "1.0.0",
+        "description": "Data prefetching patterns",
+        "tags": ["fetching", "performance"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-fetching-infinite",
+        "name": "fetching-infinite",
+        "file": "patterns/fetching/infinite-scroll.md",
+        "version": "1.0.0",
+        "description": "Infinite scroll implementation",
+        "tags": ["fetching"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-fetching-optimistic",
+        "name": "fetching-optimistic",
+        "file": "patterns/fetching/optimistic-mutations.md",
+        "version": "1.0.0",
+        "description": "Optimistic mutation patterns",
+        "tags": ["fetching", "state"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-fetching-parallel",
+        "name": "fetching-parallel",
+        "file": "patterns/fetching/parallel-queries.md",
+        "version": "1.0.0",
+        "description": "Parallel query patterns",
+        "tags": ["fetching", "performance"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-fetching-dependent",
+        "name": "fetching-dependent",
+        "file": "patterns/fetching/dependent-queries.md",
+        "version": "1.0.0",
+        "description": "Dependent query patterns",
+        "tags": ["fetching"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-fetching-background",
+        "name": "fetching-background",
+        "file": "patterns/fetching/background-refetch.md",
+        "version": "1.0.0",
+        "description": "Background refetching patterns",
+        "tags": ["fetching"],
+        "category": "fetching"
+      },
+      {
+        "id": "pt-forms-server-actions",
+        "name": "forms-server-actions",
+        "file": "patterns/forms/server-actions.md",
+        "version": "1.0.0",
+        "description": "Form with Server Actions",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-rhf",
+        "name": "forms-rhf",
+        "file": "patterns/forms/react-hook-form.md",
+        "version": "1.0.0",
+        "description": "React Hook Form integration",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-validation",
+        "name": "forms-validation",
+        "file": "patterns/forms/validation.md",
+        "version": "1.0.0",
+        "description": "Form validation with Zod",
+        "tags": ["forms", "validation"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-multi-step",
+        "name": "forms-multi-step",
+        "file": "patterns/forms/multi-step.md",
+        "version": "1.0.0",
+        "description": "Multi-step form wizard",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-file-upload",
+        "name": "forms-file-upload",
+        "file": "patterns/forms/file-upload.md",
+        "version": "1.0.0",
+        "description": "File upload handling",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-optimistic",
+        "name": "forms-optimistic",
+        "file": "patterns/forms/optimistic-forms.md",
+        "version": "1.0.0",
+        "description": "Optimistic form updates",
+        "tags": ["forms", "state"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-autosave",
+        "name": "forms-autosave",
+        "file": "patterns/forms/autosave.md",
+        "version": "1.0.0",
+        "description": "Form autosave patterns",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-dynamic",
+        "name": "forms-dynamic",
+        "file": "patterns/forms/dynamic-fields.md",
+        "version": "1.0.0",
+        "description": "Dynamic form fields",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-arrays",
+        "name": "forms-arrays",
+        "file": "patterns/forms/field-arrays.md",
+        "version": "1.0.0",
+        "description": "Form field arrays",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-forms-conditional",
+        "name": "forms-conditional",
+        "file": "patterns/forms/conditional-fields.md",
+        "version": "1.0.0",
+        "description": "Conditional form fields",
+        "tags": ["forms"],
+        "category": "forms"
+      },
+      {
+        "id": "pt-errors-boundaries",
+        "name": "errors-boundaries",
+        "file": "patterns/errors/error-boundaries.md",
+        "version": "1.0.0",
+        "description": "React error boundaries",
+        "tags": ["errors"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-errors-global",
+        "name": "errors-global",
+        "file": "patterns/errors/global-error.md",
+        "version": "1.0.0",
+        "description": "Next.js global error handling",
+        "tags": ["errors"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-errors-not-found",
+        "name": "errors-not-found",
+        "file": "patterns/errors/not-found.md",
+        "version": "1.0.0",
+        "description": "Not found error handling",
+        "tags": ["errors"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-errors-recovery",
+        "name": "errors-recovery",
+        "file": "patterns/errors/recovery.md",
+        "version": "1.0.0",
+        "description": "Error recovery patterns",
+        "tags": ["errors"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-errors-fallback",
+        "name": "errors-fallback",
+        "file": "patterns/errors/fallback-ui.md",
+        "version": "1.0.0",
+        "description": "Fallback UI patterns",
+        "tags": ["errors"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-errors-retry",
+        "name": "errors-retry",
+        "file": "patterns/errors/retry-logic.md",
+        "version": "1.0.0",
+        "description": "Error retry logic",
+        "tags": ["errors"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-errors-async",
+        "name": "errors-async",
+        "file": "patterns/errors/async-errors.md",
+        "version": "1.0.0",
+        "description": "Async error handling",
+        "tags": ["errors"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-errors-form",
+        "name": "errors-form",
+        "file": "patterns/errors/form-errors.md",
+        "version": "1.0.0",
+        "description": "Form error handling",
+        "tags": ["errors", "forms"],
+        "category": "errors"
+      },
+      {
+        "id": "pt-dx-env",
+        "name": "dx-env",
+        "file": "patterns/dx/environment.md",
+        "version": "1.0.0",
+        "description": "Environment configuration",
+        "tags": ["dx"],
+        "category": "dx"
+      },
+      {
+        "id": "pt-dx-debugging",
+        "name": "dx-debugging",
+        "file": "patterns/dx/debugging.md",
+        "version": "1.0.0",
+        "description": "Debugging techniques",
+        "tags": ["dx"],
+        "category": "dx"
+      },
+      {
+        "id": "pt-dx-hot-reload",
+        "name": "dx-hot-reload",
+        "file": "patterns/dx/hot-reload.md",
+        "version": "1.0.0",
+        "description": "Hot reload optimization",
+        "tags": ["dx"],
+        "category": "dx"
+      },
+      {
+        "id": "pt-dx-dev-tools",
+        "name": "dx-dev-tools",
+        "file": "patterns/dx/dev-tools.md",
+        "version": "1.0.0",
+        "description": "Development tools setup",
+        "tags": ["dx"],
+        "category": "dx"
+      },
+      {
+        "id": "pt-dx-typescript",
+        "name": "dx-typescript",
+        "file": "patterns/dx/typescript-config.md",
+        "version": "1.0.0",
+        "description": "TypeScript configuration",
+        "tags": ["dx", "types"],
+        "category": "dx"
+      },
+      {
+        "id": "pt-dx-linting",
+        "name": "dx-linting",
+        "file": "patterns/dx/linting.md",
+        "version": "1.0.0",
+        "description": "ESLint and Prettier setup",
+        "tags": ["dx"],
+        "category": "dx"
+      },
+      {
+        "id": "pt-testing-unit",
+        "name": "testing-unit",
+        "file": "patterns/testing/unit.md",
+        "version": "1.0.0",
+        "description": "Unit testing patterns",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-integration",
+        "name": "testing-integration",
+        "file": "patterns/testing/integration.md",
+        "version": "1.0.0",
+        "description": "Integration testing patterns",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-e2e",
+        "name": "testing-e2e",
+        "file": "patterns/testing/e2e.md",
+        "version": "1.0.0",
+        "description": "E2E testing with Playwright",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-components",
+        "name": "testing-components",
+        "file": "patterns/testing/component-testing.md",
+        "version": "1.0.0",
+        "description": "Component testing patterns",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-mocking",
+        "name": "testing-mocking",
+        "file": "patterns/testing/mocking.md",
+        "version": "1.0.0",
+        "description": "Mocking strategies",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-fixtures",
+        "name": "testing-fixtures",
+        "file": "patterns/testing/fixtures.md",
+        "version": "1.0.0",
+        "description": "Test fixture patterns",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-coverage",
+        "name": "testing-coverage",
+        "file": "patterns/testing/coverage.md",
+        "version": "1.0.0",
+        "description": "Code coverage setup",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-visual",
+        "name": "testing-visual",
+        "file": "patterns/testing/visual-regression.md",
+        "version": "1.0.0",
+        "description": "Visual regression testing",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-a11y",
+        "name": "testing-a11y",
+        "file": "patterns/testing/accessibility.md",
+        "version": "1.0.0",
+        "description": "Accessibility testing",
+        "tags": ["testing", "a11y"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-api",
+        "name": "testing-api",
+        "file": "patterns/testing/api-testing.md",
+        "version": "1.0.0",
+        "description": "API route testing",
+        "tags": ["testing", "api"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-server-components",
+        "name": "testing-server-components",
+        "file": "patterns/testing/server-components.md",
+        "version": "1.0.0",
+        "description": "Server Component testing",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-server-actions",
+        "name": "testing-server-actions",
+        "file": "patterns/testing/server-actions.md",
+        "version": "1.0.0",
+        "description": "Server Action testing",
+        "tags": ["testing"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-msw",
+        "name": "testing-msw",
+        "file": "patterns/testing/msw.md",
+        "version": "1.0.0",
+        "description": "Mock Service Worker patterns",
+        "tags": ["testing", "mocking"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-testing-ci",
+        "name": "testing-ci",
+        "file": "patterns/testing/ci-integration.md",
+        "version": "1.0.0",
+        "description": "CI test integration",
+        "tags": ["testing", "deployment"],
+        "category": "testing"
+      },
+      {
+        "id": "pt-deploy-vercel",
+        "name": "deploy-vercel",
+        "file": "patterns/deployment/vercel.md",
+        "version": "1.0.0",
+        "description": "Vercel deployment patterns",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-preview",
+        "name": "deploy-preview",
+        "file": "patterns/deployment/preview.md",
+        "version": "1.0.0",
+        "description": "Preview deployment patterns",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-feature-flags",
+        "name": "deploy-feature-flags",
+        "file": "patterns/deployment/feature-flags.md",
+        "version": "1.0.0",
+        "description": "Feature flag implementation",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-rollback",
+        "name": "deploy-rollback",
+        "file": "patterns/deployment/rollback.md",
+        "version": "1.0.0",
+        "description": "Rollback strategies",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-blue-green",
+        "name": "deploy-blue-green",
+        "file": "patterns/deployment/blue-green.md",
+        "version": "1.0.0",
+        "description": "Blue-green deployment",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-canary",
+        "name": "deploy-canary",
+        "file": "patterns/deployment/canary.md",
+        "version": "1.0.0",
+        "description": "Canary deployment patterns",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-docker",
+        "name": "deploy-docker",
+        "file": "patterns/deployment/docker.md",
+        "version": "1.0.0",
+        "description": "Docker deployment patterns",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-ci-cd",
+        "name": "deploy-ci-cd",
+        "file": "patterns/deployment/ci-cd.md",
+        "version": "1.0.0",
+        "description": "CI/CD pipeline setup",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-deploy-env-management",
+        "name": "deploy-env-management",
+        "file": "patterns/deployment/env-management.md",
+        "version": "1.0.0",
+        "description": "Environment management",
+        "tags": ["deployment"],
+        "category": "deployment"
+      },
+      {
+        "id": "pt-monitoring-web-vitals",
+        "name": "monitoring-web-vitals",
+        "file": "patterns/monitoring/web-vitals.md",
+        "version": "1.0.0",
+        "description": "Web Vitals monitoring",
+        "tags": ["monitoring", "performance"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-monitoring-analytics",
+        "name": "monitoring-analytics",
+        "file": "patterns/monitoring/analytics.md",
+        "version": "1.0.0",
+        "description": "Analytics integration",
+        "tags": ["monitoring"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-monitoring-rum",
+        "name": "monitoring-rum",
+        "file": "patterns/monitoring/rum.md",
+        "version": "1.0.0",
+        "description": "Real User Monitoring",
+        "tags": ["monitoring"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-monitoring-custom-events",
+        "name": "monitoring-custom-events",
+        "file": "patterns/monitoring/custom-events.md",
+        "version": "1.0.0",
+        "description": "Custom event tracking",
+        "tags": ["monitoring"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-monitoring-performance",
+        "name": "monitoring-performance",
+        "file": "patterns/monitoring/performance-monitoring.md",
+        "version": "1.0.0",
+        "description": "Performance monitoring",
+        "tags": ["monitoring", "performance"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-monitoring-uptime",
+        "name": "monitoring-uptime",
+        "file": "patterns/monitoring/uptime.md",
+        "version": "1.0.0",
+        "description": "Uptime monitoring",
+        "tags": ["monitoring"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-monitoring-usage",
+        "name": "monitoring-usage",
+        "file": "patterns/monitoring/usage-tracking.md",
+        "version": "1.0.0",
+        "description": "Usage tracking patterns",
+        "tags": ["monitoring"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-monitoring-dashboards",
+        "name": "monitoring-dashboards",
+        "file": "patterns/monitoring/dashboards.md",
+        "version": "1.0.0",
+        "description": "Monitoring dashboards",
+        "tags": ["monitoring"],
+        "category": "monitoring"
+      },
+      {
+        "id": "pt-design-animation",
+        "name": "design-animation",
+        "file": "patterns/design/animation.md",
+        "version": "1.0.0",
+        "description": "Animation choreography patterns",
+        "tags": ["design", "animation"],
+        "category": "design"
+      },
+      {
+        "id": "pt-design-micro-interactions",
+        "name": "design-micro-interactions",
+        "file": "patterns/design/micro-interactions.md",
+        "version": "1.0.0",
+        "description": "Micro-interaction patterns",
+        "tags": ["design"],
+        "category": "design"
+      },
+      {
+        "id": "pt-design-delight",
+        "name": "design-delight",
+        "file": "patterns/design/delight.md",
+        "version": "1.0.0",
+        "description": "Delight and easter eggs",
+        "tags": ["design"],
+        "category": "design"
+      },
+      {
+        "id": "pt-design-page-transitions",
+        "name": "design-page-transitions",
+        "file": "patterns/design/page-transitions.md",
+        "version": "1.0.0",
+        "description": "Page transition patterns",
+        "tags": ["design", "animation"],
+        "category": "design"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "r-marketing",
+        "name": "marketing-site",
+        "file": "recipes/marketing-site.md",
+        "version": "1.0.0",
+        "description": "Corporate marketing website implementation",
+        "tags": ["recipe", "marketing"],
+        "pages": 20,
+        "skills": ["o-header", "o-footer", "o-hero", "o-features", "o-testimonials", "o-pricing", "o-faq", "o-cta"]
+      },
+      {
+        "id": "r-ecommerce",
+        "name": "ecommerce",
+        "file": "recipes/ecommerce.md",
+        "version": "1.0.0",
+        "description": "E-commerce store implementation",
+        "tags": ["recipe", "commerce"],
+        "pages": 25,
+        "skills": ["o-product-card", "o-cart", "o-checkout-form", "o-checkout-summary"]
+      },
+      {
+        "id": "r-saas",
+        "name": "saas-dashboard",
+        "file": "recipes/saas-dashboard.md",
+        "version": "1.0.0",
+        "description": "SaaS dashboard application",
+        "tags": ["recipe", "saas"],
+        "pages": 15,
+        "skills": ["o-sidebar", "o-data-table", "o-chart", "o-settings-form"]
+      },
+      {
+        "id": "r-docs",
+        "name": "documentation",
+        "file": "recipes/documentation.md",
+        "version": "1.0.0",
+        "description": "Documentation site implementation",
+        "tags": ["recipe", "docs"],
+        "pages": 100,
+        "skills": ["o-sidebar", "o-blog-post"]
+      },
+      {
+        "id": "r-blog",
+        "name": "blog-platform",
+        "file": "recipes/blog-platform.md",
+        "version": "1.0.0",
+        "description": "Blog platform implementation",
+        "tags": ["recipe", "blog"],
+        "pages": 15,
+        "skills": ["o-blog-post"]
+      },
+      {
+        "id": "r-ai-app",
+        "name": "ai-application",
+        "file": "recipes/ai-application.md",
+        "version": "1.0.0",
+        "description": "AI chat application implementation",
+        "tags": ["recipe", "ai"],
+        "pages": 10,
+        "skills": ["pt-realtime-sse"]
+      },
+      {
+        "id": "r-realtime",
+        "name": "realtime-app",
+        "file": "recipes/realtime-app.md",
+        "version": "1.0.0",
+        "description": "Real-time collaborative application",
+        "tags": ["recipe", "realtime"],
+        "pages": 8,
+        "skills": ["pt-realtime-websocket", "pt-realtime-presence", "pt-realtime-crdt"]
+      }
+    ]
+  }
+}
